@@ -3,7 +3,7 @@ title = "1D lattice"
 weight = 10
 +++
 
-## Interference function of one-dimensional lattice
+## Interference function of a one-dimensional lattice
 
 A one dimensional lattice can be viewed as a chain of particles placed at regular intervals on a single axis. The plot below represents one possible use case, where infinitely long (or very long) boxes are placed at nodes of a 1d lattice to form a grating.
 
@@ -33,10 +33,9 @@ When the beam azimuthal angle $\varphi_f$ is zero, the beam direction coincides 
 
 ### Position variance
 
-Position variance parameter `Var`, as depicted on top plot, allows to introduce uncertainty for each particle position around lattice point 
-by applying corresponding Debye-Waller factor.
+The position variance parameter `Var`, as depicted on the top plot, allows to introduce uncertainty for each particle position around the lattice point by applying a corresponding Debye-Waller factor.
 
-It can be set using `setPositionVariance(value)` method, where `value` is given in $nm^2$.
+It can be set using the `setPositionVariance(value)` method, where `value` is given in $nm^2$.
 
 {{< highlight python >}}
 
@@ -44,24 +43,25 @@ lattice = InterferenceFunction1DLattice(100*nm, 0.0*deg)
 lattice.setPositionVariance(0.1)
 {{< /highlight >}}
 
-By default variance is set to zero.
+By default the variance is set to zero.
 
 ### Decay function
 
 To account for finite size effects of the lattice, a decay function should be assigned to the interference function. This function encodes the loss of coherent scattering from lattice points with increasing distance between them. The origin of this loss of coherence could be attributed to the coherence length of the beam or to the domain structure of the lattice. 
 
-On picture below one dimensional lattice is represented in real space as a probability function to find lattice point at given coordinate.
-In the presence of decay function attenuating constructive interference, probability can be given as
-$\sum F\_{decay}\cdot\delta(x-na)$.
+In the picture below a one dimensional lattice is represented in real space as a probability 
+density function for finding a particle at a given coordinate on the x-axis.
+In the presence of a decay function, this density can be given as
+$\sum F\_{decay}(x)\cdot\delta(x-na)$.
 
 {{< figscg src="lattice1d_decay_real.png" width="800px" class="center">}}
 
-Fourier transformation, applied to the $P(x)$ distribution, provides scattering amplitude in reciprocal space. Exponential decay law in real space with the decay length $\lambda$ 
-will give Cauchy distribution with characteristic width $1/\lambda$ in reciprocal space, as shown below.
+The Fourier transform of this distribution $P(x)$ provides the scattering amplitude in reciprocal space. An exponential decay law in real space with the decay length $\lambda$ 
+will give a Cauchy distribution with characteristic width $1/\lambda$ in reciprocal space, as shown below.
 
 {{< figscg src="lattice1d_decay_reciprocal.png" width="800px" class="center">}}
 
-A decay function can be set using the setDecayFunction(decay) method of the 1D interference function.
+The decay function can be set using the setDecayFunction(decay) method of the 1D interference function.
 
 
 {{< highlight python >}}
