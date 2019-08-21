@@ -7,7 +7,7 @@ weight = 10
 
 Required software:
 
-* `Compiler with C++-14 support (e.g. gcc>= 4.9 or clang>=3.4)`
+* `Compiler with full C++-14 support (e.g. gcc>= 5.0 or clang>=3.4)`
 * `cmake (>= 3.1)`
 * `boost library (>= 1.48)`
 * `fftw3 library (>= 3.3.1)`
