@@ -22,7 +22,7 @@ breadcrumb = true
     <p>Use links below to download the appropriate package. Previous versions are available <a href="{{% download-loc %}} " onclick="ga('send', 'event', 'download', 'click', 'previous-ver');">here<a>.</p>
     </div>
   </div>
-  
+
 
 <!-- Nav tabs -->
 <ul class="nav nav-tabs nav-pills nav-fill " id="OperationSystemTab" role="tablist">
@@ -36,15 +36,15 @@ breadcrumb = true
     <a class="nav-link" id="messages-tab" data-toggle="tab" href="#Linux" role="tab" aria-controls="messages" aria-selected="false">Linux</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="messages-tab" data-toggle="tab" href="#Manual" role="tab" aria-controls="messages" aria-selected="false">Manual</a>
+    <a class="nav-link" id="messages-tab" data-toggle="tab" href="#Documents" role="tab" aria-controls="messages" aria-selected="false">Documents</a>
   </li>
 </ul>
 
 <!-- Tab panes -->
 <div class="tab-content" id="OperationSystemTabContent">
-  <div class="tab-pane fade" id="Windows" role="tabpanel" aria-labelledby="profile-tab">  
+  <div class="tab-pane fade" id="Windows" role="tabpanel" aria-labelledby="profile-tab">
     <div class="d-flex flex-column flex-md-row justify-content-center">
-      <div class="card text-center bg-light mx-3 my-5 border-primary ba-custom-border" style="width: 18rem;">        
+      <div class="card text-center bg-light mx-3 my-5 border-primary ba-custom-border" style="width: 18rem;">
         <div class="card-header">Windows, 64-bit (x86)</div>
         <div class="card-body">
           <h5 class="card-title">Windows, Python 3.7</h5>
@@ -53,7 +53,7 @@ breadcrumb = true
           <a href="{{% ref-installer-win "3.7" %}}" onclick="ga('send', 'event', 'download', 'click', 'win-py37');" class="btn btn-primary ba-custom">Download</a>
         </div>
       </div>
-      <div class="card text-center bg-light mx-3 my-5 border-primary ba-custom-border" style="width: 18rem;">        
+      <div class="card text-center bg-light mx-3 my-5 border-primary ba-custom-border" style="width: 18rem;">
         <div class="card-header">Windows, 64-bit (x86)</div>
         <div class="card-body">
           <h5 class="card-title">Windows, Python 3.6</h5>
@@ -62,7 +62,7 @@ breadcrumb = true
           <a href="{{% ref-installer-win "3.6" %}}" onclick="ga('send', 'event', 'download', 'click', 'win-py36');" class="btn btn-primary ba-custom">Download</a>
         </div>
       </div>
-      <div class="card text-center bg-light mx-3 my-5 border-secondary" style="width: 18rem;">        
+      <div class="card text-center bg-light mx-3 my-5 border-secondary" style="width: 18rem;">
         <div class="card-header">Windows, 64-bit (x86)</div>
         <div class="card-body">
           <h5 class="card-title">Windows, Python 2.7</h5>
@@ -70,13 +70,13 @@ breadcrumb = true
           <p class="card-text">Windows 7,8,10 binary installer intended for Python 2.7</p>
           <a href="{{% ref-installer-win "2.7" %}}" onclick="ga('send', 'event', 'download', 'click', 'win-py27');" class="btn btn-secondary">Download</a>
         </div>
-      </div>      
+      </div>
     </div>
   </div>
 
   <div class="tab-pane fade" id="MacOS" role="tabpanel" aria-labelledby="profile-tab">
     <div class="d-flex flex-column flex-md-row justify-content-center">
-      <div class="card text-center bg-light mx-3 my-5 border-primary ba-custom-border" style="width: 22rem;">        
+      <div class="card text-center bg-light mx-3 my-5 border-primary ba-custom-border" style="width: 22rem;">
         <div class="card-header">MacOS, 64-bit (x86)</div>
         <div class="card-body">
           <h5 class="card-title">MacOS, Python 3.7</h5>
@@ -85,7 +85,7 @@ breadcrumb = true
           <a href="{{% ref-installer-mac "3.7" %}}" onclick="ga('send', 'event', 'download', 'click', 'mac-py37')" class="btn btn-primary ba-custom">Download</a>
         </div>
       </div>
-      <div class="card text-center bg-light mx-3 my-5 border-secondary" style="width: 22rem;">        
+      <div class="card text-center bg-light mx-3 my-5 border-secondary" style="width: 22rem;">
         <div class="card-header">MacOS, 64-bit (x86)</div>
         <div class="card-body">
           <h5 class="card-title">MacOS, Python 3.6</h5>
@@ -93,8 +93,8 @@ breadcrumb = true
           <p class="card-text">MacOS 10.10 (Yosemite), suitable for 10.11 (El Capitan), 10.12 (Sierra), 10.13 (High Sierra) and 10.14 (Mojave).</p>
           <a href="{{% ref-installer-mac "3.6" %}}" onclick="ga('send', 'event', 'download', 'click', 'mac-py36');" class="btn btn-secondary">Download</a>
         </div>
-      </div>      
-      <div class="card text-center bg-light mx-3 my-5 border-secondary" style="width: 22rem;">        
+      </div>
+      <div class="card text-center bg-light mx-3 my-5 border-secondary" style="width: 22rem;">
         <div class="card-header">MacOS, 64-bit (x86)</div>
         <div class="card-body">
           <h5 class="card-title">MacOS, Python 2.7</h5>
@@ -102,13 +102,13 @@ breadcrumb = true
           <p class="card-text">MacOS 10.10 (Yosemite), suitable for 10.11 (El Capitan), 10.12 (Sierra), 10.13 (High Sierra) and 10.14 (Mojave).</p>
           <a href="{{% ref-installer-mac "2.7" %}}" onclick="ga('send', 'event', 'download', 'click', 'mac-py27');" class="btn btn-secondary">Download</a>
         </div>
-      </div>      
+      </div>
     </div>
   </div>
-  
+
   <div class="tab-pane fade" id="Linux" role="tabpanel" aria-labelledby="messages-tab">
     <div class="d-flex flex-column flex-md-row justify-content-center">
-      <div class="card text-center bg-light mx-5 my-5 border-primary ba-custom-border" style="width: 80%;">        
+      <div class="card text-center bg-light mx-5 my-5 border-primary ba-custom-border" style="width: 80%;">
         <div class="card-header">Get source code</div>
         <div class="card-body">
           <h5 class="card-title">Clone Git repository</h5>
@@ -122,16 +122,30 @@ breadcrumb = true
     </div>
   </div>
 
-  <div class="tab-pane fade" id="Manual" role="tabpanel" aria-labelledby="messages-tab">
+  <div class="tab-pane fade" id="Documents" role="tabpanel" aria-labelledby="messages-tab">
     <div class="d-flex flex-column flex-md-row justify-content-center">
-      <div class="card text-center bg-light mx-3 my-5 border-primary ba-custom-border" style="width: 22rem;">        
-        <div class="card-header">Manual</div>
+      <div class="card text-center bg-light mx-3 my-5 border-primary ba-custom-border" style="width: 22rem;">
+        <div class="card-header">Reference Paper</div>
         <div class="card-body">
-          <h5 class="card-title">Manual, pdf</h5>
-          <a href="{{% ref-manual %}}" onclick="ga('send', 'event', 'download', 'click', 'manual');" class="btn btn-primary ba-custom">Download</a>
+          <h5 class="card-title">J. Appl. Cryst. 2020</h5>
+          <a href="{{% ref-paper %}}" onclick="ga('send', 'event', 'download', 'click', 'manual');" class="btn btn-primary ba-custom">Download pdf</a>
         </div>
       </div>
-    </div>  
+      <div class="card text-center bg-light mx-3 my-5 border-primary ba-custom-border" style="width: 22rem;">
+        <div class="card-header">Form Factor Catalog</div>
+        <div class="card-body">
+          <h5 class="card-title">Catalog</h5>
+          <a href="{{% ref-ffcatalog %}}" onclick="ga('send', 'event', 'download', 'click', 'manual');" class="btn btn-primary ba-custom">Download pdf</a>
+        </div>
+      </div>
+      <div class="card text-center bg-light mx-3 my-5 border-primary ba-custom-border" style="width: 22rem;">
+        <div class="card-header">Physics Manual (incomplete)</div>
+        <div class="card-body">
+          <h5 class="card-title">Manual</h5>
+          <a href="{{% ref-manual %}}" onclick="ga('send', 'event', 'download', 'click', 'manual');" class="btn btn-primary ba-custom">Download pdf</a>
+        </div>
+      </div>
+    </div>
   </div>
 
 </div>
