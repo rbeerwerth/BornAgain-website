@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Extended examples on BornAgain</title>
+    <link>https://www.bornagainproject.org/documentation/tutorial-examples/fitting/extended/</link>
+    <description>Recent content in Extended examples on BornAgain</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://www.bornagainproject.org/documentation/tutorial-examples/fitting/extended/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fitting reflectometry data</title>
+      <link>https://www.bornagainproject.org/documentation/tutorial-examples/fitting/extended/fit-specular-data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/tutorial-examples/fitting/extended/fit-specular-data/</guid>
+      <description>Fitting reflectometry data In this example we will fit reflectometry data obtained from GenX for the sample previously used in reflectometry simulation tutorial.
+The only fitting parameter of the simulation considered here is the thickness of the Ti layers. The reference data was obtained under the following assumptions:
+ All Ti layers have the same thickness Thickness value was $3 \, nm$    Fit window
+    The fit view produced by running the fitting script is shown in the picture.</description>
+    </item>
+    
+    <item>
+      <title>Custom objective function</title>
+      <link>https://www.bornagainproject.org/documentation/tutorial-examples/fitting/extended/custom-objective-function/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/tutorial-examples/fitting/extended/custom-objective-function/</guid>
+      <description>Custom objective function The BornAgain fitting API allows users to define a custom objective function to for the minimization engine.
+In this example we are going to construct a vector of residuals calculated between the experimental and simulated intensity values after applying an additional $sqrt$ function to the amplitudes.
+$$ residuals = [r_{0}, r_{1}, &amp;hellip; , r_{n-1}], ~~~ r_{i} = \sqrt{e_{i}} - \sqrt{s_{i}} $$
+The length of vector n corresponds to the total number of non-masked detector channels.</description>
+    </item>
+    
+    <item>
+      <title>Experiment at GALAXI</title>
+      <link>https://www.bornagainproject.org/documentation/tutorial-examples/fitting/extended/experiment-at-galaxi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/tutorial-examples/fitting/extended/experiment-at-galaxi/</guid>
+      <description>Experiment at GALAXI This is an example of a real data fit. We use our own measurements performed at the laboratory diffractometer GALAXI in Forschungszentrum Jülich.
+  Real-space model
+    Fit window
+     The file sample_builder.py contains a sample description. The sample represents a 4 layer system (substrate, teflon, hmdso and air) with Ag nanoparticles placed inside the hmdso layer on top of the teflon layer.</description>
+    </item>
+    
+    <item>
+      <title>Considering uncertainties</title>
+      <link>https://www.bornagainproject.org/documentation/tutorial-examples/fitting/extended/fit-with-uncertainties/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/tutorial-examples/fitting/extended/fit-with-uncertainties/</guid>
+      <description>Taking uncertainties into account In this example we are demonstrating how to allow for uncertainties during a Reflectometry fitting job. The sample to fit consists of twenty Titanium-Nickel bilayers. Assuming that all Titanium layers have the same thickness, the goal is to find that thickness.
+The reference data was generated with GENX, setting the thickness of the Ti layers equal to 3 nm.
+This example follows closely the tutorial on Fitting reflectometry data.</description>
+    </item>
+    
+    <item>
+      <title>External minimizer</title>
+      <link>https://www.bornagainproject.org/documentation/tutorial-examples/fitting/extended/external-minimizer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/tutorial-examples/fitting/extended/external-minimizer/</guid>
+      <description>External minimizer In this example we are demonstrating how to run a typical fitting task in BornAgain using a third party minimizer.
+The BornAgain fit parameters and minimizer interface were developed with the idea to simplify the switch between our own minimization engines and other, possibly more advanced minimization libraries. Particularly, we have been inspired by the lmfit Python package.
+This makes the switch between the BornAgain and lmfit minimizers very easy.</description>
+    </item>
+    
+    <item>
+      <title>External minimizer: plotting</title>
+      <link>https://www.bornagainproject.org/documentation/tutorial-examples/fitting/extended/external-minimizer-with-plotting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/tutorial-examples/fitting/extended/external-minimizer-with-plotting/</guid>
+      <description>External Minimizers: Plotting Fit Progress In this example we are demonstrating how to run a typical fitting task in BornAgain using a third party minimizer while plotting the results. As in our previous example, we use lmfit for sake of illustration.
+To plot the fit progress, it is needed to use the lmfit iteration callback function. It will come handy to define the plotting callback function as a specialized class:</description>
+    </item>
+    
+    <item>
+      <title>Reflectometry: Real life fitting</title>
+      <link>https://www.bornagainproject.org/documentation/tutorial-examples/fitting/extended/real-life-reflectometry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/tutorial-examples/fitting/extended/real-life-reflectometry/</guid>
+      <description>Reflectometry: Real life fitting In this example we are demonstrating how to perform in BornAgain a real-life reflectometry fitting job. To this fix ideas, we focus on fitting data from an X-ray reflectometer. The sample is composed of a thin silver nano-particle layer on top of a SiO2 layer and a silicon substrate. The nano-particle layer has negligible density and does not considerably affect the observed reflectometry signal.
+The fitting proceeds as follows:</description>
+    </item>
+    
+  </channel>
+</rss>

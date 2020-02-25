@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Manual Python installation (advanced) on BornAgain</title>
+    <link>https://www.bornagainproject.org/documentation/getting-started/installation/windows/python-original/</link>
+    <description>Recent content in Manual Python installation (advanced) on BornAgain</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://www.bornagainproject.org/documentation/getting-started/installation/windows/python-original/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>VSCode editor</title>
+      <link>https://www.bornagainproject.org/documentation/getting-started/installation/windows/python-original/python-vscode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/getting-started/installation/windows/python-original/python-vscode/</guid>
+      <description>VSCode editor In this tutorial we explain how to run BornAgain Python examples in a convenient manner using the VSCode editor. This is a community driven, lightweighted and open-source editor from Microsoft, which provides code highlighting for many languages and can be extremely handy in any kind of script-related and code-related activity.
+At this point we assume that the user has already installed BornAgain and a Python distribution as explained in Python installation section.</description>
+    </item>
+    
+    <item>
+      <title>PyCharm IDE</title>
+      <link>https://www.bornagainproject.org/documentation/getting-started/installation/windows/python-original/python-pycharm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/getting-started/installation/windows/python-original/python-pycharm/</guid>
+      <description>Using the PyCharm IDE In this tutorial we explain how to run BornAgain Python examples using PyCharm - a free and multi-platform Python integrated development environment, which enables one to work with Python code in a convenient manner.
+At this point we assume that the user has already installed BornAgain and a Python distribution as explained in Python installation section.
+Download and install PyCharm Download the PyCharm installer from here.</description>
+    </item>
+    
+  </channel>
+</rss>

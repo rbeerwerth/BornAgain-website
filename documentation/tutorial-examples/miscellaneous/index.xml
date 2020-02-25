@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Miscellaneous on BornAgain</title>
+    <link>https://www.bornagainproject.org/documentation/tutorial-examples/miscellaneous/</link>
+    <description>Recent content in Miscellaneous on BornAgain</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://www.bornagainproject.org/documentation/tutorial-examples/miscellaneous/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Accessing simulation results</title>
+      <link>https://www.bornagainproject.org/documentation/tutorial-examples/miscellaneous/accessing-simulation-results/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/tutorial-examples/miscellaneous/accessing-simulation-results/</guid>
+      <description>Accessing simulation results This is an extended example for the further treatment of simulation results: accessing the results, plotting, cropping, slicing and exporting. This serves as a supporting example to the Accessing simulation results  tutorial.
+ The standard &amp;ldquo;Cylinders in DWBA&amp;rdquo; sample (see this example) is used for running the simulation. The simulation results are retrieved as a Histogram2D object and then processed in various functions to achieve a resulting image.</description>
+    </item>
+    
+    <item>
+      <title>Finding Intensity Peaks</title>
+      <link>https://www.bornagainproject.org/documentation/tutorial-examples/miscellaneous/find-peaks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/tutorial-examples/miscellaneous/find-peaks/</guid>
+      <description>Finding Intensity Peaks To find the intensity peaks from a GISAXS simulation, the result must be casted in the form of a histogram2d. This must then be passed to the method FindPeaks to get the (x,y) coordinates of each peak:
+result = run_simulation().histogram2d() peaks = ba.FindPeaks(result, 2, &amp;#34;nomarkov&amp;#34;, 0.001) peaks_x = [peak[0] for peak in peaks] ypeak_y = [peak[1] for peak in peaks]   Intensity images
+    The following script offers a complete example in which the peaks are found after carrying on a GISAXS simulation.</description>
+    </item>
+    
+    <item>
+      <title>Depth-probe</title>
+      <link>https://www.bornagainproject.org/documentation/tutorial-examples/miscellaneous/depth-probe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/tutorial-examples/miscellaneous/depth-probe/</guid>
+      <description>Depth-probe A depth-probe simulation is an auxiliary simulation type, which helps to visualize the total intensity as function of the beam incidence angle and the position in the sample.
+Here we will consider the intensity map produced by a neutron resonator composed of one Ti/Pt bilayer.
+A more detailed description of this example can be found in the Depth Probe Tutorial.
+  
+  In the figure above, the $y$ axis corresponds to the position across the sample surface (in nanometers), while the $x$ axis corresponds to the incident angle $\alpha_i$.</description>
+    </item>
+    
+    <item>
+      <title>Plotting with axes in different units</title>
+      <link>https://www.bornagainproject.org/documentation/tutorial-examples/miscellaneous/axes-in-different-units/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/tutorial-examples/miscellaneous/axes-in-different-units/</guid>
+      <description>Plotting with axes in different units In this example we demonstrate how to plot intensity data with detector axes expressed in different units. It serves as a supporting example to the Accessing simulation results  tutorial.
+ The standard &amp;ldquo;Cylinders in DWBA&amp;rdquo; sample (see this example) is used to setup the simulation. When the simulation is completed, the Simulation::result() method is used to get a SimulationResult object. Depending on an additional parameter IDetector2D.</description>
+    </item>
+    
+    <item>
+      <title>Working with sample parameters</title>
+      <link>https://www.bornagainproject.org/documentation/tutorial-examples/miscellaneous/sample-parameters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/tutorial-examples/miscellaneous/sample-parameters/</guid>
+      <description>Working with sample parameters This example shows how to get an access to sample structure information and how to manipulate sample parameters on already constructed sample. This can be useful for debugging and for quick simulations.
+In BornAgain a sample is described by a hierarchical tree of objects. For example, the tree representing a multilayer can be printed in a Python session by running.
+print(sample.treeToString()) with subsequent output
+MultiLayer (&amp;#39;CrossCorrelationLength&amp;#39;:0 &amp;#39;ExternalFieldX&amp;#39;:0 &amp;#39;ExternalFieldY&amp;#39;:0 &amp;#39;ExternalFieldZ&amp;#39;:0) Layer0 ParticleLayout (&amp;#39;TotalParticleDensity&amp;#39;:1) Particle0 (&amp;#39;Abundance&amp;#39;:0.</description>
+    </item>
+    
+    <item>
+      <title>Polarized SANS</title>
+      <link>https://www.bornagainproject.org/documentation/tutorial-examples/miscellaneous/polarized-sans/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/tutorial-examples/miscellaneous/polarized-sans/</guid>
+      <description>Polarized SANS This example shows how to simulate polarized SANS with BornAgain, using the Born Approximation.
+While BornAgain is designed for GISAS experiments (using the Distorted Wave Born Approximation), it naturally also contains the regular (plane wave) Born Approximation. Accordingly, BornAgain can also simulate standard small-angle scattering (SAS).
+However, there exist several other specialized SAS softwares. Therefore we do not advertise BornAgain for analysing SAS experiments, and in general we do not provide user support for this application domain.</description>
+    </item>
+    
+    <item>
+      <title>Boxes With Specular Peak</title>
+      <link>https://www.bornagainproject.org/documentation/tutorial-examples/miscellaneous/boxes-with-specular-peak/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/tutorial-examples/miscellaneous/boxes-with-specular-peak/</guid>
+      <description>Boxes With Specular Peak Once a Simulation is defined, one can add the specular peak as follows:
+simulation.getOptions().setIncludeSpecular(True)    The figure shows the intensity map produced by the script below.
+  The script below shows how to include the specular peak when simulating a square lattice of boxes on a substrate.
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66  &amp;#34;&amp;#34;&amp;#34; Square lattice of boxes on substrate (including the specular peak) &amp;#34;&amp;#34;&amp;#34; import bornagain as ba from bornagain import deg, angstrom, nm def get_sample(): &amp;#34;&amp;#34;&amp;#34; Returns a sample with boxes on a substrate.</description>
+    </item>
+    
+    <item>
+      <title>Cylinders in Averaged Layer</title>
+      <link>https://www.bornagainproject.org/documentation/tutorial-examples/miscellaneous/cylinders-in-average-layer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/tutorial-examples/miscellaneous/cylinders-in-average-layer/</guid>
+      <description>Cylinders in Averaged Layer Supposing a Simulation has been defined in which some layers contain embedded particles of different materials; to regard those layers as composed by a single material, the setUseAvgMaterials method is used:
+simulation.getOptions().setUseAvgMaterials(True)    The figure shows the intensity map produced by the script below.
+  The script below shows how to average materials when simulating scattering from a square lattice of cylinders inside a finite layer.</description>
+    </item>
+    
+    <item>
+      <title>Hemispheres in Averaged Layer</title>
+      <link>https://www.bornagainproject.org/documentation/tutorial-examples/miscellaneous/half-spheres-in-average-top-layer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/tutorial-examples/miscellaneous/half-spheres-in-average-top-layer/</guid>
+      <description>Hemispheres in Averaged Layer Supposing a Simulation has been defined in which some layers contain embedded particles of different materials; to regard those layers as composed by a single material, the setUseAvgMaterials method is used:
+simulation.getOptions().setUseAvgMaterials(True)    The figure shows the intensity map produced by the script below.
+  The script below shows how to average materials when simulating scattering from a square lattice of hemispheres on a substrate.</description>
+    </item>
+    
+    <item>
+      <title>Magnetic particles</title>
+      <link>https://www.bornagainproject.org/documentation/tutorial-examples/miscellaneous/magnetic-particles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/tutorial-examples/miscellaneous/magnetic-particles/</guid>
+      <description>Magnetic particles This example demonstrates how to include particles with non-zero magnetization. The sample consist on magnetic spherical particles embedded in the substrate of a simple 2-layer system. The beam is polarized and the analysis focuses on the spin-flip channel.
+A more detailed description of this example can be found in the Magnetic Particles Tutorial.
+  The figure shows the intensity map produced by the script below.
+  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72  &amp;#34;&amp;#34;&amp;#34; Simulation demo: magnetic spheres in substrate &amp;#34;&amp;#34;&amp;#34; import bornagain as ba from bornagain import deg, angstrom, nm # Magnetization of the particle&amp;#39;s material (A/m) magnetization_particle = ba.</description>
+    </item>
+    
+  </channel>
+</rss>

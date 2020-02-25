@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reflectometry on BornAgain</title>
+    <link>https://www.bornagainproject.org/documentation/tutorial-examples/reflectometry/</link>
+    <description>Recent content in Reflectometry on BornAgain</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://www.bornagainproject.org/documentation/tutorial-examples/reflectometry/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Simulation with a rough sample</title>
+      <link>https://www.bornagainproject.org/documentation/tutorial-examples/reflectometry/specular-simulation-with-roughness/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/tutorial-examples/reflectometry/specular-simulation-with-roughness/</guid>
+      <description>Specular simulation with a rough sample This example demonstrates how to compute reflected signal from a multilayered sample with surface roughness. All the experiment layout is exactly the same as the one described in reflectometry tutorial, but now all the layers (except the ambient media) have roughness on the top surface. The roughness is characterized by root-mean-square deviation from the mean surface position $\sigma = 1$ nm.
+  Real-space model</description>
+    </item>
+    
+    <item>
+      <title>Footprint correction</title>
+      <link>https://www.bornagainproject.org/documentation/tutorial-examples/reflectometry/footprint-correction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/tutorial-examples/reflectometry/footprint-correction/</guid>
+      <description>Specular simulation with a footprint correction This example demonstrates taking into account the beam footprint correction in specular simulations.
+Footprint effect originates from non-infinite sizes of beam and sample. Then at small incident angles $\alpha_i$ the beam irradiates an area bigger than the area of the sample. Exact footprint impact depends on the ratio between the widths of beam and sample as well as on the shape of the beam.</description>
+    </item>
+    
+    <item>
+      <title>Beam Angular Spread</title>
+      <link>https://www.bornagainproject.org/documentation/tutorial-examples/reflectometry/beam-angular-divergence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/tutorial-examples/reflectometry/beam-angular-divergence/</guid>
+      <description>Beam Angualr Spread in Specular Simulations This example demonstrates beam angular spread effects in reflectivity computations. It also offers a comparison with data generated using another well known code: GenX. Further information about reflectometry simulations can be found in the Reflectometry Simulation Tutorial.
+The observed reflectometry signal can be affected either by a spread in the beam wavelength or in the incident angle.
+  Intensity image
+    In this example, a Gaussian distribution is used to spread the incident angle, with a standard deviation of $\sigma_{\alpha} = 0.</description>
+    </item>
+    
+    <item>
+      <title>Beam Wavelength Spread</title>
+      <link>https://www.bornagainproject.org/documentation/tutorial-examples/reflectometry/beam-full-divergence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/tutorial-examples/reflectometry/beam-full-divergence/</guid>
+      <description>Beam Wavelength Spread in Specular Simulations This example demonstrates beam wavelength spread effects in reflectivity computations. All simulation parameters (except for those related to beam spread itself) coincide with those defined in reflectometry simulation tutorial.
+In real specular experiments the observed reflectivity is always affected by the beam spread in both wavelength and incident angle.
+  Intensity image
+    In this example the following parameters related to the spread of the beam were set to the simulation:</description>
+    </item>
+    
+    <item>
+      <title>Material profile</title>
+      <link>https://www.bornagainproject.org/documentation/tutorial-examples/reflectometry/material-profile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/tutorial-examples/reflectometry/material-profile/</guid>
+      <description>Plotting the sample profile This short tutorial demonstrates how to visualize the Scattering Length Density (SLD) profile of a Multilayer sample. For more details about preparing a sample and carrying on a reflectometry simulated experiment, read the reflectometry simulation tutorial.
+  This figure shows the sld profile of the sample built, i.e. the sld value ($y$ axis) as a function of depth ($x$ axis). $x = 0$ represents the surface of the sample, while the substrate is located at $x = -40 \, [{\rm nm}]$ in this example.</description>
+    </item>
+    
+    <item>
+      <title>Material profile with particles</title>
+      <link>https://www.bornagainproject.org/documentation/tutorial-examples/reflectometry/material-profile-with-particles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/tutorial-examples/reflectometry/material-profile-with-particles/</guid>
+      <description>The SLD profile of a sample with embedded particles Plotting the Scattering Length Density (SLD) profile of a sample which contains embedded particles, will produce a figure similar to the one below. To embedd particles on a sample, a 2D square lattice particle layout needs to be created.
+  This figure shows the SLD profile of the sample built, i.e. the SLD value ($y$ axis) as a function of $z$, the depth of the sample ($x$ axis).</description>
+    </item>
+    
+    <item>
+      <title>Time of Flight Reflectometry</title>
+      <link>https://www.bornagainproject.org/documentation/tutorial-examples/reflectometry/time-of-flight/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/tutorial-examples/reflectometry/time-of-flight/</guid>
+      <description>Time of Flight Reflectometry This short tutorial quickly illustrates the setup of a Time of Flight (TOF) Reflectometry simulated experiment.
+Setting up a TOF simulation boils down to specifying the range of values spanned by the $q_z$ vector, rather than the range spanned by the angle $\theta$ of the beam:
+qzs = np.linspace(0.01, 1.0, scan_size) # qz-values scan = ba.QSpecScan(qzs) simulation = ba.SpecularSimulation() simulation.setScan(scan)   This figure shows the reflectometry signal obtained after running the TOF simulation of the script below.</description>
+    </item>
+    
+    <item>
+      <title>ToF - Resolution effects</title>
+      <link>https://www.bornagainproject.org/documentation/tutorial-examples/reflectometry/tofr-with-resolution/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/tutorial-examples/reflectometry/tofr-with-resolution/</guid>
+      <description>Resolution effects in TOF Reflectometry In real experiments, the $q_z$ resolution is non infinite. To take this into account in TOF simulations, one needs to define the spread in $q$ as $dq$, set up a distribution with a given number of samples, n_samples, and define the desired sigma factor, n_sig (e.g. the range in standard deviations to take into account during the sample generation).
+qzs = np.linspace(0.01, 1.0, scan_size) # qz-values dq = 0.</description>
+    </item>
+    
+  </channel>
+</rss>

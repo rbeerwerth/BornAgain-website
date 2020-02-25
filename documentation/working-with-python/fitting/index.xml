@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fitting on BornAgain</title>
+    <link>https://www.bornagainproject.org/documentation/working-with-python/fitting/</link>
+    <description>Recent content in Fitting on BornAgain</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://www.bornagainproject.org/documentation/working-with-python/fitting/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Basic fitting tutorial</title>
+      <link>https://www.bornagainproject.org/documentation/working-with-python/fitting/basic-fitting-tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/working-with-python/fitting/basic-fitting-tutorial/</guid>
+      <description>Basic fitting tutorial In this section we are going to go through a complete example of fitting using BornAgain. Each step will be associated with a detailed piece of code written in Python. The script can also be found in the example section.
+This example uses the same sample geometry as in Basic GISAS simulation tutorial. Cylindrical and prismatic particles are deposited on a substrate layer in equal proportion, with no interference between the particles.</description>
+    </item>
+    
+    <item>
+      <title>Importing experimental data</title>
+      <link>https://www.bornagainproject.org/documentation/working-with-python/fitting/importing-experimental-data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/working-with-python/fitting/importing-experimental-data/</guid>
+      <description>Importing experimental data The BornAgain I/O module supports only a few file formats: ascii, tiff and our own internal format. This might be not enough when it comes to the fitting of data obtained from some particular instrument. However, we fully support fitting of the data presented in the form of numpy arrays.
+The fitting workflow is as follows:
+ The user imports the data into a numpy array. The user creates a simulation with a beam, sample and detector defined.</description>
+    </item>
+    
+    <item>
+      <title>Experiment description</title>
+      <link>https://www.bornagainproject.org/documentation/working-with-python/fitting/instrument-description/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/working-with-python/fitting/instrument-description/</guid>
+      <description>Experiment description To successfully simulate and fit results of some real experiment it is important to have
+ A good guess about the sample structure and the initial values of the sample parameters. Full information about the instrument geometry: size and exact orientation of the detector. A 2D numpy array containing the intensities measured in the detector channels.  Experiment As an example we will use our own measurements performed at the laboratory diffractometer GALAXI in Forschungszentrum Jülich.</description>
+    </item>
+    
+    <item>
+      <title>Minimizer settings</title>
+      <link>https://www.bornagainproject.org/documentation/working-with-python/fitting/minimizers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/working-with-python/fitting/minimizers/</guid>
+      <description>Minimizer settings The BornAgain minimizer interface was developed with the following ideas in mind:
+ Provide an interface which looks more or less familiar for users of other Python minimization packages. Enable the use of our minimizer for optimization problems outside the BornAgain context. Allow the usage of other, possibly more advanced minimization libraries, for BornAgain fits.  Particularly, we have been inspired by the lmfit Python package, so the BornAgain setup looks very similar.</description>
+    </item>
+    
+  </channel>
+</rss>

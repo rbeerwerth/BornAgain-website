@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introduction on BornAgain</title>
+    <link>https://www.bornagainproject.org/documentation/working-with-python/fitting/introduction/</link>
+    <description>Recent content in Introduction on BornAgain</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://www.bornagainproject.org/documentation/working-with-python/fitting/introduction/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Basic concept</title>
+      <link>https://www.bornagainproject.org/documentation/working-with-python/fitting/introduction/basic-concept/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/working-with-python/fitting/introduction/basic-concept/</guid>
+      <description>Basic concept Fitting in BornAgain is no different from any other optimization problem, like fitting a curve to some data points. The user has to define an objective function, which takes the values of the fitting variables and calculates the metric that needs to be minimized. The objective function has to be passed to the minimization engine, together with the starting values of the fit parameters.
+The following code snippet was borrowed from the Getting started with Non-Linear Least-Squares Fitting tutorial of the lmfit package to demonstrate the basic principles of curve fitting.</description>
+    </item>
+    
+    <item>
+      <title>Fitting in GISAS</title>
+      <link>https://www.bornagainproject.org/documentation/working-with-python/fitting/introduction/fitting-in-gisas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/working-with-python/fitting/introduction/fitting-in-gisas/</guid>
+      <description>Fitting in GISAS A GISAS data fit deals with the following 5 components:
+ Experimental data Simulation builder Fit objective Fit parameters Minimizer    
+  Experimental data The experimental data is a 2D numpy array, obtained in the course of a GISAS experiment and containing a 2D map of the intensities measured in the detector channels.
+Simulation builder This is a Python callable, a function or a class method, returning a GISASSimulation object with beam, detector and user sample defined.</description>
+    </item>
+    
+    <item>
+      <title>Minimal fitting example</title>
+      <link>https://www.bornagainproject.org/documentation/working-with-python/fitting/introduction/minimal-fitting-example/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/working-with-python/fitting/introduction/minimal-fitting-example/</guid>
+      <description>Minimal fitting example On this page you will find a small example of a script that needs to be created to run a fitting. The scattering from spherical nano particles in the Born approximation is used here as an example. Short explanations follow below.
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57  &amp;#34;&amp;#34;&amp;#34; Minimal working fit examples: finds radius of sphere in Born approximation.</description>
+    </item>
+    
+  </channel>
+</rss>

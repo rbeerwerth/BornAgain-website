@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Working with Python scripts on BornAgain</title>
+    <link>https://www.bornagainproject.org/documentation/working-with-python/</link>
+    <description>Recent content in Working with Python scripts on BornAgain</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://www.bornagainproject.org/documentation/working-with-python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Material types</title>
+      <link>https://www.bornagainproject.org/documentation/working-with-python/material-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/working-with-python/material-types/</guid>
+      <description>Material types Overview Currently two material types are available in BornAgain: HomogeneousMaterial and MaterialBySLD.
+First of them is created with the following syntax:
+magnetization = ba.kvector_t(1.0, 0.0, 0.0) &amp;lt;material&amp;gt; = ba.HomogeneousMaterial(&amp;#34;name&amp;#34;, delta, beta, magnetization) where name is the arbitrary name of the material associated with its complex refractive index $n = 1 - delta + i \cdot beta$. magnetization defines a 3D magnetization vector (in A/m). Variable &amp;lt;material&amp;gt; is later used when referring to this particular material.</description>
+    </item>
+    
+    <item>
+      <title>Accessing simulation results</title>
+      <link>https://www.bornagainproject.org/documentation/working-with-python/accessing-simulation-results/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/working-with-python/accessing-simulation-results/</guid>
+      <description>Accessing simulation results In this tutorial we explain how to access GISAS simulation results, how to plot the simulated detector 2D intensity map as a color map and how to export the result into various formats.
+SimulationResult object The detector intensity in BornAgain can be retrieved via special object of SimulationResult type.
+simulation = GISASSimulation() simulation.setDetectorParameters(20, -1.0*deg, 1.0*deg, 10, 0.0*deg, 1.0*deg) simulation.setSample(sample) simulation.runSimulation() result = simulation.result() SimulationResult object allows</description>
+    </item>
+    
+    <item>
+      <title>Particle positioning</title>
+      <link>https://www.bornagainproject.org/documentation/working-with-python/particle-positioning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/working-with-python/particle-positioning/</guid>
+      <description>Particle positioning This tutorial demonstrates how to include particles in various layers of a multi-layer system.
+As an example we are going to use simple spherical particles and a 3-layer system consisting of a semi-infinite air layer, a middle layer with finite thickness and a semi-infinite substrate layer.
+Creating particles All particles implemented in BornAgain are defined by their form factors, their sizes and the materials they are made of.</description>
+    </item>
+    
+    <item>
+      <title>Particle distribution</title>
+      <link>https://www.bornagainproject.org/documentation/working-with-python/particle-distribution/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/working-with-python/particle-distribution/</guid>
+      <description>Particle distribution This tutorial gives an overview on how to draw a set of particles whose parameters follow a desired distribution. To fix ideas, let&amp;rsquo;s build the argument around cylindrical particles; In this case, the parameters will be radius, $r$; and height, $h$; the same reasoning should apply to other kinds of particles whose parameters differ (e.g. an Icosahedron does not have a parameter &amp;ldquo;radius&amp;rdquo;).
+  
+  No distribution In the case in which a particle distribution is not applied, all particles are identical; for cylindrical particles, this means having the same radius and the same height (the default value is $5 \, \rm{nm}$ for both).</description>
+    </item>
+    
+    <item>
+      <title>Particle rotation</title>
+      <link>https://www.bornagainproject.org/documentation/working-with-python/particle-rotation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/working-with-python/particle-rotation/</guid>
+      <description>Particle rotation This tutorial gives an overview on how to rotate a particle in different ways.
+Initial orientation The rotation of particles starts from a known standard orientation. This orientation is represented by the motionless reference coordinate system of the particle and it is defined in the User Manual. In this tutorial we are going to use a box shaped particle with defined length, width and height. The picture below represents the initial orientation of the box shape.</description>
+    </item>
+    
+    <item>
+      <title>Particle composition</title>
+      <link>https://www.bornagainproject.org/documentation/working-with-python/particle-composition/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/working-with-python/particle-composition/</guid>
+      <description>Particle composition This tutorial demonstrates how to construct complex shape particles.
+All particles implemented in BornAgain are defined by their form factors, their sizes and the materials they are made of. The form factor library provides access to a list of about 20 elementary shapes. A special ParticleComposition object allows to compose elementary particles into complex shapes and treat the resulting object as a single particle: it can be rotated, translated and included in the layer via a particle layout.</description>
+    </item>
+    
+    <item>
+      <title>3D Nanoparticle Arrangements</title>
+      <link>https://www.bornagainproject.org/documentation/working-with-python/3d-nanoparticle-arrangements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/working-with-python/3d-nanoparticle-arrangements/</guid>
+      <description>3D Nanoparticle Arrangements 3D nanoparticle arrangements obtained using different techniques are complex, but quite frequent kind of samples being studied with GISAS. Depending on the properties of the particular sample you may choose one of 2 ways to represent 3D particle arrangement in BornAgain simulation:
+ Particle compositions arranged in a lattice Mesocrystal  Below you will find a detailed description of each option.
+For simplicity this tutorial uses a spherical detector.</description>
+    </item>
+    
+    <item>
+      <title>Magnetic particles</title>
+      <link>https://www.bornagainproject.org/documentation/working-with-python/magnetic-particles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/working-with-python/magnetic-particles/</guid>
+      <description>Magnetic particles This tutorial demonstrates how to include particles with non-zero magnetization.
+As an example we are going to use magnetic spherical particles embedded in the substrate of a simple 2-layer system. We will simulate this sample with a polarized beam and use polarization analysis to focus on the spin-flip channel.
+Creating materials with magnetization density Magnetic materials in BornAgain are defined by their refractive index, as for non-mangetic materials, and the magnetization density vector, given in units of A/m.</description>
+    </item>
+    
+    <item>
+      <title>Python API</title>
+      <link>https://www.bornagainproject.org/documentation/working-with-python/python-api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/working-with-python/python-api/</guid>
+      <description>Python API Simulation scripts interact with the BornAgain core library through an Application Programmer Interface (API). This API consists of numerous classes and their member functions. The primary API is written in the programming language C++. All important classes and their member functions are also available through a Python API.
+The BornAgain C++ User API Reference, and the Comprehensive BornAgain C++ API Reference are always up to date, since they are automatically extracted from the source code (which contains comment lines in the special Doxygen format in order to enable this self documentation).</description>
+    </item>
+    
+  </channel>
+</rss>

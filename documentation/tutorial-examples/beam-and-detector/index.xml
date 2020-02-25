@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Beam and detector on BornAgain</title>
+    <link>https://www.bornagainproject.org/documentation/tutorial-examples/beam-and-detector/</link>
+    <description>Recent content in Beam and detector on BornAgain</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://www.bornagainproject.org/documentation/tutorial-examples/beam-and-detector/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Beam divergence</title>
+      <link>https://www.bornagainproject.org/documentation/tutorial-examples/beam-and-detector/beam-divergence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/tutorial-examples/beam-and-detector/beam-divergence/</guid>
+      <description>Beam divergence By default, the incident beam is perfectly monochromatic and collimated. Here we show how to set finite distributions of wavelengths and of incident angles.
+ The wavelength follows a log-normal distribution around the mean value of $1$ $\unicode{x212B}$ with a scale parameter equal to $0.1$. Both incident angles follow a Gaussian distribution around the average values $\alpha_i = 0.2 ^{\circ}$ and $\phi_i = 0^{\circ}$, respectively and $\sigma_{\alpha_i} = \sigma_{\phi_i} = 0.</description>
+    </item>
+    
+    <item>
+      <title>Adding constant background</title>
+      <link>https://www.bornagainproject.org/documentation/tutorial-examples/beam-and-detector/constant-background/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/tutorial-examples/beam-and-detector/constant-background/</guid>
+      <description>Adding constant background Given a Simulation instance, adding a constant background to it is as easy as:
+simulation.setBeamIntensity(1e6) bg = ba.ConstantBackground(1e3) simulation.setBackground(bg)   Intensity image
+    The script below shows how to add a constant background in the context of a GISAXS simulation of an air-substrate bilayer with cylindrical particles embedded.
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62  &amp;#34;&amp;#34;&amp;#34; Cylinder form factor in DWBA with constant background &amp;#34;&amp;#34;&amp;#34; import bornagain as ba from bornagain import deg, angstrom, nm def get_sample(): &amp;#34;&amp;#34;&amp;#34; Returns a sample with uncorrelated cylinders on a substrate.</description>
+    </item>
+    
+    <item>
+      <title>Detector resolution function</title>
+      <link>https://www.bornagainproject.org/documentation/tutorial-examples/beam-and-detector/detector-resolution/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/tutorial-examples/beam-and-detector/detector-resolution/</guid>
+      <description>Detector resolution function By default, the detector has perfect resolution. Here we show how to set a finite blur.
+ The detector resolution function is a two-dimensional Gaussian with the same width for the $x$ and $y$ axes: $\sigma_x = \sigma_y = 0.0025^{\circ}$. The wavelength is equal to $1$ $\unicode{x212B}$. The incident angles are $\sigma_{\alpha_i} = \sigma_{\phi_i} = 0.1^{\circ}$.  Besides this, the example is a DWBA simulation for our standard sample model, Cylinders in DWBA</description>
+    </item>
+    
+    <item>
+      <title>Off-Specular</title>
+      <link>https://www.bornagainproject.org/documentation/tutorial-examples/beam-and-detector/offspecular-simulation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/tutorial-examples/beam-and-detector/offspecular-simulation/</guid>
+      <description>Off-Specular Off-specular scattering from a monodisperse distribution of long boxes.
+ The sample is made of very long boxes with length equal to $1000$ nm, width $20$ nm and height $10$ nm. The particles are distributed along a one-dimensional lattice with a lattice spacing of $100$ nm in the $x$-direction. The particles are rotated around the $z$-axis by $90^{\circ}$ so that their &amp;ldquo;infinite&amp;rdquo; dimension is parallel to the $y$-direction. The incident wavelength is equal to $1$ $\unicode{x212B}$.</description>
+    </item>
+    
+    <item>
+      <title>Off-Specular - Resonators</title>
+      <link>https://www.bornagainproject.org/documentation/tutorial-examples/beam-and-detector/resonator-offspec-setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/tutorial-examples/beam-and-detector/resonator-offspec-setup/</guid>
+      <description>Resonators in Off-Specular Simulations Having defined a couple of Layers of different materials &amp;ndash;let&amp;rsquo;s consider Titanium and Lead, a resonator with N bilayers can be easily added to a Sample using a for loop:
+for i in range(N): sample.addLayer(l_Ti) sample.addLayer(l_Pt)   Intensity image
+    The script below show how to add a resonator of this kind in the context of an Offspecular Simulation, additionaly describing the roughness between the interfaces.</description>
+    </item>
+    
+    <item>
+      <title>Rectangular detector</title>
+      <link>https://www.bornagainproject.org/documentation/tutorial-examples/beam-and-detector/rectangular-detector/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bornagainproject.org/documentation/tutorial-examples/beam-and-detector/rectangular-detector/</guid>
+      <description>Rectangular detector In this example we demonstrate the difference between GISAS simulation using default spherical detector and using special rectangular detector. The later provides more accurate representation of real experimental detectors.
+ See the Detector types tutorial for detailed explanations about various detector types in BornAgain.
+  As an example we take typical PILATUS detector ($981\times1043$ pixels) placed at the distance $2000$ mm from sample origin. The detector is perpendicular to the $x$-axis of sample reference frame, as shown on the plot.</description>
+    </item>
+    
+  </channel>
+</rss>
