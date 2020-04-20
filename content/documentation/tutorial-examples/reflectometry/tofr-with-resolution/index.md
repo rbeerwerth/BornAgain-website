@@ -40,4 +40,4 @@ In the snippet above, a Gaussian distribution has been used, but there are sever
 
 
 
-{{% highlightfile file="/static/files/python/simulation/ex06_Reflectometry/TOFRWithResolution.py"  language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex06_Reflectometry/TOFRWithResolution.py"  language="python" >}}

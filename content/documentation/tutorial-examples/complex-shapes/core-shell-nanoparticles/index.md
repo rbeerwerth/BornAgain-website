@@ -19,4 +19,4 @@ Scattering from cuboidal core-shell particles.
 {{< figscg src="CoreShellNanoparticles.png" width="350px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
-{{% highlightfile file="/static/files/python/simulation/ex04_ComplexShapes/CoreShellNanoparticles.py" language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex04_ComplexShapes/CoreShellNanoparticles.py" language="python" >}}

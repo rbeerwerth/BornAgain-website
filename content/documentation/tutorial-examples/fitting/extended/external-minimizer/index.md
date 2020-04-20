@@ -42,4 +42,4 @@ print(result.params.pretty_print())
 
 The complete script for the `lmfit` based fitting is shown below.
 
-{{% highlightfile file="/static/files/python/fitting/ex03_ExtendedExamples/external_minimizer/lmfit_basics.py" language="python" %}}
+{{< highlightfile file="/static/files/python/fitting/ex03_ExtendedExamples/external_minimizer/lmfit_basics.py" language="python" >}}

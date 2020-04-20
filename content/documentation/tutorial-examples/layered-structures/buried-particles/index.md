@@ -19,4 +19,4 @@ Scattering from a sample containing spherical embedded particles.
 {{< figscg src="BuriedParticles.png" width="350px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
-{{% highlightfile file="/static/files/python/simulation/ex02_LayeredStructures/BuriedParticles.py" language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex02_LayeredStructures/BuriedParticles.py" language="python" >}}

@@ -20,4 +20,4 @@ Scattering from two layers of spheres distributed along a hexagonal close packed
 {{< figscg src="HexagonalLatticesWithBasis.png" width="350px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
-{{% highlightfile file="/static/files/python/simulation/ex04_ComplexShapes/HexagonalLatticesWithBasis.py" language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex04_ComplexShapes/HexagonalLatticesWithBasis.py" language="python" >}}

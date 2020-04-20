@@ -22,4 +22,4 @@ The DWBA simulation is shown for a standard sample model:
 {{< figscg src="BeamDivergence.png" width="350px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
-{{% highlightfile file="/static/files/python/simulation/ex05_BeamAndDetector/BeamDivergence.py" language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex05_BeamAndDetector/BeamDivergence.py" language="python" >}}

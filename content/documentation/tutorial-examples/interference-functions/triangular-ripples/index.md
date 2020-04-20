@@ -20,4 +20,4 @@ View the example on [Cosine Ripples on a Rectangular Lattice]({{% ref-example "i
 {{< figscg src="Figure.png" width="4500px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
-{{% highlightfile file="/static/files/python/simulation/ex03_InterferenceFunctions/TriangularRipple.py" language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex03_InterferenceFunctions/TriangularRipple.py" language="python" >}}

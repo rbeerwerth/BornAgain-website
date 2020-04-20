@@ -22,4 +22,4 @@ Off-specular scattering from a monodisperse distribution of long boxes.
 {{< figscg src="OffSpecularSimulation.png" width="350px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
-{{% highlightfile file="/static/files/python/simulation/ex05_BeamAndDetector/OffSpecularSimulation.py" language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex05_BeamAndDetector/OffSpecularSimulation.py" language="python" >}}

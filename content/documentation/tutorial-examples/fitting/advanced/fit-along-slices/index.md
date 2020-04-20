@@ -19,4 +19,4 @@ Technically, the idea is to mask the whole detector except thin lines, one verti
 {{< figscg src="fit_along_slices.png" width="600px" caption="Fit window">}}
 {{< /galleryscg >}}
 
-{{% highlightfile file="/static/files/python/fitting/ex02_AdvancedExamples/fit_along_slices.py" language="python" %}}
+{{< highlightfile file="/static/files/python/fitting/ex02_AdvancedExamples/fit_along_slices.py" language="python" >}}

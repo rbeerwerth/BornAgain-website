@@ -16,4 +16,4 @@ Here we are simulating cylinders on top of a substrate without interference. The
 The radius and height of the cylinders are passed to the function constructing the multi layer
 while the scale and background values are used to initialize the instrument.
 
-{{% highlightfile file="/static/files/python/fitting/ex02_AdvancedExamples/find_background.py" language="python" %}}
+{{< highlightfile file="/static/files/python/fitting/ex02_AdvancedExamples/find_background.py" language="python" >}}

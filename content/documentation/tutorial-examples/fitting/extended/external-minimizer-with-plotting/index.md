@@ -37,4 +37,4 @@ The complete script to plot the fitting progress and the image produced by it ar
 
 
 
-{{% highlightfile file="/static/files/python/fitting/ex03_ExtendedExamples/external_minimizer/lmfit_with_plotting.py" language="python" %}}
+{{< highlightfile file="/static/files/python/fitting/ex03_ExtendedExamples/external_minimizer/lmfit_with_plotting.py" language="python" >}}

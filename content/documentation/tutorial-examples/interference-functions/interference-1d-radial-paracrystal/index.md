@@ -21,4 +21,4 @@ $exp \left(-\frac{peak\\_distance}{damping\\_length}\right)$ to the Fourier tran
 {{< figscg src="Interference1DRadialParaCrystal.png" width="350px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
-{{% highlightfile file="/static/files/python/simulation/ex03_InterferenceFunctions/Interference1DRadialParaCrystal.py" language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex03_InterferenceFunctions/Interference1DRadialParaCrystal.py" language="python" >}}

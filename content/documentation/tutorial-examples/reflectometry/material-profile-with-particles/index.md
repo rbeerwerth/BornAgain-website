@@ -19,4 +19,4 @@ In the figure above, the embeded cone particles in the top layer create a stairl
 
 To refine the number of steps obtained in the plot above (and for the calculations carried on in an eventual simulation), the number of slices needs to be set (In the present example, it is set to 20: `ambient_layer.setNumberOfSlices(20)`).
 
-{{% highlightfile file="/static/files/python/simulation/ex06_Reflectometry/MaterialProfileWithParticles.py"  language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex06_Reflectometry/MaterialProfileWithParticles.py"  language="python" >}}

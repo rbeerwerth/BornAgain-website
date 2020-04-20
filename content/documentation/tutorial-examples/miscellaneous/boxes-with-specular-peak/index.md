@@ -15,4 +15,4 @@ simulation.getOptions().setIncludeSpecular(True)
 
 The script below shows how to include the specular peak when simulating a square lattice of boxes on a substrate.
 
-{{% highlightfile file="/static/files/python/simulation/ex07_Miscellaneous/BoxesWithSpecularPeak.py" language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex07_Miscellaneous/BoxesWithSpecularPeak.py" language="python" >}}

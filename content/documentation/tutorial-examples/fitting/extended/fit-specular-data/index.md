@@ -46,6 +46,6 @@ in the BornAgain directory.
 
 ### Complete script and data
 
-{{% highlightfile file="/static/files/python/fitting/ex03_ExtendedExamples/specular/FitSpecularBasics.py" language="python" %}}
+{{< highlightfile file="/static/files/python/fitting/ex03_ExtendedExamples/specular/FitSpecularBasics.py" language="python" >}}
 
 {{% filelink file="/static/files/python/fitting/ex03_ExtendedExamples/specular/genx_interchanging_layers.dat.gz" name="Reference data" %}}

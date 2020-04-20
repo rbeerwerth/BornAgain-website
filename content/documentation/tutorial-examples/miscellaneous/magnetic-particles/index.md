@@ -11,4 +11,4 @@ A more detailed description of this example can be found in the [Magnetic Partic
 
 {{< figscg src="MagneticSpheres.png" width="500px" class="center" caption="The figure shows the intensity map produced by the script below." >}}
 
-{{% highlightfile file="/static/files/python/simulation/ex07_Miscellaneous/MagneticSpheres.py" language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex07_Miscellaneous/MagneticSpheres.py" language="python" >}}

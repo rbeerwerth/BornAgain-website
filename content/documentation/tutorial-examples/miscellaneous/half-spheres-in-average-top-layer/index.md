@@ -15,4 +15,4 @@ simulation.getOptions().setUseAvgMaterials(True)
 
 The script below shows how to average materials when simulating scattering from a square lattice of hemispheres on a substrate.
 
-{{% highlightfile file="/static/files/python/simulation/ex07_Miscellaneous/HalfSpheresInAverageTopLayer.py" language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex07_Miscellaneous/HalfSpheresInAverageTopLayer.py" language="python" >}}

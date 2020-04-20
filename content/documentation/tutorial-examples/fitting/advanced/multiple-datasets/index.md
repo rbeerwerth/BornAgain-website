@@ -21,4 +21,4 @@ To do this, we define one dataset (a pair of real data and corresponding simulat
 {{< figscg src="multiple_datasets.png" width="600px" caption="Fit window">}}
 {{< /galleryscg >}}
 
-{{% highlightfile file="/static/files/python/fitting/ex02_AdvancedExamples/multiple_datasets.py" language="python" %}}
+{{< highlightfile file="/static/files/python/fitting/ex02_AdvancedExamples/multiple_datasets.py" language="python" >}}

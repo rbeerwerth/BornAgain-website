@@ -23,4 +23,4 @@ Besides this, the example is a DWBA simulation for our standard sample model,
 {{< figscg src="DetectorResolutionFunction.png" width="350px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
-{{% highlightfile file="/static/files/python/simulation/ex05_BeamAndDetector/DetectorResolutionFunction.py" language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex05_BeamAndDetector/DetectorResolutionFunction.py" language="python" >}}

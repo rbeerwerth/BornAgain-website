@@ -188,4 +188,4 @@ incident angle values $\alpha_i$.
 
 ### Complete script
 
-{{% highlightfile file="/static/files/python/simulation/ex07_Miscellaneous/DepthProbe.py" language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex07_Miscellaneous/DepthProbe.py" language="python" >}}

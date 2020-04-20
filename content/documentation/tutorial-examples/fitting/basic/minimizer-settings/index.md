@@ -24,4 +24,4 @@ print(ba.MinimizerFactory().catalogueDetailsToString())
 For more information, see the
 [minimizer settings tutorial]({{% relref "documentation/working-with-python/fitting/minimizers/index.md" %}}).
 
-{{% highlightfile file="/static/files/python/fitting/ex01_BasicExamples/minimizer_settings.py" language="python" %}}
+{{< highlightfile file="/static/files/python/fitting/ex01_BasicExamples/minimizer_settings.py" language="python" >}}

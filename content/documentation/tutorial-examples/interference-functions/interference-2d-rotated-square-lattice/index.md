@@ -14,4 +14,4 @@ This example is similar to [Interference 2D square lattice]({{% ref-example "int
 {{< figscg src="Interference2DRotatedSquareLattice.png" width="350px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
-{{% highlightfile file="/static/files/python/simulation/ex03_InterferenceFunctions/Interference2DRotatedSquareLattice.py" language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex03_InterferenceFunctions/Interference2DRotatedSquareLattice.py" language="python" >}}

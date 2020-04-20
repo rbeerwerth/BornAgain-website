@@ -21,4 +21,4 @@ Both simulations looks very much alike. The relative difference plot indicates t
 {{< figscg src="RectangularDetector.png" width="700px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
-{{% highlightfile file="/static/files/python/simulation/ex05_BeamAndDetector/RectangularDetector.py" language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex05_BeamAndDetector/RectangularDetector.py" language="python" >}}

@@ -20,4 +20,4 @@ In this example we simulate the scattering from infinite 1D repetition of rectan
 {{< figscg src="Interference1DLattice.png" width="200px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
-{{% highlightfile file="/static/files/python/simulation/ex03_InterferenceFunctions/Interference1DLattice.py" language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex03_InterferenceFunctions/Interference1DLattice.py" language="python" >}}
