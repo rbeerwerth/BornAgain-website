@@ -69,7 +69,7 @@ Depending on `Travis` mood and load, the build can be completed in less than a m
 After pull request merge, check site [online](https://scgmlz.github.io/BornAgain-website/).
 It might take a few minutes before changes will be propagated to hosting service.
 
-{{% alert theme="info" %}}
+{{< alert theme="info" >}}
 Because of browser cashing you might need to reload the page from scratch (e.g. push `reload` button while holding `shift` key).
 See also [bypass your cache](https://en.wikipedia.org/wiki/Wikipedia:Bypass_your_cache).
-{{% /alert %}}
+{{< /alert >}}

@@ -47,7 +47,7 @@ RotationZ(angle)
 
 By default all angles are expressed in radians.
 
-{{% alert theme="info" %}}
+{{< alert theme="info" >}}
 **Euler Angles**
 
 `alpha, beta, gamma` are the Euler angles describing a rotation composed by three elemental rotations.
@@ -56,7 +56,7 @@ The following rotation is along the transformed `X` axis (i.e. `x'` axis),
 while the last rotation is along the transformed `Z` axis (i.e. `z'` axis).
 This is commonly denoted as the `z-x'-z'` convention.
 
-{{% /alert %}}
+{{< /alert >}}
 
 ### Setting a particle rotation
 

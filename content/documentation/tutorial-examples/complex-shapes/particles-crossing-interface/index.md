@@ -16,4 +16,4 @@ The script below models a air-substrate bilayer in which cylindrical particles m
 {{< figscg src="Figure.png" width="450px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
-{{% highlightfile file="/static/files/python/simulation/ex04_ComplexShapes/ParticlesCrossingInterface.py" language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex04_ComplexShapes/ParticlesCrossingInterface.py" language="python" >}}

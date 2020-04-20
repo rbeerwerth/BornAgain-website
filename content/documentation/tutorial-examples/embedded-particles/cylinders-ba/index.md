@@ -18,4 +18,4 @@ Scattering from a monodisperse distribution of cylinders using the Born approxim
 {{< figscg src="CylindersInBA.png" width="350px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
-{{% highlightfile file="/static/files/python/simulation/ex01_BasicParticles/CylindersInBA.py" language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex01_BasicParticles/CylindersInBA.py" language="python" >}}

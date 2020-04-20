@@ -19,4 +19,4 @@ Scattering from a monodisperse distribution of particles, whose form factor is d
 {{< figscg src="CustomFormFactor.png" width="350px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
-{{% highlightfile file="/static/files/python/simulation/ex04_ComplexShapes/CustomFormFactor.py" language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex04_ComplexShapes/CustomFormFactor.py" language="python" >}}

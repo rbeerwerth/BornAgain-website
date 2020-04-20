@@ -46,10 +46,10 @@ The final window for project creation should look like the screenshot below.
 
 Push `create project` button.
 
-{{% alert theme="info" %}}
+{{< alert theme="info" >}}
 Up to now, we have configured `PyCharm` to work with the system interpreter directly. Please note that `PyCharm` has the possibility to run code in a so-called `virtual environment`. The detailed description of the configuration process can be found on the
 [official web site](https://www.jetbrains.com/help/pycharm/configuring-python-interpreter.html).
-{{% /alert %}}
+{{< /alert >}}
 
 
 ### Configure the project you've just created.

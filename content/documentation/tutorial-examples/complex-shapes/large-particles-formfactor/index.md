@@ -19,4 +19,4 @@ The simulation generates four plots using different sizes of the particles, (rad
 {{< figscg src="LargeParticlesFormFactor.png" width="350px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
-{{% highlightfile file="/static/files/python/simulation/ex04_ComplexShapes/LargeParticlesFormFactor.py" language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex04_ComplexShapes/LargeParticlesFormFactor.py" language="python" >}}

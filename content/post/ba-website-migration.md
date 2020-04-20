@@ -9,9 +9,9 @@ tags = ["Website"]
 categories = ["News"]
 +++
 
-{{% alert theme="success" %}}
+{{< alert theme="success" >}}
 #### Website and mailing list migration
-{{% /alert %}}
+{{< /alert >}}
 
 Dear BornAgain users,
 

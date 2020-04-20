@@ -54,4 +54,4 @@ the footprint impact at small incident angles.
 In other respects this example exactly matches the
 [reflectometry simulation tutorial]({{% ref-tutorial "basic-simulation-tutorial/reflectometry" %}}).
 
-{{% highlightfile file="/static/files/python/simulation/ex06_Reflectometry/FootprintCorrection.py"  language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex06_Reflectometry/FootprintCorrection.py"  language="python" >}}

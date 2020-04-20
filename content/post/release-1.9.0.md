@@ -9,9 +9,9 @@ tags = ["Release"]
 categories = ["News"]
 +++
 
-{{% alert theme="success" %}}
+{{< alert theme="success" >}}
 #### BornAgain 1.9 has been released
-{{% /alert %}}
+{{< /alert >}}
 
 
 This release includes a new formalism for polarized neutron scattering, where the materials are defined by their magnetization instead of a homogeneous B-field.

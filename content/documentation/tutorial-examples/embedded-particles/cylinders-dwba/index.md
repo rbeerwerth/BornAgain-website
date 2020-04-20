@@ -19,4 +19,4 @@ This example is similar to the simulation [Cylinders in Born Approximation]({{% 
 {{< figscg src="CylindersInDWBA.png" width="350px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
-{{% highlightfile file="/static/files/python/simulation/ex01_BasicParticles/CylindersInDWBA.py" language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex01_BasicParticles/CylindersInDWBA.py" language="python" >}}

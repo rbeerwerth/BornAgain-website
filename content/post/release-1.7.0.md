@@ -9,9 +9,9 @@ tags = ["Release"]
 categories = ["News"]
 +++
 
-{{% alert theme="success" %}}
+{{< alert theme="success" >}}
 #### BornAgain 1.7 has been released
-{{% /alert %}}
+{{< /alert >}}
 This release improves GUI support for fitting: The GUI allows now to import data, set region of interest, adjust detector settings, select fit parameters and run the fitting engine.
 
 **API changes:**

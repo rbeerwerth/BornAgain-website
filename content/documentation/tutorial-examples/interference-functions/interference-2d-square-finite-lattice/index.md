@@ -13,4 +13,4 @@ This example is similar to [Interference of a rotated square lattice]({{% ref-ex
 {{< figscg src="Figure.png" width="4500px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
-{{% highlightfile file="/static/files/python/simulation/ex03_InterferenceFunctions/Interference2DSquareFiniteLattice.py" language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex03_InterferenceFunctions/Interference2DSquareFiniteLattice.py" language="python" >}}

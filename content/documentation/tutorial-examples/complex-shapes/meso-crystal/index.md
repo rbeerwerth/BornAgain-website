@@ -15,4 +15,4 @@ The basis vectors of the base crystal are $5 \, {\rm nm}$ each, the sperical par
 {{< figscg src="Figure.png" width="450px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
-{{% highlightfile file="/static/files/python/simulation/ex04_ComplexShapes/MesoCrystal.py" language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex04_ComplexShapes/MesoCrystal.py" language="python" >}}

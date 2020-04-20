@@ -9,9 +9,9 @@ tags = ["Release"]
 categories = ["News"]
 +++
 
-{{% alert theme="success" %}}
+{{< alert theme="success" >}}
 #### BornAgain 1.5 has been released
-{{% /alert %}}
+{{< /alert >}}
 
 During this release we have worked on preparing the implementation of fitting in the GUI, and even if the fitting is not there yet, we are getting close.
 

@@ -9,9 +9,9 @@ tags = ["Release"]
 categories = ["News"]
 +++
 
-{{% alert theme="success" %}}
+{{< alert theme="success" >}}
 #### New release of BornAgain: version 1.13
-{{% /alert %}}
+{{< /alert >}}
 
 This release was focused on stabilizing the software, thus it contains numerous bug fixes. Two major features available from now are third-party compatible
 minimization interface and GUI-side fitting of reflectometry data.

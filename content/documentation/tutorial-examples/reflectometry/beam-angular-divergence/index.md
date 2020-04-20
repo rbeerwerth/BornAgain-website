@@ -18,6 +18,6 @@ The observed reflectometry signal can be affected either by a spread in the beam
 
 In this example, a Gaussian distribution is used to spread the incident angle, with a standard deviation of $\sigma_{\alpha} = 0.01^{\circ}$.
 
-{{% highlightfile file="/static/files/python/simulation/ex06_Reflectometry/BeamAngularDivergence.py"  language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex06_Reflectometry/BeamAngularDivergence.py"  language="python" >}}
 
 {{% filelink file="/static/files/python/simulation/ex06_Reflectometry/genx_angular_divergence.dat.gz" name="Reference data" %}}

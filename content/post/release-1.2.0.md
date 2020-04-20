@@ -9,9 +9,9 @@ tags = ["Release"]
 categories = ["News"]
 +++
 
-{{% alert theme="success" %}}
+{{< alert theme="success" >}}
 #### BornAgain 1.2 has been released
-{{% /alert %}}
+{{< /alert >}}
 
 The main change this time is the recast user manual, available at [link](http://apps.jcns.fz-juelich.de/src/BornAgain/BornAgainManual-1.7.1.pdf).
 

@@ -17,7 +17,7 @@ This is an example of a real data fit. We use our own measurements performed at 
 * The sample is generated with the help of a `SampleBuilder`, which is able to create samples depending on parameters defined in the constructor and passed through to the `create_sample` method.
 * The nanoparticles have a broad log-normal size distribution.
 
-{{% highlightfile file="/static/files/python/fitting/ex03_ExtendedExamples/experiment_at_galaxi/sample_builder.py" language="python" %}}
+{{< highlightfile file="/static/files/python/fitting/ex03_ExtendedExamples/experiment_at_galaxi/sample_builder.py" language="python" >}}
 
 <hr>
 
@@ -27,4 +27,4 @@ This is an example of a real data fit. We use our own measurements performed at 
 * The real data is loaded from a tiff file into a histogram representing the detector's channels.
 * The `run_fitting()` function contains the initialization of the fitting kernel: loading experimental data, assignment of fit pair, fit parameters selection (line 62).
 
-{{% highlightfile file="/static/files/python/fitting/ex03_ExtendedExamples/experiment_at_galaxi/fit_galaxi_data.py" language="python" %}}
+{{< highlightfile file="/static/files/python/fitting/ex03_ExtendedExamples/experiment_at_galaxi/fit_galaxi_data.py" language="python" >}}

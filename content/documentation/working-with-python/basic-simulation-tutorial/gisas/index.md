@@ -214,4 +214,4 @@ The following image should be displayed on the screen
 
 ### Complete script
 
-{{% highlightfile file="/static/files/python/simulation/ex01_BasicParticles/CylindersAndPrisms.py" language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex01_BasicParticles/CylindersAndPrisms.py" language="python" >}}

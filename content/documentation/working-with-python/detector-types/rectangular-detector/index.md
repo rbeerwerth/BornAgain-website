@@ -21,12 +21,12 @@ A `RectangularDetector` has a plane rectangular shape, a total given width and h
 
 {{< figscg src="rectangular_detector.png" width="600" class="center">}}
 
-{{% alert theme="info" %}}
+{{< alert theme="info" >}}
 **Note**
 
 Real experimental setups vary significantly from one GISAS instrument to another. Different conventions for representing the space coordinates, a range of detector's positions/orientations and different detector's alignment techniques make the creation of a universal detector API quite challenging. The BornAgain detector API is generic enough to be able to cope with all the aforementioned differences and, hopefully, is simple enough to let the user quickly setup his specific case.
 
-{{% /alert %}}
+{{< /alert >}}
 
 ### Rectangular detector definition
 
@@ -54,12 +54,12 @@ detector = RectangularDetector(10, 200.0, 9, 180.0)
 
 Here, the vertical and horizontal lines denote the bin boundaries while the blue markers show the bin centers. During a simulation, the bin intensity will be calculated for values of $\phi_f$ and $\alpha_f$ corresponding to the bin centers and then normalized to the bin area.
 
-{{% alert theme="info" %}}
+{{< alert theme="info" >}}
 **Note**
 
 `GISASSimulation` has a special setting to calculate the intensity in a bin as the 2D integral along the detector bin area. This mode will be explained elsewhere.
 
-{{% /alert %}}
+{{< /alert >}}
 
 ### Positioning the rectangular detector
 

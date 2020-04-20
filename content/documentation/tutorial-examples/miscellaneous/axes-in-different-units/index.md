@@ -17,4 +17,4 @@ In this example we demonstrate how to plot intensity data with detector axes exp
 {{< figscg src="AxesInDifferentUnits.png" width="670px" caption="Intensity images">}}
 {{< /galleryscg >}}
 
-{{% highlightfile file="/static/files/python/simulation/ex07_Miscellaneous/AxesInDifferentUnits.py" language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex07_Miscellaneous/AxesInDifferentUnits.py" language="python" >}}

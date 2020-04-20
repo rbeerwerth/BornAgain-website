@@ -33,4 +33,4 @@ The roughness profile is described by a normally-distributed random function. Th
 {{< figscg src="CorrelatedRoughness.png" width="350px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
-{{% highlightfile file="/static/files/python/simulation/ex02_LayeredStructures/CorrelatedRoughness.py" language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex02_LayeredStructures/CorrelatedRoughness.py" language="python" >}}

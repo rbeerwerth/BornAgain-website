@@ -45,13 +45,13 @@ Push the button `Install Microsoft VSCode` and after this installation is comple
 
 {{< figscg src="anaconda-install-step6.PNG" class="center" width="450px">}}
 
-{{% alert theme="info" %}}
+{{< alert theme="info" >}}
 In this scenario you have installed Anaconda to your local home directory and you didn't change
 any system variables. This approach has the advantage that you can't break any other software and/or Python installations existing on your system.
 
 The disadvantage is that your Anaconda is not integrated with the Windows installation. You will have to use the `Anaconda command prompt` and `Anaconda navigator`
 to have the correct Python set up. Please see below.
-{{% /alert %}}
+{{< /alert >}}
 
 ### Validate Anaconda + BornAgain installation
 
@@ -83,9 +83,9 @@ python C:/BornAgain-{{< release-string >}}/Examples/python/simulation/ex01_Basic
 
 The used path implies, that BornAgain was installed to the default location. If this was not the case, you will have to adjust the path to the BornAgain Python example accordingly.
 
-{{% alert theme="info" %}}
+{{< alert theme="info" >}}
 `Tip:` while typing long commands in the command shell you can push the `TAB` key and Windows will attempt to autocomplete long directory names.
-{{% /alert %}}
+{{< /alert >}}
 
 This kind of manual launching is not very convenient for regular usage and should be considered rather as yet another validation step.
 
@@ -101,9 +101,9 @@ the navigator.
 
 The Anaconda navigator is an important component of the Anaconda eco-system. In the given example it not only starts the `VSCode` editor, but also defines the correct environment variables to make `VSCode` work correctly in the `conda` environment.
 
-{{% alert theme="info" %}}
+{{< alert theme="info" >}}
 Always use the `Anaconda navigator` to start `VSCode` in the correct environment.
-{{% /alert %}}
+{{< /alert >}}
 
 ### Add BornAgain examples to VSCode
 

@@ -15,4 +15,4 @@ simulation.getOptions().setUseAvgMaterials(True)
 
 The script below shows how to average materials when simulating scattering from a square lattice of cylinders inside a finite layer.
 
-{{% highlightfile file="/static/files/python/simulation/ex07_Miscellaneous/CylindersInAverageLayer.py" language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex07_Miscellaneous/CylindersInAverageLayer.py" language="python" >}}

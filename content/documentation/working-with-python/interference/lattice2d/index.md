@@ -112,9 +112,9 @@ f.setDecayFunction(FTDecayFunction2DCauchy(1000*nm, 1000*nm))
 
 {{< /highlight >}}
 
-{{% alert theme="info" %}}
+{{< alert theme="info" >}}
  Typical values for the decay lengths are much larger than the lattice length. Please also note, that small decay lengths (of the order of lattice lengths or smaller) lead to a significant increase of simulation time.
-{{% /alert %}}
+{{< /alert >}}
 
 ### Particle density
 

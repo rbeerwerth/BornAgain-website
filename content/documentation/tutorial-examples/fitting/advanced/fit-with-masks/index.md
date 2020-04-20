@@ -22,4 +22,4 @@ where `Rectangle` is related to the shape of the mask in detector coordinates, `
 {{< figscg src="fit_with_masks.png" width="600px" caption="Fit window">}}
 {{< /galleryscg >}}
 
-{{% highlightfile file="/static/files/python/fitting/ex02_AdvancedExamples/fit_with_masks.py" language="python" %}}
+{{< highlightfile file="/static/files/python/fitting/ex02_AdvancedExamples/fit_with_masks.py" language="python" >}}

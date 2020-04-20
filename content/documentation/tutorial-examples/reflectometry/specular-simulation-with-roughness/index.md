@@ -30,4 +30,4 @@ do not affect the result of the simulation. The computation model takes into acc
 rms-deviation from the mean surface position.
 {{% /notice %}}
 
-{{% highlightfile file="/static/files/python/simulation/ex06_Reflectometry/SpecularSimulationWithRoughness.py"  language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex06_Reflectometry/SpecularSimulationWithRoughness.py"  language="python" >}}

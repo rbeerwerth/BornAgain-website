@@ -19,4 +19,4 @@ Scattering from a distribution of cylinders of two different sizes using the Dec
 {{< figscg src="ApproximationDA.png" width="350px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
-{{% highlightfile file="/static/files/python/simulation/ex03_InterferenceFunctions/ApproximationDA.py" language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex03_InterferenceFunctions/ApproximationDA.py" language="python" >}}

@@ -37,4 +37,4 @@ terminate called after throwing an instance of 'std::runtime_error'
   what():  Error in SpecularSimulation: parameter distribution of beam inclination angle should have zero mean.
 ```
 
-{{% highlightfile file="/static/files/python/simulation/ex06_Reflectometry/BeamFullDivergence.py"  language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex06_Reflectometry/BeamFullDivergence.py"  language="python" >}}

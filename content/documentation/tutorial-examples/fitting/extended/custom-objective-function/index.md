@@ -20,4 +20,4 @@ This is done by defining our own `MyObjective` class at line 14. It is derived f
 
 Later in the code, the `MyObjective.evaluate_residual` function is used to setup a custom objective function for the minimizer (line 116).
 
-{{% highlightfile file="/static/files/python/fitting/ex03_ExtendedExamples/custom_objective_function/custom_objective_function.py" language="python" %}}
+{{< highlightfile file="/static/files/python/fitting/ex03_ExtendedExamples/custom_objective_function/custom_objective_function.py" language="python" >}}

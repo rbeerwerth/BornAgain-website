@@ -20,4 +20,4 @@ As a result, the fitting procedure is able to find the correct value of $5$ nm f
 {{< figscg src="basic_fitting_tutorial.png" width="600px" caption="Fit window">}}
 {{< /galleryscg >}}
 
-{{% highlightfile file="/static/files/python/fitting/ex01_BasicExamples/basic_fitting_tutorial.py" language="python" %}}
+{{< highlightfile file="/static/files/python/fitting/ex01_BasicExamples/basic_fitting_tutorial.py" language="python" >}}

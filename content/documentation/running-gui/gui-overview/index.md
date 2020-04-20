@@ -77,11 +77,11 @@ The sample is constructed by dragging items from the item toolbox (1), dropping 
        * The material of the particles was changed from the default one using the property editor
    * The interference function representing a 2D paracrystal was placed on the sample canvas and connected with the ParticleLayout item
 
-{{% alert theme="info" %}}
+{{< alert theme="info" >}}
 **Note**
 
 The sample canvas can have any number of multilayers. If this is the case, during the configuration of the simulation the user will have to choose which multilayer to simulate. The multilayer is considered as valid for the simulation, if it contains at least one layer.
-{{% /alert %}}
+{{< /alert >}}
 
 ### Simulation View
 
@@ -120,13 +120,13 @@ The layout of the Job View Activity consists of five elements
 
 > The two completed jobs can be seen in the job selector widget (1), with job2 currently selected and displayed.
 
-{{% alert theme="info" %}}
+{{< alert theme="info" >}}
  The intensity image in widget (3) offers several ways of interaction:
 
    * Using the mouse wheel to zoom in and out
    * Dragging the color palette on the right of the image to change the min, max range of the z-axis
    * The toolbar (4) on top of the intensity data widget gives access to more options via Plot Properties (left button) and Projections (right control)
-{{% /alert %}}
+{{< /alert >}}
 
 {{< figscg src="gui_jobview_proj_l.png" width="800px" class="center">}}
 
@@ -142,17 +142,17 @@ The second layout of the Job View is called the Real Time Activity. It can be sw
 
 The parameter tree represents all parameters that have been used during the construction of the scattering instrument and the sample. Each displayed parameter value can be adjusted using a slider. The simulation will run in the background and the Intensity Data widget will be constantly updated reflecting the influence of the given parameter on the simulation results.
 
-{{% alert theme="info" %}}
+{{< alert theme="info" >}}
 **Note**
 
 The Real Time View works smoothly only for simple geometries, when the simulation requires fractions of a second to run. For more complex geometries, demanding more CPU power, the user will see a progress bar and any movements of the slider will not have a direct influence on the Intensity Data widget. In this case the user may try to speed up the simulation by decreasing the number of detector channels in the Instrument View and submitting a new job by running the simulation from the Simulation View.
 
-{{% /alert %}}
+{{< /alert >}}
 
 
-{{% alert theme="warning" %}}
+{{< alert theme="warning" >}}
 **Important**
 
 The jobs in the Jobs View are completely isolated from the rest of the program. Any adjustments of the sample parameters in the Sample View or the instrument parameters in the Instrument View won't have any influence on the jobs already completed or still running in the Jobs View. Similarly, any parameter adjustments made in the parameter tree (3) will not be propagated back into the Sample or Instrument Views.
 
-{{% /alert %}}
+{{< /alert >}}

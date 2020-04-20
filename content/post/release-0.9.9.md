@@ -9,9 +9,9 @@ tags = ["Release"]
 categories = ["News"]
 +++
 
-{{% alert theme="success" %}}
+{{< alert theme="success" >}}
 #### BornAgain 0.9.9 has been released
-{{% /alert %}}
+{{< /alert >}}
 
 **Summary of changes in the code:**
 

@@ -20,4 +20,4 @@ Scattering from cylinders of two different sizes using the Local Monodisperse Ap
 {{< figscg src="ApproximationLMA.png" width="350px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
-{{% highlightfile file="/static/files/python/simulation/ex03_InterferenceFunctions/ApproximationLMA.py" language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex03_InterferenceFunctions/ApproximationLMA.py" language="python" >}}

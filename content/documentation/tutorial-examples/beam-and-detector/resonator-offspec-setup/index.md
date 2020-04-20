@@ -19,4 +19,4 @@ for i in range(N):
 
 The script below show how to add a resonator of this kind in the context of an Offspecular Simulation, additionaly describing the roughness between the interfaces.
 
-{{% highlightfile file="/static/files/python/simulation/ex05_BeamAndDetector/ResonatorOffSpecSetup.py" language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex05_BeamAndDetector/ResonatorOffSpecSetup.py" language="python" >}}

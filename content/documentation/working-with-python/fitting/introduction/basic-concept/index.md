@@ -36,9 +36,9 @@ The objective function `residual` takes the values of the fit parameters, data p
 
 The minimum of the objective function is then found using the `leastsq` method of the `scipy.optimize` package.
 
-{{% alert theme="info" %}}
+{{< alert theme="info" >}}
 Similarly, fitting in BornAgain is all about constructing an objective function that represents the difference between simulation and data, and passing it to a minimization engine.
-{{% /alert %}}
+{{< /alert >}}
 
 Conceptually, the `residual` objective function should adjust the scattering sample using the fit parameters provided, run the simulation and then calculate the difference between the experimental and simulated scattering images.
 

@@ -9,8 +9,8 @@ tags = ["Website"]
 categories = ["News"]
 +++
 
-{{% alert theme="success" %}}
+{{< alert theme="success" >}}
 #### New web site is online
-{{% /alert %}}
+{{< /alert >}}
 
 We are happy to announce that our brand new [site](http://bornagainproject.org/) is finally online. People interested in BornAgain will be able to find all relevant information, including BornAgain Online Documentation, news system and a discussion forum.

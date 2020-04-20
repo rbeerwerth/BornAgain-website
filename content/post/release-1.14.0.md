@@ -9,9 +9,9 @@ tags = ["Release"]
 categories = ["News"]
 +++
 
-{{% alert theme="success" %}}
+{{< alert theme="success" >}}
 #### New release of BornAgain: version 1.14
-{{% /alert %}}
+{{< /alert >}}
 
 In this release the number of instruments accessible through GUI was expanded with
 depth probe instrument. It also becomes possible in the GUI to fit material parameters

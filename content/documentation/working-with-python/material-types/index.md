@@ -71,7 +71,7 @@ In this case the "default" material is created, i.e. a material with the name `v
 
 ### Limitations
 
-{{% alert theme="warning" %}}
+{{< alert theme="warning" >}}
 
 Although `MaterialBySLD` and `HomogeneousMaterial` are interchangeable in the case of neutron experiments with fixed wavelength,
 they must not be used together in one sample because of different behavior inside BornAgain. If they are, an exception will be thrown
@@ -81,7 +81,7 @@ terminate called after throwing an instance of 'std::runtime_error'
   what():  Error in Simulation::prepareSimulation(): non-default materials of several types in the sample provided
 ```
 
-{{% /alert %}}
+{{< /alert >}}
 
 `HomogeneousMaterial` uses refractive index directly, thus it is equally suitable for simulations with X-ray or neutron
 probe. On the other hand, refractive index does depend on beam wavelength, thus using `HomogeneousMaterial` can lead to incorrect simulation results in the case

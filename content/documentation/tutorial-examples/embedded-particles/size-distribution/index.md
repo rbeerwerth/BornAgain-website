@@ -19,4 +19,4 @@ Scattering from a polydisperse distribution of cylinders in Born Approximation.
 {{< figscg src="CylindersWithSizeDistribution.png" width="350px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
-{{% highlightfile file="/static/files/python/simulation/ex01_BasicParticles/CylindersWithSizeDistribution.py" language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex01_BasicParticles/CylindersWithSizeDistribution.py" language="python" >}}

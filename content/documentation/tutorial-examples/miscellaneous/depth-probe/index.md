@@ -19,4 +19,4 @@ In the figure above, the $y$ axis corresponds to the position across the sample 
 (in nanometers), while the $x$ axis corresponds to the
 incident angle $\alpha_i$. The script below provides a complete example of how to run a depth-probe simulation which produces the image above.
 
-{{% highlightfile file="/static/files/python/simulation/ex07_Miscellaneous/DepthProbe.py" language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex07_Miscellaneous/DepthProbe.py" language="python" >}}

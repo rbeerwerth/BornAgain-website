@@ -23,5 +23,5 @@ A damping length is used to introduce finite size effects by applying a multipli
 {{< figscg src="Interference2DParaCrystal.png" width="350px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
-{{% highlightfile file="/static/files/python/simulation/ex03_InterferenceFunctions/Interference2DParaCrystal.py" language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex03_InterferenceFunctions/Interference2DParaCrystal.py" language="python" >}}
 

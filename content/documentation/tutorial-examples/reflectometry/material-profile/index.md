@@ -15,4 +15,4 @@ For more details about preparing a sample and carrying on a reflectometry simula
 
 To obtain the figure above, one must run the script below, which is basically about [defining a sample with interfacial roughness]({{% ref-example "reflectometry/specular-simulation-with-roughness" %}}) and plotting right away its sld profile.
 
-{{% highlightfile file="/static/files/python/simulation/ex06_Reflectometry/MaterialProfile.py"  language="python" %}}
+{{< highlightfile file="/static/files/python/simulation/ex06_Reflectometry/MaterialProfile.py"  language="python" >}}
