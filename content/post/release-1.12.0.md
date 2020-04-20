@@ -9,9 +9,9 @@ tags = ["Release"]
 categories = ["News"]
 +++
 
-{{% alert theme="success" %}}
+{{< alert theme="success" >}}
 #### New release of BornAgain: version 1.12
-{{% /alert %}}
+{{< /alert >}}
 
 Much of this release was devoted to migrating our website to Hugo, allowing better automation and checking of online examples. The GUI has been extended with the possibility to perform specular simulations and in the sample view, a prototype 3D view of the sample is implemented.
 

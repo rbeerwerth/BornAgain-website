@@ -9,9 +9,9 @@ tags = ["Release"]
 categories = ["News"]
 +++
 
-{{% alert theme="success" %}}
+{{< alert theme="success" >}}
 #### New release of BornAgain: version 1.15
-{{% /alert %}}
+{{< /alert >}}
 
 This release was mainly focused on incorporating the feedback from the BornAgain
 school in December 2018. We also added some specific features for user support and

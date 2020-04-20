@@ -38,7 +38,7 @@ This command checks your system for the presence of the third party libraries ne
 $ cmake -DCMAKE_PREFIX_PATH=/opt/local -DCMAKE_INSTALL_PREFIX=<install_dir> <source_dir>
 ```
 
-{{% alert theme="info" %}}
+{{< alert theme="info" >}}
 **Note for MacOS users**
 
 MacOS users who have installed third party libraries using the MacPorts package manager have to use an additional key during the CMake configuration to specify the location of MacPort's libraries (e.g. `/opt/local`):
@@ -51,16 +51,16 @@ cmake -DCMAKE_PREFIX_PATH=/opt/local -DCMAKE_INSTALL_PREFIX=<install_dir> <sourc
 ```
 cmake -DCMAKE_PREFIX_PATH=/usr/local -DCMAKE_INSTALL_PREFIX=<install_dir> <source_dir>
 ```
-{{% /alert %}}
+{{< /alert >}}
 
-{{% alert theme="info" %}}
+{{< alert theme="info" >}}
 **Note for Python2 users**
 
 Use additional CMake key during configuration
 ```
 cmake -DBORNAGAIN_USE_PYTHON3=OFF -DCMAKE_INSTALL_PREFIX=<install_dir> <source_dir>
 ```
-{{% /alert %}}
+{{< /alert >}}
 
 #### The compilation
 

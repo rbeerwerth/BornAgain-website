@@ -34,13 +34,13 @@ At this point you can can already start working with the BornAgain GUI. The rest
 
 The current version of BornAgain requires `python, matplotlib, numpy` to be installed on the system. This set of packages is known as the [SciPy](http://www.scipy.org/) stack and for most users the easiest way to install it is to download one of the free Python distributions, which includes all the key packages. The list of possible options is given on the [SciPy installation website](http://www.scipy.org/install.html). You can also directly install Python from their main website [Python](https://www.python.org/downloads/) and then use `pip` to install `matplotlib` and `numpy` as detailed on the [SciPy installation website](http://www.scipy.org/install.html).
 
-{{% alert theme="info" %}}
+{{< alert theme="info" >}}
 We recommend users to install Python3, as support for BornAgain with Python2 might be dropped in the future.
-{{% /alert %}}
+{{< /alert >}}
 
-{{% alert theme="warning" %}}
+{{< alert theme="warning" >}}
 While Python comes pre-installed on OS X, it is always quite outdated and we do not recommend to use it together with BornAgain libraries.
-{{% /alert %}}
+{{< /alert >}}
 
 {{% collapse title="More options" id="more-options-1" %}}
 If your system is already equipped with [Homebrew](http://brew.sh/) (recommended) or [MacPorts](http://www.macports.org/) package managers, you can certainly make use of it and install Python with all the required modules from the terminal

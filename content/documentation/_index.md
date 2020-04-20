@@ -10,10 +10,10 @@ functionality and architecture overviews, installation instructions, tutorials a
 For complementary information, see the *Documents* tab on the
 *{{< local-link "download">}}Download{{< /local-link >}}* page.
 
-{{% alert theme="info" %}}
+{{< alert theme="info" >}}
 
 Software and documentation are work in progress. Some features of the software are not yet documented. Contact us for any questions.
 
-{{% /alert %}}
+{{< /alert >}}
 
 {{% children  %}}

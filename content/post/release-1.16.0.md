@@ -9,9 +9,9 @@ tags = ["Release"]
 categories = ["News"]
 +++
 
-{{% alert theme="success" %}}
+{{< alert theme="success" >}}
 #### New release of BornAgain: version 1.16
-{{% /alert %}}
+{{< /alert >}}
 
 We are glad to announce [BornAgain 1.16.0](https://www.bornagainproject.org/download/) release.
 

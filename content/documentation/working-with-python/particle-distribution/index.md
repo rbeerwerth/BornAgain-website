@@ -23,11 +23,11 @@ are identical; for cylindrical particles, this means having the same radius
 and the same height (the default value is $5 \, \rm{nm}$ for both).
 
 
-{{% alert theme="info" %}}
+{{< alert theme="info" >}}
 One may say that applying no distribution for
 a parameter of a set of particles is equivalent to applying a Dirac delta 
 distribution to it.
-{{% /alert %}}
+{{< /alert >}}
 
 
 ### Adding irregularities to a set of identical particles
@@ -119,14 +119,14 @@ distribution offers several parameters to tweak:
  - Limits<sup>[3](#limits)</sup>
  - Distributed parameter<sup>[5](#distributedParameter)</sup>
 
-{{% alert theme="info" %}}
+{{< alert theme="info" >}}
 <a name="evidentMeaning">1</a>: The meaning should be evident from the name of the distribution.  
 <a name="numberOfSamples">2</a>: The number of different equally spaced values to extract from the distribution.  
 <a name="limits">3</a>: Limits can be set in order to avoid taking values outside a given range.  
 <a name="sigmaFactor">4</a>: Sigma factor acts as a cutoff scale after which values are not taken into account.  
 <a name="distributedParameter">5</a>: A string in the form "/Particle/ParticleType/Parameter".
 
-{{% /alert %}}
+{{< /alert >}}
 
 BornAgain provides a function to print the list of available particle parameters and their corresponding values:
 :

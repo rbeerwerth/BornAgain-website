@@ -9,9 +9,9 @@ tags = ["Workshop"]
 categories = ["News"]
 +++
 
-{{% alert theme="success" %}}
+{{< alert theme="success" >}}
 #### BornAgain School and User Meeting 2016
-{{% /alert %}}
+{{< /alert >}}
 The first BornAgain School and User Meeting, organized by the MLZ Scientific Computing Group, will take place on 21-22 November 2016 at Heinz Maier-Leibnitz-Zentrum Garching, Germany. The program will be available at [https://webapps.frm2.tum.de/indico/event/34](https://webapps.frm2.tum.de/indico/event/34).
 
 **As per October 28, the school is overbooked, and registration is closed.**

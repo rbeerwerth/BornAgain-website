@@ -49,11 +49,11 @@ For example, to simulate the scattering from a mixture of cylinders and prisms d
 
 The parent MultiLayer object represents the sample and contains three children: the semi-infinite air layer, the semi-infinite substrate layer, and the interface between them. The air layer contains the so-called ParticleLayout object, which holds information about the particles populating the layer and the interference between them. Each particle is fully defined via its children: the material the particle is made of and the form factor representing the particle's shape.
 
-{{% alert theme="info" %}}
+{{< alert theme="info" >}}
 
 The object-oriented approach in software design allows the users to have a much higher level of flexibility in the sample construction. It also decouples the building blocks used in the internal calculations and thereby facilitates the creation of new models, with little or no modification to the existing code.
 
-{{% /alert %}}
+{{< /alert >}}
 
 In practice, for the users working from the Graphical User Interface the sample construction involves the usage of a drag-and-drop editor, where items of certain types should be placed on the canvas and connected with each other in order to create the sample structure (see figure below, on the left). For the users working from Python, a script similar to the one shown on the right of the figure below has to be created.
 

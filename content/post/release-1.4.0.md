@@ -9,9 +9,9 @@ tags = ["Release"]
 categories = ["News"]
 +++
 
-{{% alert theme="success" %}}
+{{< alert theme="success" >}}
 #### BornAgain 1.4 has been released
-{{% /alert %}}
+{{< /alert >}}
 
 This release provides an easier way to use `IntensityData` objects from Python and added new export formats for simulation data. Accompanied by a big refactoring, the new version also provides for better integration of new detector geometries. As a first application of this, a rectangular detector geometry has been defined in the core library.
 

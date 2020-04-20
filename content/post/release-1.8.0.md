@@ -9,9 +9,9 @@ tags = ["Release"]
 categories = ["News"]
 +++
 
-{{% alert theme="success" %}}
+{{< alert theme="success" >}}
 #### BornAgain 1.8 has been released
-{{% /alert %}}
+{{< /alert >}}
 
 This release improves support for fitting: all reasonable parameters can now be used for fitting, both in Python and the GUI.
 

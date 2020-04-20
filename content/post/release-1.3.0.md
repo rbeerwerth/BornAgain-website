@@ -9,9 +9,9 @@ tags = ["Release"]
 categories = ["News"]
 +++
 
-{{% alert theme="success" %}}
+{{< alert theme="success" >}}
 #### BornAgain 1.3 has been released
-{{% /alert %}}
+{{< /alert >}}
 
 This time we have been working on a deep refactoring of the machinery related to the positioning and rotation of particles. As a result `Particle`, `CoreShellParticle` and `ParticleComposition` can be rotated and translated inside layers in a similar way. We wrote a few tutorials explaining the latest changes.
 

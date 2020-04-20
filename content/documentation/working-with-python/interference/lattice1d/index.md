@@ -105,9 +105,9 @@ During the simulation setup the particle density has to be explicitely specified
 
 In this paragraph we would like to clarify the relation between the lattice orientation and the orientation of the particles forming the lattice.
 
-{{% alert theme="info" %}}
+{{< alert theme="info" >}}
  The rotation of the lattice doesn't change the orientation of the particles with respect to the beam direction.
-{{% /alert %}}
+{{< /alert >}}
 
 ### Setup 1
 

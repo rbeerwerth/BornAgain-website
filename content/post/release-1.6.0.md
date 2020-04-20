@@ -9,9 +9,9 @@ tags = ["Release"]
 categories = ["News"]
 +++
 
-{{% alert theme="success" %}}
+{{< alert theme="success" >}}
 #### BornAgain 1.6 has been released
-{{% /alert %}}
+{{< /alert >}}
 
 During this release we have mainly worked on providing a beta version for the fitting in the GUI. Additionally, our software now supports Python 3 for Linux users.
 

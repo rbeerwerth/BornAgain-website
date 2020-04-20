@@ -53,9 +53,9 @@ The command `pip install matplotlib numpy` starts the installation of the `matpl
 
 {{< figscg src="python-install-step4.PNG" class="center" width="450px">}}
 
-{{% alert theme="info" %}}
+{{< alert theme="info" >}}
 If Windows complains that the `pip` command is not found on the system, this means that you have forgotten to add Python to the PATH as explained above.
-{{% /alert %}}
+{{< /alert >}}
 
 When the installation is complete the window should look like the screenshot below.
 
@@ -63,13 +63,13 @@ When the installation is complete the window should look like the screenshot bel
 
 At this point Python and all the required dependencies are successfully installed.
 
-{{% alert theme="info" %}}
+{{< alert theme="info" >}}
 In this scenario you have installed Python to your local home directory and _you have added_
 Python to the system PATH. This approach has the advantage that your Python is integrated with the Windows installation and
 you can use it from any Windows command shell or use it together with any integrated development environment, like `VSCode` or `PyCharm`. 
 
 The disadvantage is that this approach can be safely used only if you have a single Python installation on your system. The setup of multiple Python versions on a system goes far beyond the scope of this tutorial.
-{{% /alert %}}
+{{< /alert >}}
 
 
 ### Validate Python and BornAgain installation
@@ -100,9 +100,9 @@ python C:/BornAgain-{{< release-string >}}/Examples/python/simulation/ex01_Basic
 
 The used path implies that BornAgain was installed to the default location. If this was not the case, you will have to adjust the path to the BornAgain Python example accordingly.
 
-{{% alert theme="info" %}}
+{{< alert theme="info" >}}
 `Tip:` while typing long commands in the command shell you can push the `TAB` key and Windows will attempt to autocomplete long directory names.
-{{% /alert %}}
+{{< /alert >}}
 
 This kind of manual launching of Python scripts is not very convenient for regular usage and should be considered rather as another validation step.
 

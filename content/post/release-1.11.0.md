@@ -9,16 +9,16 @@ tags = ["Release"]
 categories = ["News"]
 +++
 
-{{% alert theme="success" %}}
+{{< alert theme="success" >}}
 #### BornAgain 1.11 has been released
-{{% /alert %}}
+{{< /alert >}}
 
-{{% alert theme="info" %}}
+{{< alert theme="info" >}}
 Starting from this release, we are using Python3 as the default scripting platform in BornAgain.
 Users can however choose between downloading a Python2 or Python3 based installer.
 In the future, Python2 support will be discontinued.
 We recommend all users to update their Python installation to version 3.x, if they haven't done so already.
-{{% /alert %}}
+{{< /alert >}}
 
 **This release has the following highlights:**
 

@@ -9,9 +9,9 @@ tags = ["Release"]
 categories = ["News"]
 +++
 
-{{% alert theme="success" %}}
+{{< alert theme="success" >}}
 #### BornAgain 1.10 has been released
-{{% /alert %}}
+{{< /alert >}}
 
 
 **This release has the following highlights:**

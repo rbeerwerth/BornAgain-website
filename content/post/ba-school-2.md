@@ -9,9 +9,9 @@ tags = ["Workshop"]
 categories = ["News"]
 +++
 
-{{% alert theme="success" %}}
+{{< alert theme="success" >}}
 #### BornAgain School and User Meeting 2018
-{{% /alert %}}
+{{< /alert >}}
 
 The Jülich Center for Neutron Science (JCNS) and the Maier-Leibnitz Zentrum (MLZ) are pleased to invite you to the **2nd BornAgain School and User Meeting**, which will be held in Garching bei München, Germany, on **19-21 December, 2018**.
 

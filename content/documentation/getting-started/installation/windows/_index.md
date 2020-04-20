@@ -18,9 +18,9 @@ The BornAgain installation package for Windows 7, 8 and 10 can be downloaded fro
 
 There are several installers provided for various Python distributions. 
 
-{{% alert theme="info" %}}
+{{< alert theme="info" >}}
 We recommend users to install BornAgain intended for latest Python {{% recommended-python %}} version, as support for BornAgain with Python 2.x might be dropped in the future.
-{{% /alert %}}
+{{< /alert >}}
 
 After downloading the installer, double click the `.exe` file and follow the instructions on the screen.
 

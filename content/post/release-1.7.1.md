@@ -9,9 +9,9 @@ tags = ["Release"]
 categories = ["News"]
 +++
 
-{{% alert theme="success" %}}
+{{< alert theme="success" >}}
 #### A bugfix release for BornAgain is now available
-{{% /alert %}}
+{{< /alert >}}
 
 
 This is a hotfix to the [Release-1.7]({{< relref "release-1.7.0.md" >}}).
