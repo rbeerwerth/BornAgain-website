@@ -1,9 +1,9 @@
 +++
-title = "Material types"
+title = "Materials"
 weight = 20
 +++
 
-## Material types
+## Materials
 
 The refractive properties of a homogeneous `Material` can be specified
 through two different functions:

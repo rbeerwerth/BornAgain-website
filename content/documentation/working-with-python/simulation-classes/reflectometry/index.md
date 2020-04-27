@@ -63,7 +63,7 @@ where `name` is the arbitrary name of the material, `sld_real` and `sld_imag` co
 Here we assume for simplicity absorption coefficients (imaginary part of SLDs) being equal to zero.
 
 {{< notice note >}}
-One can find out more about materials in BornAgain from [material types tutorial]({{% relref "documentation/working-with-python/material-types/index.md" %}}).
+One can find out more about materials in BornAgain from [material types tutorial]({{% relref "documentation/working-with-python/materials/index.md" %}}).
 {{< /notice >}}
 
 After creating materials, we create associated layers. It is done with `Layer`
