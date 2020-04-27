@@ -1,11 +1,11 @@
 +++
-title = "Contribute to documentation"
+title = "Contribute to this documentation"
 weight = 20
 +++
 
-## Contribute to documentation 
+## Contribute to this documentation
 
-Here we explain how to make change in the documentation and make it available online.
+Here we explain how to edit this documentation locally and submit changes for online publication.
 
 ### General information
 
@@ -35,6 +35,15 @@ Please note, that repository contains submodule (external Hugo theme), so clone 
 git clone --recurse-submodules https://github.com/<your-name>/BornAgain-website.git
 ```
 
+### Update your local repository
+
+Besides the usual `git pull`, we also need to update the submodule:
+
+```
+git pull
+git pull --recurse-submodules
+git submodule update --remote --recursive
+```
 
 ### Run Hugo locally
 
@@ -45,7 +54,7 @@ $ cd <source>
 $ hugo server -D
 ```
 
-Open web-browser using address Hugo will tell you (most probably http://localhost:1313/BornAgain-website). 
+Open web-browser using address Hugo will tell you (most probably http://localhost:1313/).
 
 ### Modify the documentation
 
@@ -53,14 +62,14 @@ Modify one of documentation related markdown file. For example, to modify the pa
 ```
 <source>/content/documentation/developers-corner/contribute-to-documentation.md
 ```
-`Hugo` will update web site within a fraction of a second. 
+`Hugo` will update web site within a fraction of a second.
 
 
 ### Provide a pull request
 
 When you are happy with the changes you've made, push changes to the `origin` and provide a pull request.
 
-`Travis` will start the build to make sure that site is still in working state (no broken links found, etc). 
+`Travis` will start the build to make sure that site is still in working state (no broken links found, etc).
 Depending on `Travis` mood and load, the build can be completed in less than a minute.
 
 > Members of [scgmlz](https://github.com/scgmlz) have rights to merge their own pull requests.
