@@ -5,11 +5,14 @@ weight = 20
 
 ## Material types
 
-### Overview
+The refractive properties of a homogeneous `Material` can be specified
+through two different functions:
+* `HomogeneousMaterial`, based on the refractive index,
+* `MaterialBySLD`, based on the scattering length density.
 
-Currently two material types are available in BornAgain: `HomogeneousMaterial` and `MaterialBySLD`.
+### Material by refractive index
 
-First of them is created with the following syntax:
+A `Material` can be created through
 
 {{< highlight python >}}
 
@@ -19,7 +22,8 @@ magnetization = ba.kvector_t(1.0, 0.0, 0.0)
 {{< /highlight >}}
 
 where `name` is the arbitrary name of the material associated with its complex refractive index $n = 1 - delta + i \cdot beta$.
-`magnetization` defines a 3D magnetization vector (in A/m). Variable `<material>` is later used when referring to this particular material.
+`magnetization` defines a 3D magnetization vector (in A/m).
+The variable `<material>` is later used when referring to this particular material.
 
 `magnetization` can be omitted in material construction. It is assumed to be zero then:
 
@@ -29,7 +33,9 @@ where `name` is the arbitrary name of the material associated with its complex r
 
 {{< /highlight >}}
 
-`MaterialBySLD` can be created with the expression
+### Material by scattering length density
+
+A `Material` can also be created through
 
 {{< highlight python >}}
 
@@ -45,7 +51,8 @@ or, omitting `magnetization` again,
 
 {{< /highlight >}}
 
-Here `sld_real` and `sld_imag` are the real and imaginary parts of material scattering length density (SLD) according to the following convention:
+Here `sld_real` and `sld_imag` are the real and imaginary parts
+of the material scattering length density (SLD) according to the following convention:
 
 $$SLD = sld\_\{real\} - i \cdot sld\_\{imag\}$$
 
@@ -55,8 +62,12 @@ with numerous online SLD-calculators, e.g. these ones:
 * [sld-calculator.appspot.com](https://sld-calculator.appspot.com/)
 * [SLD calculator by NIST](https://www.ncnr.nist.gov/resources/activation/)
 
-The first of aforementioned calculators provides SLD values in inverse square angstroms, which are also the input units for `MaterialBySLD`.
-Thus the SLD values found with the calculator can be directly copied and pasted into a BornAgain script.
+The first of aforementioned calculators provides SLD values in inverse square angstroms,
+which are also the input units for `MaterialBySLD`.
+Thus the SLD values found with the calculator
+can be directly copied and pasted into a BornAgain script.
+
+### Default = Vacuum
 
 Both `HomogeneousMaterial` and `MaterialBySLD` can be created with empty constructors:
 
