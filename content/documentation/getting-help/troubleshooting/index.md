@@ -54,14 +54,14 @@ $ unset DYLD_LIBRARY_PATH; unset $PYTHONPATH
 
 This should resolve the issue.
 
-{{% notice tip %}}
+{{< notice tip >}}
 To see which libraries get loaded by the MacOS loader during the import of BornAgain, use
 
 ```bash
 $ export DYLD_PRINT_LIBRARIES=1
 $ python -c "import bornagain"
 ```
-{{% /notice %}}
+{{< /notice >}}
 
 <hr>
 
@@ -151,9 +151,9 @@ $ make VERBOSE=1 >& my_build.log
 
 #### Functional test (ctest) fails
 
-{{% notice note %}}
+{{< notice note >}}
 A frequent cause for errors at this stage is a conflict with older versions of `BornAgain` installed on the system. Make sure the `LD_LIBRARY_PATH` and `PYTHONPATH` variables do not contain the older installation location and run `ctest` again.
-{{% /notice %}}
+{{< /notice >}}
 
 If `ctest` fails, then rerun it without the multi-core option `-j[N]`. This yields clearer, sorted output, and allows to rule out errors due to thread-safety violations.
 
