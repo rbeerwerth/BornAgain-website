@@ -22,10 +22,10 @@ In both cases, the root-mean-square deviation from the mean surface position is 
 to be $\sigma = 1$ nm.
 
 
-{{% notice note %}}
+{{< notice note >}}
 Even though the same selection of the underlying roughness model can be done for 
 GISAS computations, we recommend to always use the default ($tanh$) for those simulations.
-{{% /notice %}}
+{{< /notice >}}
 
 
 {{< highlightfile file="/static/files/python/simulation/ex06_Reflectometry/RoughnessModel.py"  language="python" >}}

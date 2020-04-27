@@ -16,11 +16,11 @@ As a first example, this tutorial will focus on fitting data simulated with Born
    * [Setting up the fit job]({{% relref "#3-setting-up-the-fit-job" %}})
    * [Running the fit]({{% relref "#4-running-the-fit" %}})
 
-{{% notice note %}}
+{{< notice note >}}
 Although this tutorial consideres GISAS data fitting, the steps described are
 equally applicable to fitting reflectometry or off-specular data (after choosing
 the appropriate type of instrument).
-{{% /notice %}}
+{{< /notice >}}
 
 ### 1. Preparing data to fit
 

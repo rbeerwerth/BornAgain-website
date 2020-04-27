@@ -23,11 +23,11 @@ When comparing the result of the simulation to the result obtained in the
 one can notice up to two orders of magnitude attenuation of the reflected signal due to
 the roughness of the sample.
 
-{{% notice note %}}
+{{< notice note >}}
 Please note that other roughness characteristics (like Hurst parameter or lateral and cross correlation lengths)
 previously described in [example on correlated roughness]({{% ref-example "layered-structures/correlated-roughness" %}})
 do not affect the result of the simulation. The computation model takes into account only the
 rms-deviation from the mean surface position.
-{{% /notice %}}
+{{< /notice >}}
 
 {{< highlightfile file="/static/files/python/simulation/ex06_Reflectometry/SpecularSimulationWithRoughness.py"  language="python" >}}

@@ -90,10 +90,10 @@ addParticle(<particle>, abundance=1.0, position=kvector_t(0,0,0), rotation=None)
 
 Here `<particle>` is the name of the variable used to define the particles. `abundance` is the proportion of the given type of particles, normalized to the total number of particles. Here we have 50% of cylinders and 50% of prisms. The parameter `position` represents coordinates of particle's reference point (expressed in nanometers) in the coordinate system of a given layer (the association with a particular layer will be done during the next step). In this example the position is set to the default value $(0,0,0)$ which means particles sitting on top of the interface.
 
-{{% notice note %}}
+{{< notice note >}}
 See tutorials [Particles positioning]({{% ref-tutorial "particle-positioning" %}}) and
 [Particles rotation]({{% ref-tutorial "particle-rotation" %}}) for more detailed explanations.
-{{% /notice %}}
+{{< /notice >}}
 
 Finally, the last two lines specify that there is no coherent interference between the waves scattered by particles at different locations. In this case, the intensity is calculated by the incoherent sum of the scattered waves. By default, the `ParticleLayout` object has no interference function, so these lines could be omitted. Other examples will present more complex cases of interference by the particles' position.
 
@@ -155,9 +155,9 @@ setDetectorParameters(n_phi, phi_f_min, phi_f_max, n_alpha, alpha_f_min, alpha_f
 
 where the number of bins `n_phi`, the low edge of first bin `phi_f_min` and the upper edge of last bin `phi_f_max` define the `phi_f` detector axis, while `n_alpha`, `alpha_f_min` and `alpha_f_max` are related to the `alpha_f` detector axis.
 
-{{% notice note %}}
+{{< notice note >}}
 See  [Detector types]({{% ref-tutorial "detector-types" %}}) tutorial for more details.
-{{% /notice %}}
+{{< /notice >}}
 
 To characterize the beam we use the following method
 ```python
@@ -166,9 +166,9 @@ setBeamParameters(wavelength, alpha_i, phi_i)
 
 where `wavelength` is the incident beam wavelength, `alpha_i` is the incident grazing angle on the surface of the sample and `phi_i` is the in-plane direction of the incident beam (measured with respect to the x-axis).
 
-{{% notice note %}}
+{{< notice note >}}
 In BornAgain, the scattering vector $q$ is defined as $k_i - k_f$, where $k_i$ and $k_f$ are the initial (incident) and final (scattered) wave vector, respectively.
-{{% /notice %}}
+{{< /notice >}}
 
 ### Running the simulation and plotting the results
 
