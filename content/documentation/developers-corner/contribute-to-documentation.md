@@ -58,16 +58,19 @@ Open web-browser using address Hugo will tell you (most probably http://localhos
 
 ### Modify the documentation
 
-Modify one of documentation related markdown file. For example, to modify the page you are looking at right now, edit
+The documentation sources are in directory `content/`.
+They consist of [Markdown](https://www.markdownguide.org/getting-started/) files.
+For example, the source of the page you are looking at right now, is
 ```
-<source>/content/documentation/developers-corner/contribute-to-documentation.md
+content/documentation/developers-corner/contribute-to-documentation.md
 ```
-`Hugo` will update web site within a fraction of a second.
+Edit any source file. `Hugo` will then update the web site within a fraction of a second.
 
 
 ### Provide a pull request
 
-When you are happy with the changes you've made, push changes to the `origin` and provide a pull request.
+When you are happy with the changes you've made, commit them, push them to `origin`,
+and create a pull request.
 
 `Travis` will start the build to make sure that site is still in working state (no broken links found, etc).
 Depending on `Travis` mood and load, the build can be completed in less than a minute.
