@@ -5,22 +5,16 @@ weight = 15
 
 ## GISAS simulation tutorial
 
-A simulation of GISAS using BornAgain consists of following steps:
-
-* define materials by specifying name and refractive index
-* define layers by specifying thickness, roughness, material
-* define embedded particles by specifying shape, size, constituting material, interference function
-* include particles in layers, specifying density, position, orientation
-* assemble a multilayered sample
-* specify input beam and detector characteristics
-* run the simulation
-* save the simulated detector image
-
-In this example, we simulate the scattering from a mixture of cylinder and prism nanoparticles without any interference between them.
+A GISAS simulation using BornAgain consists of the following steps:
+* specify materials and structures that make up the scattering target ("sample"),
+* specify input beam and detector,
+* run the simulation,
+* visualize or/and save the simulated detector image.
 
 {{< figscg src="cylinders-prisms.jpg" width="400" class="center">}}
 
-These particles are placed in air, on top of a substrate. We will go through each step of the simulation. Each section starts with a short Python code snippet, followed by a discussion. The full code can be found at the end of this page.
+In this example, we simulate the scattering from a mixture of cylinder and prism nanoparticles
+that are placed at random on top of a substrate. We will go through each step of the simulation. Each section starts with a short Python code snippet, followed by a discussion. The full code can be found at the end of this page.
 
 ### Importing the Python modules
 
