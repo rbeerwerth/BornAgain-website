@@ -7,7 +7,7 @@ weight = 30
 
 This short tutorial demonstrates how to visualize the Scattering Length Density (SLD) profile of a `Multilayer` sample.
 For more details about preparing a sample and carrying on a reflectometry simulated experiment, read the
-[reflectometry simulation tutorial]({{% ref-tutorial "basic-simulation-tutorial/reflectometry" %}}).
+[reflectometry simulation tutorial]({{% ref-tutorial "simulation-classes/reflectometry" %}}).
 
 {{< galleryscg >}}
 {{< figscg src="MaterialProfile.png" width="500px" caption="This figure shows the sld profile of the sample built, i.e. the sld value ($y$ axis) as a function of depth ($x$ axis). $x = 0$ represents the surface of the sample, while the substrate is located at $x = -40 \, [{\rm nm}]$ in this example." >}}

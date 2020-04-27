@@ -43,8 +43,8 @@ from bornagain import deg, angstrom, nm
 {{< /highlight >}}
 
 The process of constructing the sample is the same as the one described in  
-[GISAS]({{% ref-tutorial "basic-simulation-tutorial/gisas/index.md" %}})
-and [reflectometry]({{% ref-tutorial "basic-simulation-tutorial/reflectometry/index.md" %}})
+[GISAS]({{% ref-tutorial "simulation-classes/gisas/index.md" %}})
+and [reflectometry]({{% ref-tutorial "simulation-classes/reflectometry/index.md" %}})
 tutorials. First of all we will define the `get_sample` function:
 
 {{< highlight python >}}

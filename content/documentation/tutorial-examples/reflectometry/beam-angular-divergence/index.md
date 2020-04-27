@@ -8,7 +8,7 @@ weight = 30
 This example demonstrates beam angular spread effects in reflectivity computations.
 It also offers a comparison with data generated using another well known code: GenX.
 Further information about reflectometry simulations can be found in the
-[Reflectometry Simulation Tutorial]({{% ref-tutorial "basic-simulation-tutorial/reflectometry" %}}).
+[Reflectometry Simulation Tutorial]({{% ref-tutorial "simulation-classes/reflectometry" %}}).
 
 The observed reflectometry signal can be affected either by a spread in the beam wavelength or in the incident angle.
 

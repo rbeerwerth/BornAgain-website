@@ -30,7 +30,7 @@ During this release we have worked on preparing the implementation of fitting in
 **New tutorials:**
 
 1. [How to setup PyCharm project](#)
-1. [Detector types tutorial]({{< relref "documentation/working-with-python/detector-types" >}})
+1. [Detector types tutorial]({{< relref "documentation/working-with-python/detectors" >}})
 1. [Accessing simulation results tutorial]({{< relref "documentation/working-with-python/accessing-simulation-results/index.md" >}})
 1. [Importing experimental data]({{< relref "documentation/working-with-python/fitting/instrument-description" >}})
 
