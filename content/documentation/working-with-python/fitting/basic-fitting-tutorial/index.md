@@ -9,7 +9,7 @@ In this section we are going to go through a complete example of fitting using B
 Each step will be associated with a detailed piece of code written in Python.
 The script can also be found in the [example section]({{% ref-example "fitting/basic/basic-fit-tutorial" %}}).
 
-This example uses the same sample geometry as in [Basic GISAS simulation tutorial]({{% ref-tutorial "basic-simulation-tutorial/gisas/index.md" %}}).
+This example uses the same sample geometry as in [Basic GISAS simulation tutorial]({{% ref-tutorial "simulation-classes/gisas/index.md" %}}).
 Cylindrical and prismatic particles are deposited on a substrate layer in equal proportion,
 with no interference between the particles. We consider the following parameters to be unknown:
 

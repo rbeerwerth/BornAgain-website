@@ -52,6 +52,6 @@ The incident angle range was made rather small in this example
 (from $0.0$ to $0.6$ degrees) in order to emphasize
 the footprint impact at small incident angles.
 In other respects this example exactly matches the
-[reflectometry simulation tutorial]({{% ref-tutorial "basic-simulation-tutorial/reflectometry" %}}).
+[reflectometry simulation tutorial]({{% ref-tutorial "simulation-classes/reflectometry" %}}).
 
 {{< highlightfile file="/static/files/python/simulation/ex06_Reflectometry/FootprintCorrection.py"  language="python" >}}

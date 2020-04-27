@@ -11,7 +11,7 @@ the sample.
 
 Here we will consider the intensity map produced by a neutron resonator composed of one Ti/Pt bilayer.
 
-A more detailed description of this example can be found in the [Depth Probe Tutorial]({{% ref-tutorial "basic-simulation-tutorial/depth-probe/index.md" %}}).
+A more detailed description of this example can be found in the [Depth Probe Tutorial]({{% ref-tutorial "simulation-classes/depth-probe/index.md" %}}).
 
 {{< figscg src="DepthProbeSimulation.png" width="500" class="center">}}
 
