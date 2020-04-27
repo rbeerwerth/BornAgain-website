@@ -156,7 +156,7 @@ setDetectorParameters(n_phi, phi_f_min, phi_f_max, n_alpha, alpha_f_min, alpha_f
 where the number of bins `n_phi`, the low edge of first bin `phi_f_min` and the upper edge of last bin `phi_f_max` define the `phi_f` detector axis, while `n_alpha`, `alpha_f_min` and `alpha_f_max` are related to the `alpha_f` detector axis.
 
 {{< notice note >}}
-See  [Detector types]({{% ref-tutorial "detector-types" %}}) tutorial for more details.
+See  [Detector types]({{% ref-tutorial "detectors" %}}) tutorial for more details.
 {{< /notice >}}
 
 To characterize the beam we use the following method
