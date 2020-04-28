@@ -33,21 +33,8 @@ breadcrumb = true
   </div>
   <hr style="max-width: 200px;">
   <div class="row">
-    <div class="col-lg-10 mx-auto">
-      <p class="lead"><h5> Citing BornAgain </h5></p>
-      The canonical reference for BornAgain is the journal article<br>
-Gennady Pospelov, Walter Van Herck, Jan Burle, Juan M. Carmona Loaiza,
-Céline Durniak, Jonathan M. Fisher, Marina Ganeva, Dmitry Yurov and
-Joachim Wuttke:<br>
-BornAgain: software for simulating and fitting grazing-incidence small-
-angle scattering<br>
-<a href="https://doi.org/10.1107/S1600576719016789">J. Appl. Cryst. 53, 262–276 (2020)</a>
-</p><p>
-Use of the software should additionally be documented by citing a specific version
-thereof:<br>
-BornAgain — Software for simulating and fitting X-ray and neutron small-
-angle scattering at grazing incidence, version ⟨version⟩ (⟨release date⟩),<br>
-<a href="https://www.bornagainproject.org">https://www.bornagainproject.org</a></p>
+    <div class="col-lg-10 mx-auto mt-5">
+    <p>{{< local-link "documentation/howto/cite" >}} How to cite BornAgain</p>
     </div>
   </div>
   <hr style="max-width: 200px;">
