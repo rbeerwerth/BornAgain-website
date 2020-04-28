@@ -1,12 +1,9 @@
 +++
-title = "Troubleshooting"
+title = "Solve known problems"
 weight = 60
 +++
 
-## Troubleshooting
-
-To report bugs or request help with problems in building or running BornAgain,
-please create an issue on [github](https://github.com/scgmlz/BornAgain) or send us an [e-mail](mailto:contact@bornagainproject.org). Provide all relevant information that may help us to analyse the issue. In particular, submit the full output of the last, unsuccessful command (screen copy, or redirection `[command] >& [logfile]`).
+## How to solve known problems
 
 * [Windows specific]({{% relref "#windows-specific" %}})
   * [Missing api-ms-win-crt-runtime-l1-1-0.dll]({{% relref "#missing-api-ms-win-crt-runtime-l1-1-0-dll" %}})
@@ -41,7 +38,7 @@ When Mantid is installed on the system, BornAgain might conflict with its librar
 
 ```bash
 $ python -c "import bornagain"
- 
+
 Incompatible library version: libBornAgainCore.so requires
 version 18.0.0 or later, but libgsl.0.dylib provides version 16.0.0
 ```
@@ -186,4 +183,3 @@ When reporting errors to us, please run just the plain `ctest` without options `
 This error shows up when a Python module tries to use a Python library that is different than the one the interpreter uses. This might happen if the user's system contains several  Python installations.
 
 For example, BornAgain was compiled against `/usr/lib64/libpython2.7.so` and then used by mistake with a Python interpreter from another installation. This interpreter might depend on his own version of `libpython2.7.so`  located, for example, at `/usr/local`. Importing of the bornagain module into this interpreter will cause the loading of two different `libpython2.7.so` libraries: one will be loaded by the bornagain module, the other will be loaded by the interpreter itself. This will cause the given fatal Python error. Make sure you are running the correct Python interpreter and that your `PYTHONPATH` and `DYLD_LIBRARY_PATH` doesn't contain the old BornAgain installation.
-
