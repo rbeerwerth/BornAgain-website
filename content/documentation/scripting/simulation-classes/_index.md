@@ -13,6 +13,7 @@ about the scattering target ("sample") and about the simulated instrument
 The following tutorial pages describe the typical simulation workflow for the
 different fundamental types of simulations in BornAgain:
 
-* [GISAS simulation]({{% ref-tutorial "simulation-classes/gisas" %}})
-* [Reflectometry simulation]({{% ref-tutorial "simulation-classes/reflectometry" %}})
-* [Depth-probe simulation]({{% ref-tutorial "simulation-classes/depth-probe" %}})
+* [GISAS]({{% ref-tutorial "simulation-classes/gisas" %}})
+* [Off-specular scattering]({{% ref-tutorial "simulation-classes/off-specular" %}})
+* [Reflectometry]({{% ref-tutorial "simulation-classes/reflectometry" %}})
+* [Depth-probe]({{% ref-tutorial "simulation-classes/depth-probe" %}})
