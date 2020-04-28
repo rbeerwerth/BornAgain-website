@@ -1,6 +1,6 @@
 +++
 title = "Accessing simulation results"
-weight = 30
+weight = 8
 +++
 
 ## Accessing simulation results
@@ -44,7 +44,7 @@ numpy.savetxt("intensity.txt", arr)
 ### Plotting simulation results
 
 BornAgain provides few convenient functions to plot simulation result as color map. Internally they are using not more than `matplotlib` routines.
-The function `plot_simulation_result` makes a plot and holds the graphics, while `plot_colormap` makes the plot 
+The function `plot_simulation_result` makes a plot and holds the graphics, while `plot_colormap` makes the plot
 and let the program continue to allow more plots on same figure, for example.
 
 The code snippet below gives few examples
