@@ -8,7 +8,7 @@ weight = 30
 This example demonstrates beam wavelength spread effects in reflectivity computations.
 All simulation parameters (except for those related to beam spread itself)
 coincide with those defined in
-[reflectometry simulation tutorial]({{% ref-tutorial "basic-simulation-tutorial/reflectometry" %}}).
+[reflectometry simulation tutorial]({{% ref-tutorial "simulation-classes/reflectometry" %}}).
 
 In real specular experiments the observed reflectivity is always affected
 by the beam spread in both wavelength and incident angle.

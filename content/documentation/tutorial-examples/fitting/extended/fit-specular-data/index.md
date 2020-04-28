@@ -7,7 +7,7 @@ weight = 10
 
 In this example we will fit reflectometry data obtained from `GenX` for the sample
 previously used in
-[reflectometry simulation tutorial]({{% ref-tutorial "basic-simulation-tutorial/reflectometry" %}}).
+[reflectometry simulation tutorial]({{% ref-tutorial "simulation-classes/reflectometry" %}}).
 
 The only fitting parameter of the simulation considered here is the thickness of the Ti
 layers. The reference data was obtained under the following assumptions:

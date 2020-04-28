@@ -1,9 +1,9 @@
 +++
-title = "Detector types"
+title = "Detectors"
 weight = 25
 +++
 
-## Detector types
+## Detectors
 
 This tutorial explains the various types of detectors, the detector resolution functions and masking abilities implemented in BornAgain.
 
@@ -24,5 +24,5 @@ The `RectangularDetector` object, as follows from its name, strives to represent
 
 Both detector types are explained in detail in the following sections of the tutorial.
 
-* [Spherical detector]({{% relref "documentation/working-with-python/detector-types/spherical-detector/index.md" %}}) 
-* [Rectangular detector]({{% relref "documentation/working-with-python/detector-types/rectangular-detector/index.md" %}})
+* [Spherical detector]({{% relref "documentation/working-with-python/detectors/spherical-detector/index.md" %}})
+* [Rectangular detector]({{% relref "documentation/working-with-python/detectors/rectangular-detector/index.md" %}})

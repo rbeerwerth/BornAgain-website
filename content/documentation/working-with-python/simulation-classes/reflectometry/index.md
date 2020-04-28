@@ -63,7 +63,7 @@ where `name` is the arbitrary name of the material, `sld_real` and `sld_imag` co
 Here we assume for simplicity absorption coefficients (imaginary part of SLDs) being equal to zero.
 
 {{< notice note >}}
-One can find out more about materials in BornAgain from [material types tutorial]({{% relref "documentation/working-with-python/material-types/index.md" %}}).
+One can find out more about materials in BornAgain from [material types tutorial]({{% relref "documentation/working-with-python/materials/index.md" %}}).
 {{< /notice >}}
 
 After creating materials, we create associated layers. It is done with `Layer`
@@ -172,7 +172,7 @@ and `n_bins` defines the number of points to be uniformly sampled between `angle
 
 One can express the input arguments in degrees and angstroms via the conversion factors `ba.deg` and `ba.angstrom`.
 
-Note that, as opposed to a `GISASSimulation`s (see [GISAS simulation tutorial]({{% relref "documentation/working-with-python/basic-simulation-tutorial/gisas/index.md" %}})),
+Note that, as opposed to a `GISASSimulation`s (see [GISAS simulation tutorial]({{% relref "documentation/working-with-python/simulation-classes/gisas/index.md" %}})),
 `SpecularSimuation`s do not need to define a detector. Their outcomes are always reflected intensities as
 function of the selected incident angles.
 

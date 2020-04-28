@@ -13,7 +13,7 @@ weight = 55
 Below you will find a detailed description of each option.
 
 {{< notice note >}}
-For simplicity this tutorial uses a spherical detector. This is a good approximation, but for the real-life cases we recommend to use rectangular detectors. See the [Detector types]({{% relref "documentation/working-with-python/detector-types" %}}) tutorial for detailed explanations about various detector types in BornAgain. 
+For simplicity this tutorial uses a spherical detector. This is a good approximation, but for the real-life cases we recommend to use rectangular detectors. See the [Detector types]({{% relref "documentation/working-with-python/detectors" %}}) tutorial for detailed explanations about various detector types in BornAgain. 
 
 We also neglect [detector resolution]({{% relref "documentation/tutorial-examples/beam-and-detector/detector-resolution" %}}) and [beam divergence]({{% relref "documentation/tutorial-examples/beam-and-detector/beam-divergence" %}}) in this tutorial. However, we recommend to consider them if you want to compare simulation results to experimental data.
 

@@ -8,7 +8,7 @@ weight = 15
 This example demonstrates how to apply different roughness models
 in a specular reflectivity calculation. The considered sample is 
 exactly the same as the one described in the
-[reflectometry tutorial]({{% ref-tutorial "basic-simulation-tutorial/reflectometry" %}}),
+[reflectometry tutorial]({{% ref-tutorial "simulation-classes/reflectometry" %}}),
 and the [basic roughness tutorial]({{% ref-example "reflectometry/specular-simulation-with-roughness" %}}).
 Hewever, now the computation is performed twice with the standard $tanh$ interface profile
 and the Névot-Croce roughness model that arises from a Gaussian distribution of the 
