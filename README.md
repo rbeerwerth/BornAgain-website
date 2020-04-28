@@ -21,7 +21,7 @@ The documentation theme [hugo-theme-scgdoc](https://github.com/scgmlz/hugo-theme
 is included as a submodule.
 
 Instructions for using Hugo and for contributing to this project are at
-https://www.bornagainproject.org/documentation/developers-corner/contribute-to-documentation.
+https://www.bornagainproject.org/documentation/howto/contribute-to-documentation.
 
 ## CI Status
 
