@@ -30,16 +30,16 @@ During this release we have worked on preparing the implementation of fitting in
 **New tutorials:**
 
 1. [How to setup PyCharm project](#)
-1. [Detector types tutorial]({{< relref "documentation/working-with-python/detectors" >}})
-1. [Accessing simulation results tutorial]({{< relref "documentation/working-with-python/accessing-simulation-results/index.md" >}})
-1. [Importing experimental data]({{< relref "documentation/working-with-python/fitting/instrument-description" >}})
+1. [Detector types tutorial]({{< relref "documentation/scripting/detectors" >}})
+1. [Accessing simulation results tutorial]({{< relref "documentation/scripting/accessing-simulation-results/index.md" >}})
+1. [Importing experimental data]({{< relref "documentation/scripting/fitting/instrument-description" >}})
 
 **New examples:**
 
-1. [Rectangular detector]({{< relref "documentation/tutorial-examples/beam-and-detector/rectangular-detector/index.md" >}})
-1. [Real life fit example: experiment at GALAXI]({{< relref "documentation/tutorial-examples/fitting/extended/experiment-at-galaxi/index.md" >}})
-1. [Accessing simulation results]({{< relref "documentation/tutorial-examples/miscellaneous/accessing-simulation-results/index.md" >}})
-1. [Plotting with axes in different units]({{< relref "documentation/tutorial-examples/miscellaneous/axes-in-different-units/index.md" >}})
+1. [Rectangular detector]({{< relref "documentation/cookbook/beam-and-detector/rectangular-detector/index.md" >}})
+1. [Real life fit example: experiment at GALAXI]({{< relref "documentation/cookbook/fitting/extended/experiment-at-galaxi/index.md" >}})
+1. [Accessing simulation results]({{< relref "documentation/cookbook/miscellaneous/accessing-simulation-results/index.md" >}})
+1. [Plotting with axes in different units]({{< relref "documentation/cookbook/miscellaneous/axes-in-different-units/index.md" >}})
 
 **API changes:**
 
