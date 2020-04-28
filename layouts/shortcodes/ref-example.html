@@ -1,9 +1,9 @@
 <!--
-Provide reference link to Python example located in content/documentation/tutorial-examples
+Provide reference link to Python example located in content/documentation/cookbook
 -->
 
 {{- $shortref := .Get 0 -}}
-{{- $ref := (print "documentation/tutorial-examples/" $shortref) -}}
+{{- $ref := (print "documentation/cookbook/" $shortref) -}}
 
 {{- if in $ref "/_index.md" -}}
 	{{- $path := (trim $ref "_index.md") -}}

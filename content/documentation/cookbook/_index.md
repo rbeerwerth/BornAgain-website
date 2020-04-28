@@ -1,11 +1,14 @@
 +++
-title = "Tutorial examples"
+title = "Cookbook"
 weight = 50
 +++
 
-## Sample model reference
+## Exemplary Python scripts
 
-This section presents BornAgain simulations of various model systems. All Python scripts are shipped with BornAgain. They can be found in the "Examples" directory:
+This section of the online documentation is the BornAgain cookbook.
+It is a vast collection of exemplary Python scripts for various model systems.
+All scripts are also shipped with the BornAgain binaries.
+They can be found in the "Examples" directory:
 
 <!-- Nav tabs -->
 <ul class="nav nav-tabs" id="OperationSystemTab" role="tablist">
@@ -26,10 +29,10 @@ This section presents BornAgain simulations of various model systems. All Python
     <p><pre><code>C:\BornAgain-{{< release-string >}}\Examples\python</code></pre></p>
   </div>
   <div class="tab-pane" id="MacOS" role="tabpanel" aria-labelledby="macos-tab">
-    <p><pre><code>/Applications/BornAgain.app/Contents/share/BornAgain-{{< release-string-short >}}/Examples/python</code></pre></p>  
+    <p><pre><code>/Applications/BornAgain.app/Contents/share/BornAgain-{{< release-string-short >}}/Examples/python</code></pre></p>
   </div>
   <div class="tab-pane" id="Linux" role="tabpanel" aria-labelledby="linux-tab">
-    <p><pre><code>install_dir/share/BornAgain-{{< release-string-short >}}/Examples/python</code></pre></p>  
+    <p><pre><code>install_dir/share/BornAgain-{{< release-string-short >}}/Examples/python</code></pre></p>
   </div>
 </div>
 
@@ -39,41 +42,41 @@ This section presents BornAgain simulations of various model systems. All Python
 
 #### Embedded particles
 
-{{% examples-preview "documentation/tutorial-examples/embedded-particles" %}}
+{{% examples-preview "documentation/cookbook/embedded-particles" %}}
 
 #### Layered structures
 
-{{% examples-preview "documentation/tutorial-examples/layered-structures" %}}
+{{% examples-preview "documentation/cookbook/layered-structures" %}}
 
 #### Interference functions
 
-{{% examples-preview "documentation/tutorial-examples/interference-functions" %}}
+{{% examples-preview "documentation/cookbook/interference-functions" %}}
 
 #### Complex shapes
 
-{{% examples-preview "documentation/tutorial-examples/complex-shapes" %}}
+{{% examples-preview "documentation/cookbook/complex-shapes" %}}
 
 #### Beam and detector
 
-{{% examples-preview "documentation/tutorial-examples/beam-and-detector" %}}
+{{% examples-preview "documentation/cookbook/beam-and-detector" %}}
 
 #### Reflectometry
 
-{{% examples-preview "documentation/tutorial-examples/reflectometry" %}}
+{{% examples-preview "documentation/cookbook/reflectometry" %}}
 
 #### Fitting
 
-{{% examples-preview "documentation/tutorial-examples/fitting" %}}
+{{% examples-preview "documentation/cookbook/fitting" %}}
 
 **Basic**
-{{% examples-preview "documentation/tutorial-examples/fitting/basic" %}}
+{{% examples-preview "documentation/cookbook/fitting/basic" %}}
 
 **Advanced**
-{{% examples-preview "documentation/tutorial-examples/fitting/advanced" %}}
+{{% examples-preview "documentation/cookbook/fitting/advanced" %}}
 
 **Extended**
-{{% examples-preview "documentation/tutorial-examples/fitting/extended" %}}
+{{% examples-preview "documentation/cookbook/fitting/extended" %}}
 
 #### Miscellaneous
 
-{{% examples-preview "documentation/tutorial-examples/miscellaneous" %}}
+{{% examples-preview "documentation/cookbook/miscellaneous" %}}

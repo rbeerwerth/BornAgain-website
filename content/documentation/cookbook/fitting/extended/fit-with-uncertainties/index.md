@@ -10,7 +10,7 @@ In this example we are demonstrating how to allow for uncertainties during a Ref
 
 The reference data was generated with GENX, setting the thickness of the Ti layers equal to 3 nm.
 
-This example follows closely the tutorial on [Fitting reflectometry data](/documentation/tutorial-examples/fitting/extended/fit-specular-data/). The main points to focus on here are the following: 
+This example follows closely the tutorial on [Fitting reflectometry data](/documentation/cookbook/fitting/extended/fit-specular-data/). The main points to focus on here are the following: 
 
  - Added artificial uncertainties to the data being fitted
  - Use of the the $RQ^4$ view for plotting
