@@ -1,9 +1,9 @@
 +++
 title = "Contribute to this documentation"
-weight = 20
+weight = 70
 +++
 
-## Contribute to this documentation
+## How to contribute to this documentation
 
 Here we explain how to edit this documentation locally and submit changes for online publication.
 
