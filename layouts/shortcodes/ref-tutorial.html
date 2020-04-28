@@ -1,9 +1,9 @@
 <!--
-Provide reference link to Python example located in content/documentation/working-with-python
+Provide reference link to Python example located in content/documentation/scripting
 -->
 
 {{- $shortref := .Get 0 -}}
-{{- $ref := (print "documentation/working-with-python/" $shortref) -}}
+{{- $ref := (print "documentation/scripting/" $shortref) -}}
 
 {{- if in $ref "/_index.md" -}}
 	{{- $path := (trim $ref "_index.md") -}}

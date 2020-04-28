@@ -25,12 +25,12 @@ This time we have been working on a deep refactoring of the machinery related to
 
 **New tutorials:**
 
-1. [Particles positioning tutorial]({{< relref "documentation/working-with-python/particle-positioning/index.md" >}})
-1. [Particles rotation tutorial]({{< relref "documentation/working-with-python/particle-rotation/index.md" >}})
-1. [Particle composition tutorial]({{< relref "documentation/working-with-python/particle-composition/index.md" >}})
+1. [Particles positioning tutorial]({{< relref "documentation/scripting/particle-positioning/index.md" >}})
+1. [Particles rotation tutorial]({{< relref "documentation/scripting/particle-rotation/index.md" >}})
+1. [Particle composition tutorial]({{< relref "documentation/scripting/particle-composition/index.md" >}})
 1. Working with sample parameters tutorial (*obsolete link*)
-1. [Introduction to fitting]({{< relref "documentation/working-with-python/fitting/introduction" >}})
-1. [Basic fitting tutorial]({{< relref "documentation/working-with-python/fitting/basic-fitting-tutorial/index.md" >}})
+1. [Introduction to fitting]({{< relref "documentation/scripting/fitting/introduction" >}})
+1. [Basic fitting tutorial]({{< relref "documentation/scripting/fitting/basic-fitting-tutorial/index.md" >}})
 
 **API changes:**
 

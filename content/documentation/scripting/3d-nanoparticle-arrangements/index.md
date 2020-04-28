@@ -13,7 +13,7 @@ weight = 55
 Below you will find a detailed description of each option.
 
 {{< notice note >}}
-For simplicity this tutorial uses a spherical detector. This is a good approximation, but for the real-life cases we recommend to use rectangular detectors. See the [Detector types]({{% relref "documentation/working-with-python/detectors" %}}) tutorial for detailed explanations about various detector types in BornAgain. 
+For simplicity this tutorial uses a spherical detector. This is a good approximation, but for the real-life cases we recommend to use rectangular detectors. See the [Detector types]({{% relref "documentation/scripting/detectors" %}}) tutorial for detailed explanations about various detector types in BornAgain. 
 
 We also neglect [detector resolution]({{% relref "documentation/tutorial-examples/beam-and-detector/detector-resolution" %}}) and [beam divergence]({{% relref "documentation/tutorial-examples/beam-and-detector/beam-divergence" %}}) in this tutorial. However, we recommend to consider them if you want to compare simulation results to experimental data.
 
@@ -54,7 +54,7 @@ for i in range(n+1):
     particle_composition.addParticle(particle)
 ```
 
-If you work in GUI, you will need to add each particle manually. See the [Particle composition]({{% relref "documentation/working-with-python/particle-composition" %}}) tutorial for more details.
+If you work in GUI, you will need to add each particle manually. See the [Particle composition]({{% relref "documentation/scripting/particle-composition" %}}) tutorial for more details.
 
 **Arrange created compositions in a lattice.** 
 
@@ -72,7 +72,7 @@ layout.addParticle(particle_composition, 1.0)
 layout.setInterferenceFunction(interference)
 ```
 
-See the [Interference functions]({{% relref "documentation/working-with-python/interference" %}}) tutorial for more details on interference functions available in BornAgain.
+See the [Interference functions]({{% relref "documentation/scripting/interference" %}}) tutorial for more details on interference functions available in BornAgain.
 
 ### Disorder
 
@@ -100,7 +100,7 @@ Pay attention, that in this case the whole particle composition is considered as
 interference.setPositionVariance(var)
 ```
 
-where `var` is a floating point number. More details you will find in the [2D lattice]({{% relref "documentation/working-with-python/interference/lattice2d" %}}) tutorial.
+where `var` is a floating point number. More details you will find in the [2D lattice]({{% relref "documentation/scripting/interference/lattice2d" %}}) tutorial.
 
 **Rotational distribution**
 
@@ -150,9 +150,9 @@ In the GUI you should create and add all the layouts manually. This approach mak
 
 Figures above show the influence of both considered rotational distributions on the GISAS pattern.
 
-Alternatively, you can consider to use distributions available in BornAgain. See the [Particle distribution]({{% relref "documentation/working-with-python/particle-distribution" %}}) tutorial for more information. Pay attention, that in this case you should apply the chosen distribution to the parameter `Interference2DLattice/BasicLattice/Xi`. See the corresponding [tutorial example]({{% relref "documentation/tutorial-examples/interference-functions/interference-2d-lattice-sum-of-rotated" %}}) for details.
+Alternatively, you can consider to use distributions available in BornAgain. See the [Particle distribution]({{% relref "documentation/scripting/particle-distribution" %}}) tutorial for more information. Pay attention, that in this case you should apply the chosen distribution to the parameter `Interference2DLattice/BasicLattice/Xi`. See the corresponding [tutorial example]({{% relref "documentation/tutorial-examples/interference-functions/interference-2d-lattice-sum-of-rotated" %}}) for details.
 
-If your particle composition is not symmetrical, you may need to rotate your particles as well. See the [Particle rotation]({{% relref "documentation/working-with-python/particle-rotation" %}}) tutorial for details.
+If your particle composition is not symmetrical, you may need to rotate your particles as well. See the [Particle rotation]({{% relref "documentation/scripting/particle-rotation" %}}) tutorial for details.
 
 Complete Python scripts for this part of tutorial
 
@@ -306,7 +306,7 @@ Download the complete Python script {{< icon fa-save fa-lg  fa-fw>}} <a href="me
 
 Besides of Bragg peaks, measured GISAS patterns often contain diffuse scattering. This is a sign of some kind of disorder in the sample. Which kind of disorder it is exactly, depends on the sample production technique. Here we can list some frequent types:
 
-* **Loose nanoparticles.** This is frequent for self-assembled 3D nanoparticle arrangements. These nanoparticles can also have size distributions or a positional distribution along the $Z$ axis (`PositionZ`). To add loose particles, you will need to create a separate `ParticleLayout` and add it to the same layer as the mesocrystal with an appropriate weight.  For more information about particle distributions, see the [particle distribution]({{% relref "documentation/working-with-python/particle-distribution" %}}) tutorial.
+* **Loose nanoparticles.** This is frequent for self-assembled 3D nanoparticle arrangements. These nanoparticles can also have size distributions or a positional distribution along the $Z$ axis (`PositionZ`). To add loose particles, you will need to create a separate `ParticleLayout` and add it to the same layer as the mesocrystal with an appropriate weight.  For more information about particle distributions, see the [particle distribution]({{% relref "documentation/scripting/particle-distribution" %}}) tutorial.
 
 {{< notice note >}}
 Pay attention, that relative weights of layouts as well as `TotalParticleSurfaceDensity` in each layout will affect the relative scattering intensities caused by particles of each particle layout. You can set these parameters either in GUI or using the following Python code

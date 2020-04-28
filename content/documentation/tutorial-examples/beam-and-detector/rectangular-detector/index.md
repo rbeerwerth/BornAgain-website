@@ -7,7 +7,7 @@ weight = 40
 
 In this example we demonstrate the difference between GISAS simulation using default spherical detector and using special rectangular detector. The later provides more accurate representation of real experimental detectors.
 
-> See the [Detector types]({{% relref "documentation/working-with-python/detectors" %}}) tutorial for detailed explanations about various detector types in BornAgain.
+> See the [Detector types]({{% relref "documentation/scripting/detectors" %}}) tutorial for detailed explanations about various detector types in BornAgain.
 
 * As an example we take typical PILATUS detector ($981\times1043$ pixels) placed at the distance $2000$ mm from sample origin. The detector is perpendicular to the $x$-axis of sample reference frame, as shown on the plot.
 * Scattering from monodisperse distribution of cylindrical particles in DWBA is simulated.

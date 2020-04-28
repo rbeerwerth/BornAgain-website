@@ -24,5 +24,5 @@ The `RectangularDetector` object, as follows from its name, strives to represent
 
 Both detector types are explained in detail in the following sections of the tutorial.
 
-* [Spherical detector]({{% relref "documentation/working-with-python/detectors/spherical-detector/index.md" %}})
-* [Rectangular detector]({{% relref "documentation/working-with-python/detectors/rectangular-detector/index.md" %}})
+* [Spherical detector]({{% relref "documentation/scripting/detectors/spherical-detector/index.md" %}})
+* [Rectangular detector]({{% relref "documentation/scripting/detectors/rectangular-detector/index.md" %}})
