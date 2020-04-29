@@ -33,13 +33,12 @@ breadcrumb = true
   </div>
   <hr style="max-width: 200px;">
   <div class="row">
-    <div class="col-lg-10 mx-auto mt-5">
+    <div class="col-lg-10 mx-auto mt-3">
     <p>{{< local-link "documentation/howto/cite" >}} How to cite BornAgain</p>
     </div>
   </div>
-  <hr style="max-width: 200px;">
   <div class="row">
-    <div class="col-lg-10 mx-auto mt-5">
+    <div class="col-lg-10 mx-auto">
     <p>{{< local-link "about-website" >}} About this website</p>
     </div>
   </div>
