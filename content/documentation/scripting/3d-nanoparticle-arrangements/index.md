@@ -279,7 +279,7 @@ While representing a 3D nanoparticle arrangement as a mesocrystal, you might com
 
 Let's take the mesocrystal of width $W=100$ nm and distance between two mesocrystals $D=300$ nm. In this case, to be able to resolve interference peaks you will need an instrument resolution of at least:
 
-$$\Delta Q = \frac{2\pi}{300}\approx \;0.02\; nm^{-1} \approx \; 0.002 \; \unicode{x212B}^{-1}$$
+$$\Delta Q = \frac{2\pi}{300}\approx\\;0.02\\; nm^{-1} \approx \\; 0.002 \\; \unicode{x212B}^{-1}$$
 
 
 ## Large particles (aliasing problem)

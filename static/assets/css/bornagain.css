@@ -127,7 +127,7 @@ a.navbar-brand {
 }
 
 .page-contact span.fa-github {
-  margin-right: 0.3em;
+  margin-right: 0.2em;
   font-size: 125%;
 }
 
@@ -135,15 +135,15 @@ a.navbar-brand {
   margin-right: 0.5em;
 }
 
-.page-contact h4 a {
+.page-contact h4, h5 a {
   color: #404040;
 }
 
-.page-contact h4 a:hover, a:focus {
+.page-contact h4, h5 a:hover, a:focus {
   color: grey;
 }
 
-.page-contact h2, h4 {
+.page-contact h2, h4, h5 {
   font-weight: 400;
 }
 

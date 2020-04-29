@@ -8,7 +8,7 @@
         <h5 class="card-title">{{.}}</h5>
       {{ end }}
       <p class="card-text">
-        {{ .Inner }}
+        {{ .Inner | markdownify }}
       </p>
       {{ with .Get "href"}}
       <a href="{{.}}" class="btn btn-secondary">
