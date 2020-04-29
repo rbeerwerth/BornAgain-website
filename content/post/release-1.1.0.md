@@ -20,7 +20,7 @@ Most of the efforts in this sprint have been devoted to porting more features fr
 **Summary of changes in the code:**
 
 1.  New form factor: truncated cube
-1.  New features in Graphical User Interface:
+1.  New features in graphical user interface:
     *   Beam divergence, detector resolution function
     *   `ParticleComposition` (particles composed from other particles)
     *   `ParticleDistribution` (particles with size distribution)

@@ -15,7 +15,7 @@ BornAgain is designed to be immediately useful for users with little experience 
 
 ### General Structure
 
-The framework consists of two shared libraries written in C++, *libBornAgainCore* and libBornAgainFit, and a standalone Graphical User Interface. Thanks to the Python bindings the libraries can be imported into Python as external modules. The library libBornAgainCore defines the data structures and provides the algorithms needed to set up a sample model and to run a simulation. The library libBornAgainFit contains several minimization engines and interfaces to each of them, allowing the user to fit real data with the model previously defined.
+The framework consists of two shared libraries written in C++, *libBornAgainCore* and libBornAgainFit, and a standalone graphical user interface. Thanks to the Python bindings the libraries can be imported into Python as external modules. The library libBornAgainCore defines the data structures and provides the algorithms needed to set up a sample model and to run a simulation. The library libBornAgainFit contains several minimization engines and interfaces to each of them, allowing the user to fit real data with the model previously defined.
 
 {{< figure src="nodes_architecture1.png" >}}
 
@@ -31,7 +31,7 @@ The fitting library includes a number of minimization algorithms from
 
 ### Working with BornAgain
 
-In simple cases the user interacts with the framework through a Graphical User Interface.
+In simple cases the user interacts with the framework through a graphical user interface.
 
 {{< figure src="nodes_architecture2_640.png" class="center">}}
 
@@ -55,7 +55,7 @@ The object-oriented approach in software design allows the users to have a much 
 
 {{< /alert >}}
 
-In practice, for the users working from the Graphical User Interface the sample construction involves the usage of a drag-and-drop editor, where items of certain types should be placed on the canvas and connected with each other in order to create the sample structure (see figure below, on the left). For the users working from Python, a script similar to the one shown on the right of the figure below has to be created.
+In practice, for the users working from the graphical user interface the sample construction involves the usage of a drag-and-drop editor, where items of certain types should be placed on the canvas and connected with each other in order to create the sample structure (see figure below, on the left). For the users working from Python, a script similar to the one shown on the right of the figure below has to be created.
 
 {{< figure src="nodes_architecture5.png" class="center">}}
 

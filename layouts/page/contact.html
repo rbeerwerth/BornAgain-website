@@ -4,12 +4,12 @@
   <div class="page-contact">
     <div class="row my-4 justify-content-center align-items-center">
       <h2> Get in touch</h2>
-    </div>      
+    </div>
     {{ range .Site.Params.social }}
       <div class="row mx-5">
         <h4 class="col-xs-12 col-md-3"><span class="fa fa-github"></span>GitHub</h4>
         <h4 class="col-xs-12 col-md-9"><a href="{{ .url }}">github.com/scgmlz/BornAgain</a></h4>
-      </div>      
+      </div>
     {{ end }}
 
     {{ with .Site.Params.email }}
@@ -20,8 +20,8 @@
     {{ end }}
 
     <div class="row my-4 justify-content-center align-items-center">
-      <p class="text-muted"><a href="{{ .Site.BaseURL }}/documentation/getting-help"> How to get help</a></p>
-    </div>      
+      <p class="text-muted"><a href="{{ .Site.BaseURL }}/documentation/howto/get-help"> How to get help</a></p>
+    </div>
 
   </div>
 </div>

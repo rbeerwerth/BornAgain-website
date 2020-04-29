@@ -25,7 +25,7 @@ are also contained in the BornAgain source tree. Typically,
 users will start from some example script and then gradually
 adapt it to their own needs.
 To get started with scripting it is also possible to build a
-model in the Graphical User Interface (GUI) and export it as
+model in the graphical user interface (GUI) and export it as
 a Python script.
 
 Scripting is more versatile than the GUI and provides functionality

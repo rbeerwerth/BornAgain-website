@@ -24,7 +24,7 @@ The manual is still incomplete. Additional chapters will be published along with
 **Summary of changes in the code:**
 
 1. Kernel: support for polarized neutron scattering with polarization/analysis along different axes (no longer restricted to z-axis).
-1. GUI: new features in Graphical User Interface
+1. GUI: new features in graphical user interface
    * GUI real time view us now saved in projects
    * Beam divergence can be exported to Python script
    * InstrumentView allows to change beam divergency with the help of fancy distribution viewer
