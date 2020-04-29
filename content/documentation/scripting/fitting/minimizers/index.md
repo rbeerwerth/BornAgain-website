@@ -110,7 +110,7 @@ print(ba.MinimizerFactory().catalogueDetailsToString())
 </p>
 <div class="collapse" id="collapseExample">
   <div class="card card-body">
-  ```
+     <pre>
 --------------------------------------------------------------------------------
 Minuit2             | Minuit2 minimizer from ROOT library
 --------------------------------------------------------------------------------
@@ -190,7 +190,7 @@ Test                | One-shot minimizer to test whole chain
 --------------------------------------------------------------------------------
 Algorithm names
 Default             | Default algorithm
-```
+    </pre>
   </div>
 </div>
 

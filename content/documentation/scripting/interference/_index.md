@@ -1,9 +1,9 @@
 +++
-title = "Interference functions"
+title = "Particle assemblies"
 weight = 50
 +++
 
-## Interference functions
+## Particle assemblies
 
 The interference function in BornAgain is a key component to organize in-plane order of nanoparticles.
 
@@ -13,7 +13,7 @@ The interference function, being assigned to a ParticleLayout object, defines th
 
 particle = Particle(material, FormFactorSphere(radius))
 interference = YourInterferenceFunction()
- 
+
 layout = ParticleLayout()
 layout.addParticle(particle)
 layout.setInterferenceFunction(interference)
@@ -41,4 +41,3 @@ Similarly to the interference function of the lattice, paracrystals are used to 
 The following sections provide specific guidance and practical details on each of the interference functions available in BornAgain.
 
 {{% children  %}}
-

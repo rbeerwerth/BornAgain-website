@@ -1,9 +1,9 @@
 +++
-title = "3D Nanoparticle Arrangements"
+title = "3D particle assemblies"
 weight = 55
 +++
 
-# 3D Nanoparticle Arrangements
+# 3D Particle Assemblies
 
 3D nanoparticle arrangements obtained using different techniques are complex, but quite frequent kinds of samples being studied with GISAS. Depending on the properties of the particular sample you may choose one of 2 ways to represent a 3D particle arrangement in a BornAgain simulation:
 
@@ -13,7 +13,7 @@ weight = 55
 Below you will find a detailed description of each option.
 
 {{< notice note >}}
-For simplicity this tutorial uses a spherical detector. This is a good approximation, but for the real-life cases we recommend to use rectangular detectors. See the [Detector types]({{% relref "documentation/scripting/detectors" %}}) tutorial for detailed explanations about various detector types in BornAgain. 
+For simplicity this tutorial uses a spherical detector. This is a good approximation, but for the real-life cases we recommend to use rectangular detectors. See the [Detector types]({{% relref "documentation/scripting/detectors" %}}) tutorial for detailed explanations about various detector types in BornAgain.
 
 We also neglect [detector resolution]({{% relref "documentation/cookbook/beam-and-detector/detector-resolution" %}}) and [beam divergence]({{% relref "documentation/cookbook/beam-and-detector/beam-divergence" %}}) in this tutorial. However, we recommend to consider them if you want to compare simulation results to experimental data.
 
@@ -30,11 +30,11 @@ Let's take a case of spherical particles arranged in a cubic lattice with the fo
 particle_radius = 2.5*nm
 lattice_length = 10.0*nm
 height = 50.0*nm
-``` 
+```
 
 One can easily create such a structure either in GUI or in Python using the following steps:
 
-**Create a particle composition** 
+**Create a particle composition**
 
 ```python
 # Defining Form Factors
@@ -42,10 +42,10 @@ ff_sphere = ba.FormFactorFullSphere(particle_radius)
 
 # Defining composition of particles at specific positions
 particle_composition = ba.ParticleComposition()
-    
+
 # compute number of particles in the vertical direction
-n = int((height - 2.0*particle_radius) // lattice_length) 
-    
+n = int((height - 2.0*particle_radius) // lattice_length)
+
 # add particles to the particle composition
 for i in range(n+1):
     particle = ba.Particle(m_particle, ff_sphere)
@@ -56,7 +56,7 @@ for i in range(n+1):
 
 If you work in GUI, you will need to add each particle manually. See the [Particle composition]({{% relref "documentation/scripting/particles/particle-composition" %}}) tutorial for more details.
 
-**Arrange created compositions in a lattice.** 
+**Arrange created compositions in a lattice.**
 
 For this example we will use a 2D square lattice.
 
@@ -88,7 +88,7 @@ Perfectly ordered nanoparticle arrangements are rare. For better match between s
 {{< figscg src="3d_np_gisas_posvar.png" width="350px" caption="Position variance 0.3 nm$^2$">}}
 {{< /galleryscg >}}
 
-Position variance characterizes the uncertainty of the particle position in the lattice. It will broaden and smear out the interference peaks as shown in the example figure above. 
+Position variance characterizes the uncertainty of the particle position in the lattice. It will broaden and smear out the interference peaks as shown in the example figure above.
 
 {{< notice note >}}
 Pay attention, that in this case the whole particle composition is considered as a single "particle". Thus, position variance is only in **2D**. Be sure that this is the desired behavior for the system you simulate.
@@ -141,7 +141,7 @@ for xi in rotations.keys():
     l_air.addLayout(layout)
 ```
 
-In the GUI you should create and add all the layouts manually. This approach makes sense if you have just a few rotations. 
+In the GUI you should create and add all the layouts manually. This approach makes sense if you have just a few rotations.
 
 {{< galleryscg >}}
 {{< figscg src="3d_np_gisas_integration_over_xi.png" width="350px" caption="Uniform rotational distribution">}}
@@ -165,7 +165,7 @@ Complete Python scripts for this part of tutorial
 
 {{< figscg src="meso_view.png" class="center">}}
 
-Another and more flexible way to represent a 3D particle arrangement is as a **mesocrystal**. It can be easily created in both, GUI and Python. The complete Python script to create a mesocrystal you can find in the [Mesocrystal]({{% relref "documentation/cookbook/complex-shapes/meso-crystal" %}}) tutorial example. 
+Another and more flexible way to represent a 3D particle arrangement is as a **mesocrystal**. It can be easily created in both, GUI and Python. The complete Python script to create a mesocrystal you can find in the [Mesocrystal]({{% relref "documentation/cookbook/complex-shapes/meso-crystal" %}}) tutorial example.
 
 In the present tutorial, we consider a mesocrystal with the following parameters
 
@@ -216,7 +216,7 @@ layout.addParticle(meso)
 
 ### Size of the mesocrystal
 
-The size of the mesocrystal influences the GISAS pattern dramatically. This is especially well seen for small mesocrystals. Unless you know size of your mesocrystals from other techniques, we recommend to vary it to find the one that matches the experimental data the best. 
+The size of the mesocrystal influences the GISAS pattern dramatically. This is especially well seen for small mesocrystals. Unless you know size of your mesocrystals from other techniques, we recommend to vary it to find the one that matches the experimental data the best.
 
 {{< galleryscg >}}
 {{< figscg src="meso_box_w050nm.png" width="350px" caption="Mesocrystal of $W=L=50$ nm">}}
@@ -248,7 +248,7 @@ The figures above show the GISAS patterns for different shapes of mesocrystals. 
 meso_ff = ba.FormFactorGauss(meso_width, meso_height)
 ```
 
-or 
+or
 
 ```python
 meso_ff = ba.FormFactorLorentz(meso_width, meso_height)
@@ -351,7 +351,7 @@ simulation.getOptions().setUseAvgMaterials(True)
 
 See also tutorial examples on [Hemispheres in Averaged Layer]({{% relref "documentation/cookbook/miscellaneous/half-spheres-in-average-top-layer" %}}) and [Cylinders in Averaged Layer]({{% relref "documentation/cookbook/miscellaneous/cylinders-in-average-layer" %}}).
 
-* Peak shapes and intensities can be influenced by a lot of different parameters, starting from disorder in 3D particle arrangement and finishing by instrument resolution, beam divergence and background. To find out which factor is important for your case, you should investigate the influence of each of them one by one. 
+* Peak shapes and intensities can be influenced by a lot of different parameters, starting from disorder in 3D particle arrangement and finishing by instrument resolution, beam divergence and background. To find out which factor is important for your case, you should investigate the influence of each of them one by one.
 
 
 ## Exercise
