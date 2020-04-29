@@ -32,6 +32,7 @@ Before installing the Visual C++ Redistributable, install all Windows updates. T
 ### MacOS specific
 
 {{% anchor "a-incompatible-gsl" %}}
+
 #### Incompatible library version of libgsl.0.dylib
 
 When Mantid is installed on the system, BornAgain might conflict with its libraries if the path to Mantid is specified in the `DYLD_LIBRARY_PATH` and/or `PYTHONPATH` environment variables. This conflict can occur while running any of the BornAgain Python examples or just during the import of BornAgain into Python, with an error message similar to:
