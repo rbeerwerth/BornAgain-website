@@ -1,9 +1,9 @@
 +++
-title = "Cookbook"
+title = "Example scripts"
 weight = 50
 +++
 
-## Exemplary Python scripts
+## Python script examples
 
 This section of the online documentation is the BornAgain cookbook.
 It is a vast collection of exemplary Python scripts for various model systems.
