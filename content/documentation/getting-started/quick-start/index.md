@@ -7,7 +7,7 @@ weight = 20
 
 This tutorial demonstrates how to run the simulation and get the simulated intensity data image in a few mouse clicks.
 
-### 1. Run BornAgain Graphical User Interface
+### 1. Run BornAgain graphical user interface
 {{< figscg src="BornAgain_48x48.png" width="48px" class="float-left" >}}
 Use the BornAgain icon located on the desktop (Windows) or on Launchpad (MacOS) to start the GUI.
 

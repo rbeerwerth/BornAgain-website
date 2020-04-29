@@ -1,11 +1,11 @@
 +++
-title = "Graphical User Interface"
+title = "Graphical user interface"
 weight = 30
 +++
 
 ## Running BornAgain through the GUI
 
-BornAgain comes with a Graphical User Interface (GUI).
+BornAgain comes with a graphical user interface (GUI).
 Based on the library Qt5, it has a native look and feel
 under all three supported operating systems. It allows
 users to view experimental and simulated data, to set up
