@@ -4,7 +4,7 @@ date = "2020-06-17T8:30:10+02:00"
 description = "BornAgain 1.17 has been released"
 draft = false
 comments = false
-authors = ["pospelov"]
+authors = ["wuttke"]
 tags = ["Release"]
 categories = ["News"]
 +++
