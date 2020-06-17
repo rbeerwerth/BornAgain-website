@@ -8,8 +8,8 @@ weight = 10
 Required software:
 
 * `Compiler with full C++-14 support (e.g. gcc>= 5.0 or clang>=3.4)`
-* `cmake (>= 3.1)`
-* `boost library (>= 1.48)`
+* `cmake (>= 3.14)`
+* `boost library (>= 1.60)`
 * `fftw3 library (>= 3.3.1)`
 * `gsl (GNU scientific library, >= 1.15)`
 * `libtiff library (>=4.0.2)`
@@ -21,7 +21,7 @@ All required packages can be easily installed on most Linux distributions using 
 <!-- Nav tabs -->
 <ul class="nav nav-tabs" id="OperationSystemTab" role="tablist">
   <li class="nav-item">
-    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#Ubuntu" role="tab" aria-controls="ubuntu" aria-selected="true">Debian/Ubuntu</a>
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#Ubuntu" role="tab" aria-controls="ubuntu" aria-selected="true">Ubuntu (Focal)</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" id="profile-tab" data-toggle="tab" href="#OpenSuse" role="tab" aria-controls="opensuse" aria-selected="false">OpenSuse</a>
@@ -38,11 +38,8 @@ All required packages can be easily installed on most Linux distributions using 
 <div class="tab-content id="OperationSystemTabContent">
   <div class="tab-pane active" id="Ubuntu" role="tabpanel" aria-labelledby="ubuntu-tab">
     <p><ul><li>Install required packages:
-<pre><code>$ sudo apt-get install build-essential git cmake libgsl-dev libboost-all-dev \
-  libfftw3-dev python3 python3-dev python3-numpy python3-matplotlib libtiff5-dev</code></pre></li>
-    <li>Install Qt5:
-<pre><code>$ sudo apt-get install qt5-default libqt5designercomponents5 qttools5-dev \
-  libqt5svg5-dev</code></pre></li></ul></p>
+<pre><code>$ sudo apt-get install build-essential git cmake libgsl-dev libfftw3-dev python3 python3-dev python3-numpy python3-matplotlib libtiff5-dev libboost-dev libboost-filesystem-dev libboost-program-options-dev libboost-regex-dev libboost-iostreams-dev qt5-default libqt5designercomponents5 qttools5-dev libqt5svg5-dev libqt5opengl5-dev</code></pre></li>
+</ul></p>
   </div>
   <div class="tab-pane" id="OpenSuse" role="tabpanel" aria-labelledby="opensuse-tab">
     <p><ul><li>Install required packages:
@@ -82,8 +79,9 @@ $ sudo yum -y install qt5-qtbase-devel qt5-qttools-devel qt5-qtsvg-devel</code><
     <p>Homebrew installs all packages in <pre>/usr/local</pre>, while MacPorts prefers the <pre>/opt/local</pre> folder. Depending on your package manager selection, the corresponding path has to be specified explicitly during the BornAgain CMake configuration as explained in <a href=../build-and-install>Build and install BornAgain<a>.</p>
     <h4>Homebrew</h4>
     <p>Install Homebrew as explained <a href=https://brew.sh/>here</a> and then install all BornAgain dependencies by running the following command:
-    <pre><code>$ brew install git cmake fftw gsl python homebrew/science/matplotlib numpy \
-  boost qt5 libtiff</code></pre>
+    <pre><code>brew install git cmake fftw gsl python boost libtiff eigen qt5 &&
+pip3 install matplotlib numpy
+</code></pre>
     </p>
     <p>Finally, add Qt to your path environment variable:
     <pre><code>$ export PATH=/usr/local/opt/qt5/bin/:$PATH</code></pre></p>

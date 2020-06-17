@@ -22,12 +22,12 @@ PygmentsStyle = "vs"
   custom_js = ["assets/js/bornagain.js"]
   logo = "assets/img/bornagain-logo.png"
   version_major = "1"
-  version_minor = "16"
+  version_minor = "17"
   version_patch = "0"
   download_loc = "http://apps.jcns.fz-juelich.de/src/BornAgain"
   manual_version = "1.7.2"
   recommended_python_major = "3"
-  recommended_python_minor = "7"
+  recommended_python_minor = "8"
   Debug = false
 
 [params.authors.herck]

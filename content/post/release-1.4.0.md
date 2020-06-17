@@ -27,9 +27,9 @@ This release provides an easier way to use `IntensityData` objects from Python a
 
 **New examples:**
 
-1. [Fitting with masks]({{< relref "documentation/cookbook/fitting/advanced/fit-with-masks/index.md" >}})
-1. [Fitting along slices]({{< relref "documentation/cookbook/fitting/advanced/fit-along-slices/index.md" >}})
-1. [Fitting two datasets]({{< relref "documentation/cookbook/fitting/advanced/multiple-datasets/index.md" >}})
+1. [Fitting with masks]({{< relref "documentation/examples/fitting/advanced/fit-with-masks/index.md" >}})
+1. [Fitting along slices]({{< relref "documentation/examples/fitting/advanced/fit-along-slices/index.md" >}})
+1. [Fitting two datasets]({{< relref "documentation/examples/fitting/advanced/multiple-datasets/index.md" >}})
 
 **API changes:**
 1. `Simulation::getIntensityData()::getArray()` returns a numpy array with numpy-standard row, column layout (no rotation is required anymore)

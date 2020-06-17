@@ -10,7 +10,7 @@ weight = 20
 Download the [BornAgain source tarball]({{< ref-tarball >}}) and unpack it:
 ```bash
 $ cd <some_directory>
-$ tar xfz BornAgain-1.11.1.tar.gz
+$ tar xfz BornAgain-1.17.0.tar.gz
 ```
 
 #### Github

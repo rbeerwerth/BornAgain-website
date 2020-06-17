@@ -10,13 +10,13 @@ This page shortly explains how to build and install BornAgain from source on Lin
 #### Install third party software
 
 * `Compiler with full C++-14 support (i.e. gcc>= 5.0)`
-* `cmake (>= 3.1)`
-* `boost library (>= 1.48)`
+* `cmake (>= 3.14)`
+* `boost library (>= 1.60)`
 * `fftw3 library (>= 3.3.1)`
 * `gsl (GNU scientific library, >= 1.15)`
 * `libtiff library (>=4.0.2)`
 * `python3, python3-devel, python3-numpy-devel, python3-matplotlib`
-* `Qt5 (>=5.4)`
+* `Qt5 (>=5.11)`
 
 #### Get the source
 

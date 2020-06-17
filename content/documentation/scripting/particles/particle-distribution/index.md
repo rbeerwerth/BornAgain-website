@@ -179,4 +179,4 @@ for instance, `linkParameter` is not accessible through the GUI:
 par_distr.linkParameter("/Particle/Cylinder/Height")
 ```
 
-Further details and a complete working script are provided in the tutorial [Cylinders with size distribution](/documentation/cookbook/embedded-particles/size-distribution/).
+Further details and a complete working script are provided in the tutorial [Cylinders with size distribution](/documentation/examples/embedded-particles/size-distribution/).

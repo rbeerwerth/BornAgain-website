@@ -21,12 +21,12 @@ SLD/refractive index profile across sample layers, support for uncertainties in 
 
 **Example highlights**
 
-+ [Material SLD profile](https://www.bornagainproject.org/documentation/cookbook/reflectometry/material-profile/)
-+ [Material SLD profile with particles](https://www.bornagainproject.org/documentation/cookbook/reflectometry/material-profile-with-particles/)
-+ [Reflectometry fit with uncertanties](https://www.bornagainproject.org/documentation/cookbook/fitting/extended/fit-with-uncertainties/)
-+ [Beam divergence in reflectometry scan](https://www.bornagainproject.org/documentation/cookbook/reflectometry/beam-full-divergence/)
-+ [Resolution effects in TOF reflectometry](https://www.bornagainproject.org/documentation/cookbook/reflectometry/tofr-with-resolution/)
-+ [Angular divergence in reflectometry scan](https://www.bornagainproject.org/documentation/cookbook/reflectometry/beam-angular-divergence/)
++ [Material SLD profile](https://www.bornagainproject.org/documentation/examples/reflectometry/material-profile/)
++ [Material SLD profile with particles](https://www.bornagainproject.org/documentation/examples/reflectometry/material-profile-with-particles/)
++ [Reflectometry fit with uncertanties](https://www.bornagainproject.org/documentation/examples/fitting/extended/fit-with-uncertainties/)
++ [Beam divergence in reflectometry scan](https://www.bornagainproject.org/documentation/examples/reflectometry/beam-full-divergence/)
++ [Resolution effects in TOF reflectometry](https://www.bornagainproject.org/documentation/examples/reflectometry/tofr-with-resolution/)
++ [Angular divergence in reflectometry scan](https://www.bornagainproject.org/documentation/examples/reflectometry/beam-angular-divergence/)
 
 **API changes:**
 

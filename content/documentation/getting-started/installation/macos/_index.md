@@ -5,7 +5,7 @@ weight = 21
 
 ## Installation on MacOS
 
-For Mac OS X, we provide a 64-bit binary .dmg installer for Yosemite (10.10) or above and also support build and installation from source. To build BornAgain from source by yourself follow the 
+For Mac OS X, we provide a 64-bit binary .dmg installer for High Sierra (10.13) or above and also support build and installation from source. To build BornAgain from source by yourself follow the 
 [Installation on Linux]({{% relref "documentation/getting-started/installation/linux-detailed" %}}) section.
 
 The rest of this section explains how to install BornAgain using the `.dmg` installer.
@@ -14,14 +14,15 @@ The BornAgain graphical user interface doesn't require any additional libraries 
 
 To install and run BornAgain for the first time proceed with the following steps:
 
-* [Run the BornAgain installer](#run-the-bornagain-installer)
-* [Install Python](#install-python)
-* [Configure Python for BornAgain](#configure-python-for-bornagain)
-* [Test the installation](#test-the-installation)
+- [Installation on MacOS](#installation-on-macos)
+  - [Run the BornAgain installer](#run-the-bornagain-installer)
+  - [Install Python](#install-python)
+  - [Configure Python for BornAgain](#configure-python-for-bornagain)
+  - [Test the installation](#test-the-installation)
 
 ### Run the BornAgain installer
 
-The BornAgain installer can be downloaded from [here]({{% relref "download#MacOS" %}}). There are two installers provided: one for usage with Python3 (recommended) and one for Python2.
+The BornAgain installer can be downloaded from [here]({{% relref "download#MacOS" %}}).
 After downloading the installer, double click `.dmg` file to mount it, accept the license agreement and then drag the BornAgain icon onto the Applications shortcut icon.
 
 {{< figscg src="installation_macdmg2.png" class="center">}}
@@ -34,10 +35,6 @@ At this point you can can already start working with the BornAgain GUI. The rest
 
 The current version of BornAgain requires `python, matplotlib, numpy` to be installed on the system. This set of packages is known as the [SciPy](http://www.scipy.org/) stack and for most users the easiest way to install it is to download one of the free Python distributions, which includes all the key packages. The list of possible options is given on the [SciPy installation website](http://www.scipy.org/install.html). You can also directly install Python from their main website [Python](https://www.python.org/downloads/) and then use `pip` to install `matplotlib` and `numpy` as detailed on the [SciPy installation website](http://www.scipy.org/install.html).
 
-{{< alert theme="info" >}}
-We recommend users to install Python3, as support for BornAgain with Python2 might be dropped in the future.
-{{< /alert >}}
-
 {{< alert theme="warning" >}}
 While Python comes pre-installed on OS X, it is always quite outdated and we do not recommend to use it together with BornAgain libraries.
 {{< /alert >}}
@@ -47,7 +44,8 @@ If your system is already equipped with [Homebrew](http://brew.sh/) (recommended
 
 For Homebrew users:
 ```
-$ brew install python homebrew/science/matplotlib numpy
+$ brew install python3
+$ pip3 install matplotlib numpy
 ```
 
 For MacPorts users (assuming Python version 3.6)
