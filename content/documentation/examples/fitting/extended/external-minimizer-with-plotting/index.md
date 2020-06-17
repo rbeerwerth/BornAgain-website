@@ -5,7 +5,7 @@ weight = 40
 
 ## External Minimizers: Plotting Fit Progress
 
-In this example we are demonstrating how to run a typical fitting task in BornAgain using a third party minimizer while plotting the results. As in our [previous example](/documentation/cookbook/fitting/extended/external-minimizer), we use lmfit for sake of illustration.
+In this example we are demonstrating how to run a typical fitting task in BornAgain using a third party minimizer while plotting the results. As in our [previous example](/documentation/examples/fitting/extended/external-minimizer), we use lmfit for sake of illustration.
 
 To plot the fit progress, it is needed to use the lmfit iteration callback function. It will come handy to define the plotting callback function as a specialized class:
 

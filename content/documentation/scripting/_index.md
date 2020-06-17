@@ -17,7 +17,7 @@ in a Python session or script is
 sufficient to make all the functionality of BornAgain available
 through function calls with the prefix `ba`.
 
-The [cookbook]({{% relref "documentation/cookbook" %}})
+The [examples]({{% relref "documentation/examples" %}})
 section of this online documentation comprises numerous example
 scripts. For each script, the implemented model is explained
 and the obtained simulation result is shown. The same scripts

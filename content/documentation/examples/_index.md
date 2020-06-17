@@ -5,7 +5,7 @@ weight = 50
 
 ## Python script examples
 
-This section of the online documentation is the BornAgain cookbook.
+This section of the online documentation is the BornAgain examples.
 It is a vast collection of exemplary Python scripts for various model systems.
 All scripts are also shipped with the BornAgain binaries.
 They can be found in the "Examples" directory:
@@ -42,41 +42,41 @@ They can be found in the "Examples" directory:
 
 #### Embedded particles
 
-{{% examples-preview "documentation/cookbook/embedded-particles" %}}
+{{% examples-preview "documentation/examples/embedded-particles" %}}
 
 #### Layered structures
 
-{{% examples-preview "documentation/cookbook/layered-structures" %}}
+{{% examples-preview "documentation/examples/layered-structures" %}}
 
 #### Interference functions
 
-{{% examples-preview "documentation/cookbook/interference-functions" %}}
+{{% examples-preview "documentation/examples/interference-functions" %}}
 
 #### Complex shapes
 
-{{% examples-preview "documentation/cookbook/complex-shapes" %}}
+{{% examples-preview "documentation/examples/complex-shapes" %}}
 
 #### Beam and detector
 
-{{% examples-preview "documentation/cookbook/beam-and-detector" %}}
+{{% examples-preview "documentation/examples/beam-and-detector" %}}
 
 #### Reflectometry
 
-{{% examples-preview "documentation/cookbook/reflectometry" %}}
+{{% examples-preview "documentation/examples/reflectometry" %}}
 
 #### Fitting
 
-{{% examples-preview "documentation/cookbook/fitting" %}}
+{{% examples-preview "documentation/examples/fitting" %}}
 
 **Basic**
-{{% examples-preview "documentation/cookbook/fitting/basic" %}}
+{{% examples-preview "documentation/examples/fitting/basic" %}}
 
 **Advanced**
-{{% examples-preview "documentation/cookbook/fitting/advanced" %}}
+{{% examples-preview "documentation/examples/fitting/advanced" %}}
 
 **Extended**
-{{% examples-preview "documentation/cookbook/fitting/extended" %}}
+{{% examples-preview "documentation/examples/fitting/extended" %}}
 
 #### Miscellaneous
 
-{{% examples-preview "documentation/cookbook/miscellaneous" %}}
+{{% examples-preview "documentation/examples/miscellaneous" %}}

@@ -3,7 +3,7 @@ Provide reference link to Python example located in content/documentation/cookbo
 -->
 
 {{- $shortref := .Get 0 -}}
-{{- $ref := (print "documentation/cookbook/" $shortref) -}}
+{{- $ref := (print "documentation/examples/" $shortref) -}}
 
 {{- if in $ref "/_index.md" -}}
 	{{- $path := (trim $ref "_index.md") -}}

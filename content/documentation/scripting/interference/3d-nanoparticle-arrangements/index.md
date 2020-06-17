@@ -15,7 +15,7 @@ Below you will find a detailed description of each option.
 {{< notice note >}}
 For simplicity this tutorial uses a spherical detector. This is a good approximation, but for the real-life cases we recommend to use rectangular detectors. See the [Detector types]({{% relref "documentation/scripting/detectors" %}}) tutorial for detailed explanations about various detector types in BornAgain.
 
-We also neglect [detector resolution]({{% relref "documentation/cookbook/beam-and-detector/detector-resolution" %}}) and [beam divergence]({{% relref "documentation/cookbook/beam-and-detector/beam-divergence" %}}) in this tutorial. However, we recommend to consider them if you want to compare simulation results to experimental data.
+We also neglect [detector resolution]({{% relref "documentation/examples/beam-and-detector/detector-resolution" %}}) and [beam divergence]({{% relref "documentation/examples/beam-and-detector/beam-divergence" %}}) in this tutorial. However, we recommend to consider them if you want to compare simulation results to experimental data.
 
 All Python code in this tutorial assumes **Python3** and may not work with Python2.
 {{< /notice >}}
@@ -150,7 +150,7 @@ In the GUI you should create and add all the layouts manually. This approach mak
 
 Figures above show the influence of both considered rotational distributions on the GISAS pattern.
 
-Alternatively, you can consider to use distributions available in BornAgain. See the [Particle distribution]({{% relref "documentation/scripting/particles/particle-distribution" %}}) tutorial for more information. Pay attention, that in this case you should apply the chosen distribution to the parameter `Interference2DLattice/BasicLattice/Xi`. See the corresponding [tutorial example]({{% relref "documentation/cookbook/interference-functions/interference-2d-lattice-sum-of-rotated" %}}) for details.
+Alternatively, you can consider to use distributions available in BornAgain. See the [Particle distribution]({{% relref "documentation/scripting/particles/particle-distribution" %}}) tutorial for more information. Pay attention, that in this case you should apply the chosen distribution to the parameter `Interference2DLattice/BasicLattice/Xi`. See the corresponding [tutorial example]({{% relref "documentation/examples/interference-functions/interference-2d-lattice-sum-of-rotated" %}}) for details.
 
 If your particle composition is not symmetrical, you may need to rotate your particles as well. See the [Particle rotation]({{% relref "documentation/scripting/particles/particle-rotation" %}}) tutorial for details.
 
@@ -165,7 +165,7 @@ Complete Python scripts for this part of tutorial
 
 {{< figscg src="meso_view.png" class="center">}}
 
-Another and more flexible way to represent a 3D particle arrangement is as a **mesocrystal**. It can be easily created in both, GUI and Python. The complete Python script to create a mesocrystal you can find in the [Mesocrystal]({{% relref "documentation/cookbook/complex-shapes/meso-crystal" %}}) tutorial example.
+Another and more flexible way to represent a 3D particle arrangement is as a **mesocrystal**. It can be easily created in both, GUI and Python. The complete Python script to create a mesocrystal you can find in the [Mesocrystal]({{% relref "documentation/examples/complex-shapes/meso-crystal" %}}) tutorial example.
 
 In the present tutorial, we consider a mesocrystal with the following parameters
 
@@ -233,7 +233,7 @@ Pay attention, that instrument resolution and beam divergence can smear out the 
 
 ### Shape of the mesocrystal
 
-The shape of the mesocrystal is also a very important parameter that influences the GISAS pattern. To vary the shape you can choose any of the particle form factors available in BornAgain. See the example on available [particle form factors]({{% relref "documentation/cookbook/embedded-particles/all-formfactors" %}})
+The shape of the mesocrystal is also a very important parameter that influences the GISAS pattern. To vary the shape you can choose any of the particle form factors available in BornAgain. See the example on available [particle form factors]({{% relref "documentation/examples/embedded-particles/all-formfactors" %}})
 
 {{< galleryscg >}}
 {{< figscg src="meso_cylinder.png" width="350px" caption="Cylinder">}}
@@ -297,7 +297,7 @@ The way to avoid this problem implemented in BornAgain is Monte-Carlo integratio
 simulation.getOptions().setMonteCarloIntegration(True, n)
 ```
 
-where `n` is a number of points for Monte-Carlo integration. For more details see the [Large particle formfactor]({{% relref "documentation/cookbook/complex-shapes/large-particles-formfactor" %}}) tutorial.
+where `n` is a number of points for Monte-Carlo integration. For more details see the [Large particle formfactor]({{% relref "documentation/examples/complex-shapes/large-particles-formfactor" %}}) tutorial.
 
 
 Download the complete Python script {{< icon fa-save fa-lg  fa-fw>}} <a href="mesocrystal.py">mesocrystal.py</a>
@@ -328,7 +328,7 @@ meso.setRotation(meso_rotation)
 ```
 This example rotates the mesocrystal around $Z$ axis by 45 degrees. You can also apply a rotational distribution in a way similar to the one described above in the [Particle compositions arranged in a lattice]({{% relref "#pcomposition" %}}) section.
 
-* **Interface roughness** influences the peak intensities. See the tutorial example on [correlated roughness]({{% relref "documentation/cookbook/layered-structures/correlated-roughness" %}}) for more details about interface roughness.
+* **Interface roughness** influences the peak intensities. See the tutorial example on [correlated roughness]({{% relref "documentation/examples/layered-structures/correlated-roughness" %}}) for more details about interface roughness.
 
 {{< notice note >}}
 Pay attention, the more disorder you add to your sample model, the more **slow and resource-consuming** will be the simulation.
@@ -349,7 +349,7 @@ Pay attention, the more disorder you add to your sample model, the more **slow a
 simulation.getOptions().setUseAvgMaterials(True)
 ```
 
-See also tutorial examples on [Hemispheres in Averaged Layer]({{% relref "documentation/cookbook/miscellaneous/half-spheres-in-average-top-layer" %}}) and [Cylinders in Averaged Layer]({{% relref "documentation/cookbook/miscellaneous/cylinders-in-average-layer" %}}).
+See also tutorial examples on [Hemispheres in Averaged Layer]({{% relref "documentation/examples/miscellaneous/half-spheres-in-average-top-layer" %}}) and [Cylinders in Averaged Layer]({{% relref "documentation/examples/miscellaneous/cylinders-in-average-layer" %}}).
 
 * Peak shapes and intensities can be influenced by a lot of different parameters, starting from disorder in 3D particle arrangement and finishing by instrument resolution, beam divergence and background. To find out which factor is important for your case, you should investigate the influence of each of them one by one.
 
