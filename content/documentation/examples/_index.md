@@ -1,5 +1,5 @@
 +++
-title = "Example scripts"
+title = "Examples"
 weight = 50
 +++
 
