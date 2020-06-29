@@ -18,7 +18,7 @@ $ tar xfz BornAgain-1.17.0.tar.gz
 You can also get access to the source code by cloning our public Git repository:
 ```bash
 $ cd <some_directory>
-$ git clone --recursive https://github.com/scgmlz/BornAgain.git
+$ git clone --recurse-submodules https://github.com/scgmlz/BornAgain.git
 ```
 
 #### Why Git?
