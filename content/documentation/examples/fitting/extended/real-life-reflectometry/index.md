@@ -28,3 +28,5 @@ Be patient, since it takes some time to run.
 
 {{< highlightfile file="/static/files/python/fitting/ex03_ExtendedExamples/specular/RealLifeReflectometryFitting.py" language="python" >}}
 
+{{% filelink file="/static/files/python/fitting/ex03_ExtendedExamples/specular/mg6a_Merged.txt.gz" name="Reference data" %}}
+
