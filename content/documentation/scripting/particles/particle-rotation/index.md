@@ -34,13 +34,13 @@ There are 4 rotation classes in BornAgain:
 ```python
 # sequence of three rotations following Euler angles notation
 RotationEuler(alpha, beta, gamma)
- 
+
 # rotation around X axis by given angle
 RotationX(angle)
- 
+
 # rotation around Y axis by given angle
 RotationY(angle)
- 
+
 # rotation around Z axis by given angle
 RotationZ(angle)
 ```
@@ -50,11 +50,16 @@ By default all angles are expressed in radians.
 {{< alert theme="info" >}}
 **Euler Angles**
 
-`alpha, beta, gamma` are the Euler angles describing a rotation composed by three elemental rotations.
-The object is first rotated along the `Z` axis by `alpha`.
-The following rotation is along the transformed `X` axis (i.e. `x'` axis),
-while the last rotation is along the transformed `Z` axis (i.e. `z'` axis).
-This is commonly denoted as the `z-x'-z'` convention.
+`alpha, beta, gamma` are the Euler angles describing a rotation composed
+by three elemental rotations.
+The object is first rotated about the `z` axis by `alpha`.
+The coordinate axis, rotated together with the object, shall be denoted by a prime:
+`z'=z`, while `x',y'` differ from `x,y`.
+The second rotation is about the `x'` axis by `beta`.
+The coordinate axis, rotated together, are now denoted by a double prime.
+The third rotation is about the `z''` axis by `gamma`.
+This choice of Euler angles is commonly denoted as the `z-x'-z''` convention,
+or `z-x-z` for short.
 
 {{< /alert >}}
 
@@ -65,13 +70,13 @@ To set the rotation, use the following constructor
 ```python
 # non rotated box
 particle = Particle(material, FormFactorBox(30, 20, 6))
- 
+
 # box rotated around X by 90. degrees
 particle = Particle(material, FormFactorBox(30, 20, 6), RotationX(90.*degree))
- 
+
 # box rotated around Y by 90. degrees
 particle = Particle(material, FormFactorBox(30, 20, 6), RotationY(90.*degree))
- 
+
 # box rotated around Z by 90. degrees
 particle = Particle(material, FormFactorBox(30, 20, 6), RotationZ(90.*degree))
 ```
@@ -95,13 +100,13 @@ method, then we apply an additional rotation via the particle's
 
 ```python
 particle = Particle(material, formfactor)
- 
+
 # sets initial rotation of the particle
 particle.setRotation(RotationZ(90*degree))
- 
+
 # applies additional rotation on top of existing one
 particle.applyRotation(RotationY(90.0*degree))
- 
+
 layout.addParticle(particle, 1.0, kvector_t(0,0,0))
 ```
 
@@ -110,10 +115,10 @@ of the particle, and then we apply the additional rotation while adding the part
 
 ```python
 particle = Particle(material, formfactor)
- 
+
 # sets initial rotation of the particle
 particle.setRotation(RotationZ(90*degree))
- 
+
 # adding particle to the layout with the additional rotation specified
 layout.addParticle(particle, 1.0, kvector_t(0,0,0), RotationY(90.0*degree))
 ```
@@ -124,14 +129,14 @@ Consider a two-layer system (air, substrate) with a box shaped nanoparticle sitt
 
 ```python
 box = Particle(particle_material, FormFactorBox(30., 20., 6.))
- 
+
 layout = ParticleLayout()
 layout.addParticle(box, 1, kvector_t(0, 0, 0))
- 
+
 air_layer = Layer(layer_material)
 air_layer.addLayout(layout)
 substrate_layer = Layer(substrate_material)
- 
+
 multilayer = MultiLayer()
 multilayer.addLayer(air_layer)
 multilayer.addLayer(substrate_layer)
@@ -147,10 +152,10 @@ In the plot below 3 different cases are illustrated.
 ```python
 # box on the left
 layout.addParticle(box, 1, kvector_t(0, 0, 0))
- 
+
 # box at the center
 layout.addParticle(box, 1, kvector_t(0, 0, 0), RotationY(90.*degree))
- 
+
 # box on the right
 layout.addParticle(box, 1, kvector_t(0, 0, 30.0/2.), RotationY(90.*degree))
 ```
