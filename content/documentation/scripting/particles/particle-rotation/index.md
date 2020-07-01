@@ -51,13 +51,13 @@ By default all angles are expressed in radians.
 **Euler Angles**
 
 `alpha, beta, gamma` are the Euler angles describing a rotation composed
-by three elemental rotations.
-The object is first rotated about the `z` axis by `alpha`.
-The coordinate axis, rotated together with the object, shall be denoted by a prime:
+of three elemental rotations.
+The object is first rotated by `alpha` about the `z` axis.
+The coordinate axis, rotated along with the object, shall be denoted by a prime:
 `z'=z`, while `x',y'` differ from `x,y`.
-The second rotation is about the `x'` axis by `beta`.
-The coordinate axis, rotated together, are now denoted by a double prime.
-The third rotation is about the `z''` axis by `gamma`.
+The second rotation is by `beta` about the `x'` axis.
+The coordinate axis, rotated along, are now denoted by a double prime.
+The third rotation is by `gamma` about the `z''` axis.
 This choice of Euler angles is commonly denoted as the `z-x'-z''` convention,
 or `z-x-z` for short.
 
