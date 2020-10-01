@@ -16,7 +16,7 @@ PygmentsStyle = "vs"
 [params]
   DateForm = "Mon, Jan 2, 2006"
   Description = "Simulate and fit grazing insidence small angle scattering"
-  Author = "James Bond"
+  Author = "BornAgain authors"
   email = "contact@bornagainproject.org"
   custom_css = ["assets/css/bornagain.css"]
   custom_js = ["assets/js/bornagain.js"]
