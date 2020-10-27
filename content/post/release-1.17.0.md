@@ -80,11 +80,7 @@ Linux, we recommend Ubuntu 20.04 LTS Focal / Debian 11 bullseye.
 
 There are three new examples:
 + [Specular simulation with different roughness models]({{< relref "documentation/examples/reflectometry/roughness-model/index.md" >}})
-<<<<<<< HEAD
-+ [Basic polarized reflectometry]({{< relref "documentation/examples/reflectometry/basic-polarized-reflectometry/index.md" >}})
-=======
 + [Basic polarized reflectometry]({{< relref "documentation/examples/polarized-reflectometry/basic-polarized-reflectometry/index.md" >}})
->>>>>>> update release notes
 + [Reflectometry: Real life fitting]({{< relref "documentation/examples/fitting/extended/real-life-reflectometry/index.md" >}})
 
 More details are in the CHANGELOG, the [issue tracker](http://apps.jcns.fz-juelich.de/redmine/versions/51), and the git history.
