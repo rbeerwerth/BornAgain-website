@@ -10,9 +10,9 @@ We show this for a sample that contains only a single magnetic layer on top of a
 The magnetization and polarization are chosen to be (anti-)parallel, and hence, no
 spin-flip is observed.
 By rotation of either the magnetization or the polarization vector, one can generalize this example
-to observe also the spin-flip channels.
+to observe also the [spin-flip channels]({{% ref-example "polarized-reflectometry/polarized-spin-flip" %}}).
 
-The construction of the sample is almost identical to the normal unpolarized cases, where the only difference is that the magnetization of a material can be specified:
+The construction of the sample is almost identical to the unpolarized cases, where the only difference is that the magnetization of a material can be specified:
 {{< highlight python>}}
 m_layer_mat = ba.MaterialBySLD("Layer", 1e-4, 1e-8,
                                ba.kvector_t(0, 1e8, 0))
@@ -47,13 +47,26 @@ analyzer: half of an unpolarized incoming beam is not transmitted.
 Therefore, this example corresponds to a perfect analyzer that is configured to probe 
 the up-up channel.
 
+In this example, setting up the beam polarization and the analyzer is done in the 
+`run_simulation` function.
+In order to simulate the two non-spin-flip channels (up-up and down-down), we have to perform the two calls
+
+{{< highlight python>}}
+results_pp = run_simulation(ba.kvector_t(0,  1, 0),
+                            ba.kvector_t(0,  1, 0))
+results_mm = run_simulation(ba.kvector_t(0, -1, 0),
+                            ba.kvector_t(0, -1, 0))
+{{< /highlight >}}
+
+
+The resulting reflectivities are shown in this plot:
+
 {{< galleryscg >}}
-{{< figscg src="BasicPolarizedReflectometry.png" width="650px" caption="Intensity image">}}
+{{< figscg src="BasicPolarizedReflectometry.png" width="650px" caption="Reflectivity">}}
 {{< /galleryscg >}}
 
-This plot shows the resulting reflectivity in the up-up and down-down channel.
 As expected, we find the birefringent behavior and two different critical angles.
-Since the magnetization of the layer is parallel to the neutron polarization 
+Since the magnetization of the layer is parallel to the neutron polarization, 
 no spin-flip is observed. 
 It is a good exercise to verify this claim by a short computation.
 
