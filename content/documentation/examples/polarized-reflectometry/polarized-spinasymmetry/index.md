@@ -3,23 +3,23 @@ title = "Spin asymmetry example"
 weight = 40
 +++
 
-### Spin-Asymmetry Example from NIST
+### Spin-asymmetry example from NIST
  
  
 This example shows how to simulate the magnetic layer described on the NIST homepage in the [Magnetically Dead Layers in Spinel Films](https://www.nist.gov/ncnr/magnetically-dead-layers-spinel-films) example.
 In particular, we want to show how to use BornAgain in order to simulate the spin asymmetry.
 The sample simulated in this example is very similar to the previous examples introduced in this section.
 It just consists of a magnetic layer on top of a substrate.
-During these tutorial we neglect the magnetically dead layer that forms below the magnetic layer, as there is currently no API in BornAgain to support such a scenario out of the box.
+During these tutorials, we neglect the magnetically dead layer that forms below the magnetic layer, as there is currently no API in BornAgain to support such a scenario out of the box.
 
 
-In this first example, we utilize parameters that are deduced from a fit to the data provided on the Nist homepage.
+In this first example, we utilize parameters that are deduced from a fit to the data provided on the NIST homepage.
 How to perform the fit is described in the 
 [extended example]({{% ref-example "polarized-reflectometry/polarized-spinasymmetry-fit" %}}).
 
 
 
-#### Spin Asymmetry 
+#### Spin asymmetry 
 
 
 The spin asymmetry is defined as
@@ -38,7 +38,7 @@ This is performed in the function `plotSpinAsymmetry`.
 
 
 
-#### Further Corrections
+#### Further corrections
 
 We also apply a resolution correction, as described in the [ToF - Resolution effects]({{% ref-example "reflectometry/tofr-with-resolution" %}}) example.
 
@@ -52,13 +52,13 @@ q_axis = q_axis + parameters["q_offset"]
 
 
 
-#### Data Processing
+#### Data processing
 
-After loading the experimental data, we scale the q-axis in order to obtain inverse nm as are the default units in BornAgain.
-Furthermore, the reflectivity data is scaled such that its maximum is unity
+After loading the experimental data, we scale the q-axis in order to obtain inverse nm as they are the default units in BornAgain.
+Furthermore, the reflectivity data is scaled such that its maximum is unity.
 
 
-#### Simulation Result
+#### Simulation result
 
 
 {{< galleryscg >}}
@@ -69,7 +69,3 @@ Furthermore, the reflectivity data is scaled such that its maximum is unity
 Here is the complete example:
 
 {{< highlightfile file="/static/files/python/simulation/ex06_Reflectometry/PolarizedSpinAsymmetry.py"  language="python" >}}
-
-
-
-

@@ -3,14 +3,14 @@ title = "Spin asymmetry fit example"
 weight = 40
 +++
 
-### Fitting the Spin-Asymmetry Example from Nist
+### Fitting the spin-asymmetry example from NIST
 
-This example shows how to fit the parameters in the [spin asymmetry example]({{% ref-example "polarized-reflectometry/polarized-spinasymmetry" %}}).
+This example shows how to fit the parameters in the [spin-asymmetry example]({{% ref-example "polarized-reflectometry/polarized-spinasymmetry" %}}).
 
-For this demonstration we choose initial parameters that are not too far from the fitting results. 
+For this demonstration, we choose initial parameters that are not too far from the fitting results. 
 In particular, the magnetization is initially set to zero, such that the spin asymmetry identically vanishes.
 
-With the initial parameters, we obtain:
+With the initial parameters, we obtain the following reflectivity and spin-asymmetry curves:
 
 {{< galleryscg >}}
 {{< figscg src="SpinAsymmetryInitial1.png" width="350px" caption="Reflectivity">}}
@@ -22,7 +22,7 @@ With the initial parameters, we obtain:
 
 #### Setup of the Fit
 
-For fitting of reflectometry data covering several orders of magnitude use relative difference
+For fitting of reflectometry data covering several orders of magnitude we use the relative difference
 
 $$\Delta = \frac{1}{N} \sum_{i = 1}^N \left( \frac{d_i - s_i}{d_i + s_i} \right)^2$$
 
@@ -58,8 +58,8 @@ We want to fit the following parameters:
 * `q_res`: Relative $Q$-resolution
 * `q_offset`: Shift of the $Q$-axis.
 * `t_Mafo`: The thickness of the layer
-* `rhoM_Mafo`: The SLD of the layer
-* `rho_Mafo`: The magnetic SLD of the layer
+* `rho_Mafo`: The SLD of the layer
+* `rhoM_Mafo`: The magnetic SLD of the layer
 * `r_Mao`: The roughness on top of the substrate
 * `r_Mafo`: The roughness on top of the magnetic layer
 
@@ -92,4 +92,3 @@ python3 PolarizedSpinAsymmetryFit.py
 Here is the complete example:
 
 {{< highlightfile file="/static/files/python/simulation/ex06_Reflectometry/PolarizedSpinAsymmetryFit.py"  language="python" >}}
-

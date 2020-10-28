@@ -3,7 +3,7 @@ title = "Basic polarized reflectometry"
 weight = 10
 +++
 
-### Specular Reflectometry with Polarized Neutrons and a Magnetic Sample
+### Specular reflectometry with polarized neutrons and a magnetic sample
 
 This example shows how to perform a specular reflectometry simulation with polarized neutrons.
 We show this for a sample that contains only a single magnetic layer on top of a substrate.

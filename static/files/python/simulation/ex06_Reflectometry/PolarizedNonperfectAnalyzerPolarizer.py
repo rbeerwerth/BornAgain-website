@@ -16,9 +16,10 @@ sldMgO = (5.9803e-06, 9.3996e-12)
 
 magnetizationMagnitude = 1.6e6
 angle                  = 0
-magnetizationVector    = ba.kvector_t(magnetizationMagnitude * numpy.sin(angle * deg), 
-                                      magnetizationMagnitude * numpy.cos(angle * deg), 
-                                      0)
+magnetizationVector    = ba.kvector_t(
+                    magnetizationMagnitude * numpy.sin(angle * deg), 
+                    magnetizationMagnitude * numpy.cos(angle * deg), 
+                    0)
 
 
 def get_sample(*, magnetization=magnetizationVector):
@@ -29,7 +30,8 @@ def get_sample(*, magnetization=magnetizationVector):
     # create materials
     mat_vacuum    = ba.MaterialBySLD("Vacuum", 0.0, 0.0)
     mat_Pd        = ba.MaterialBySLD("Pd", *sldPd)
-    mat_Fe        = ba.MaterialBySLD("Fe", *sldFe, magnetizationVector)
+    mat_Fe        = ba.MaterialBySLD("Fe", *sldFe, 
+                                      magnetizationVector)
     mat_substrate = ba.MaterialBySLD("MgO", *sldMgO)
 
     # create layers
@@ -73,9 +75,7 @@ def get_simulation( scan_size=1500 ):
 def run_simulation(*, polarization=ba.kvector_t(0, 1, 0),
                       polarizer_efficiency=1,
                       analyzer=ba.kvector_t(0, 1, 0),
-                      analyzer_efficiency=1,
-                      slab=True,
-                      sldFeEffective=0 ):
+                      analyzer_efficiency=1):
     """
     Runs simulation and returns its result.
     """
@@ -98,7 +98,7 @@ def plot(data, labels):
     plt.figure()
     for d, l in zip(data, labels):
         plt.semilogy(numpy.array( d.axis(ba.Axes.QSPACE) ), 
-                       d.array(ba.Axes.QSPACE), label=l, linewidth=1)
+                     d.array(ba.Axes.QSPACE), label=l, linewidth=1)
         
     plt.legend( loc='upper right' )
     plt.gca().yaxis.set_ticks_position('both')
@@ -117,23 +117,22 @@ if __name__ == '__main__':
     analyzer_efficiency  = 0.970
   
     results_pp = run_simulation(polarization = ba.kvector_t(0, 1, 0), 
-                                polarizer_efficiency = polarizer_efficiency,
-                                analyzer     = ba.kvector_t(0, 1, 0), 
-                                analyzer_efficiency = analyzer_efficiency )
+                          analyzer           = ba.kvector_t(0, 1, 0), 
+                          polarizer_efficiency = polarizer_efficiency,
+                          analyzer_efficiency  = analyzer_efficiency )
     results_mm = run_simulation(polarization = ba.kvector_t(0, -1, 0), 
-                                polarizer_efficiency = polarizer_efficiency,
-                                analyzer     = ba.kvector_t(0, -1, 0), 
-                                analyzer_efficiency = analyzer_efficiency )
-    
+                          analyzer           = ba.kvector_t(0, -1, 0), 
+                          polarizer_efficiency = polarizer_efficiency,
+                          analyzer_efficiency  = analyzer_efficiency )
+  
     results_pm = run_simulation(polarization = ba.kvector_t(0,  1, 0), 
-                                polarizer_efficiency = polarizer_efficiency,
-                                analyzer     = ba.kvector_t(0, -1, 0), 
-                                analyzer_efficiency = analyzer_efficiency )
+                          analyzer           = ba.kvector_t(0, -1, 0), 
+                          polarizer_efficiency = polarizer_efficiency,
+                          analyzer_efficiency  = analyzer_efficiency )
     results_mp = run_simulation(polarization = ba.kvector_t(0, -1, 0), 
-                                polarizer_efficiency = polarizer_efficiency,
-                                analyzer     = ba.kvector_t(0,  1, 0), 
-                                analyzer_efficiency = analyzer_efficiency )
+                          analyzer           = ba.kvector_t(0,  1, 0), 
+                          polarizer_efficiency = polarizer_efficiency,
+                          analyzer_efficiency  = analyzer_efficiency )
     
     plot([results_pp, results_mm, results_pm, results_mp], 
          ["$++$", "$--$", "$+-$", "$-+$"])
-

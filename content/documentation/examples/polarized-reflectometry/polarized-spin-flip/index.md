@@ -3,7 +3,7 @@ title = "Spin-flip reflectivity"
 weight = 20
 +++
 
-### Spin-Flip Reflectivity
+### Spin-flip reflectivity
 
 In this section, we want to extend the [basic polarized reflectometry tutorial]({{% ref-example "polarized-reflectometry/basic-polarized-reflectometry" %}}) to simulate spin-flip reflectivity.
 For this purpose, we want to parametrize the magnetization by the angle $\alpha$ between the magnetization and the spin of the incoming neutrons and its magnitude $\left| \mathbf{M} \right|$:
@@ -18,7 +18,7 @@ magnetizationVector    = ba.kvector_t(
                 0)
 {{< /highlight >}}
 
-In addition to the non-spin-flip channels, we simulate the Spin-Flip (up-down and down-up) channels 
+In addition to the non-spin-flip channels, we simulate the spin-flip channels (up-down and down-up)
 with the following function calls
 
 {{< highlight python>}}

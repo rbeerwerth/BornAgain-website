@@ -3,7 +3,7 @@ title = "Non-perfect polarizer + analyzer"
 weight = 40
 +++
 
-### Polarized Specular Reflectometry with Non-perfect Polarizer and Analyzer
+### Polarized specular reflectometry with non-perfect polarizer and analyzer
 
 In this example, we show how to perform a specular reflectometry simulation with polarized neutrons and 
 both a non-perfect polarizer as well as analyzer.
@@ -14,9 +14,8 @@ On top of the iron layer is a thin Pd cap layer.
 
 We don't explain the whole script in detail here, it combines all concepts that were introduced before
 in the polarized reflectometry section.
-Furthermore, instrument resolution is simulated as explained in the 
+Instrument resolution is simulated as explained in the 
 [ToF - Resolution effects example]({{% ref-example "reflectometry/tofr-with-resolution" %}}).
-
 Furthermore, a constant background is added:
 
 {{< highlight python>}}

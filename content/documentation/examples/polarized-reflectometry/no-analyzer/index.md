@@ -3,7 +3,7 @@ title = "Without analyzer"
 weight = 30
 +++
 
-### Polarized Reflectometry Without Analyzer
+### Polarized reflectometry without analyzer
 
 Starting from the [spin-flip tutorial]({{% ref-example "polarized-reflectometry/polarized-spin-flip" %}}), we 
 want to remove the analyzer and perform a reflectivity simulation with incident polarized neutrons and no 
@@ -16,7 +16,7 @@ $$I^+ = I^{++} + I^{+-}
 \hspace{2em}
 I^- = I^{- -} + I^{-+}$$
 
-In a script, these to polarization measurements can be computed according to:
+In a script, these two polarization measurements can be computed according to:
 
 {{< highlight python>}}
 r_plus  = results_pp + results_pm
@@ -50,7 +50,7 @@ This can simply be achieved by not specifying any analyzer when setting up the `
 simulation.setAnalyzerProperties(analyzer, 1.0, 0.5)
 {{< /highlight >}}
 
-In this example, this is achieved by calling the `run_simulation` function for up and down polarization of the incident neutron beam:
+In this example, this is achieved by calling the `run_simulation` function for up and down polarization of the incident neutron beam as follows:
 
 {{< highlight python>}}
 q, results_p = run_simulation(ba.kvector_t(0,  1, 0))
@@ -71,4 +71,3 @@ This is the resulting plot that shows the computed reflectivity for up and down 
 Here is the complete example:
 
 {{< highlightfile file="/static/files/python/simulation/ex06_Reflectometry/PolarizedNoAnalyzer.py"  language="python" >}}
-

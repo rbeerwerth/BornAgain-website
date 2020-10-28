@@ -105,14 +105,15 @@ def get_simulation(q_axis, parameters, polarization, analyzer):
     
 def run_simulation(q_axis, fitParams, *, polarization, analyzer):
     """
-    Run a simulation on the given q-axis, where the sample is constructed 
-    with the given parameters.
+    Run a simulation on the given q-axis, where the sample is 
+    constructed with the given parameters.
     Vectors for polarization and analyzer need to be provided
     """
     parameters = dict(fitParams, **fixedParams)
     
     sample = get_sample(parameters)
-    simulation = get_simulation(q_axis, parameters, polarization, analyzer)
+    simulation = get_simulation(q_axis, parameters, 
+                                polarization, analyzer)
 
     simulation.setSample(sample)
     simulation.runSimulation()
@@ -145,8 +146,8 @@ def plot(qs, rs, exps, labels, filename):
     
     for q, r, exp, l in zip(qs, rs, exps, labels):
     
-      ax.errorbar( exp[0], exp[1], xerr=exp[3], yerr=exp[2], fmt='.', 
-                    markersize=0.75, linewidth=0.5)
+      ax.errorbar( exp[0], exp[1], xerr=exp[3], yerr=exp[2], 
+                   fmt='.', markersize=0.75, linewidth=0.5)
       
       ax.plot(q, r, label=l)
     
@@ -167,12 +168,15 @@ def plotSpinAsymmetry(data_pp, data_mm, q, r_pp, r_mm, filename):
     """
     
     # compute the errorbars of the spin asymmetry
-    delta = numpy.sqrt(4 * (data_pp[1]**2 * data_mm[2]**2 + data_mm[1]**2 * data_pp[2]**2 ) / ( data_pp[1] + data_mm[1] )**4 )
+    delta = numpy.sqrt(4 * (data_pp[1]**2 * data_mm[2]**2 + \
+            data_mm[1]**2 * data_pp[2]**2 ) / 
+                ( data_pp[1] + data_mm[1] )**4 )
     
     fig = plt.figure()
     ax = fig.add_subplot(111)
     
-    ax.errorbar( data_pp[0], (data_pp[1] - data_mm[1])/(data_pp[1] + data_mm[1]),
+    ax.errorbar( data_pp[0], 
+                (data_pp[1] - data_mm[1])/(data_pp[1] + data_mm[1]),
                   xerr = data_pp[3], yerr = delta,
                     fmt='.', markersize=0.75, linewidth=0.5 )
     
@@ -235,7 +239,8 @@ def get_Experimental_data(qmin, qmax):
         get_Experimental_data.data_mm = data_mm
         get_Experimental_data.raw_data = True
     
-    return ( filterData( data_pp, qmin, qmax) , filterData( data_mm, qmin, qmax) )
+    return ( filterData( data_pp, qmin, qmax) , 
+            filterData( data_mm, qmin, qmax) )
 
 
 
@@ -248,14 +253,20 @@ def downloadAndExtractData():
         outfile.write(downloadfile.read())
         
     zipfile = ZipFile("spinelfilm.zip")
-      
-    rawdata = zipfile.open("MAFO_Saturated.refl").read().decode("utf-8")
+    rawdata = zipfile.open("MAFO_Saturated.refl").\
+                  read().decode("utf-8")
     
-    table_pp = match(r'.*# "polarization": "\+\+"\n#.*?\n# "units".*?\n(.*?)#.*', rawdata, DOTALL).group(1)
-    table_mm = match(r'.*# "polarization": "\-\-"\n#.*?\n# "units".*?\n(.*?)#.*', rawdata, DOTALL).group(1)
+    table_pp = match(
+          r'.*# "polarization": "\+\+"\n#.*?\n# "units".*?\n(.*?)#.*', 
+          rawdata, DOTALL).group(1)
+    table_mm = match(
+          r'.*# "polarization": "\-\-"\n#.*?\n# "units".*?\n(.*?)#.*', 
+          rawdata, DOTALL).group(1)
     
-    data_pp = numpy.genfromtxt(BytesIO(table_pp.encode()), unpack=True)
-    data_mm = numpy.genfromtxt(BytesIO(table_mm.encode()), unpack=True)
+    data_pp = numpy.genfromtxt(BytesIO(table_pp.encode()), 
+                               unpack=True)
+    data_mm = numpy.genfromtxt(BytesIO(table_mm.encode()), 
+                               unpack=True)
     
     return (data_pp, data_mm)
 
@@ -303,7 +314,8 @@ if __name__ == '__main__':
           [data_pp, data_mm], ["$++$", "$--$"], 
           f'MAFO_Saturated.pdf' )
     
-    plotSpinAsymmetry(data_pp, data_mm, qzs, r_pp, r_mm, "MAFO_Saturated_spin_asymmetry.pdf")
+    plotSpinAsymmetry(data_pp, data_mm, qzs, r_pp, r_mm, 
+                      "MAFO_Saturated_spin_asymmetry.pdf")
     
     
     
