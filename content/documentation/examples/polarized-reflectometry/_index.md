@@ -1,8 +1,8 @@
 +++
-title = "Polarized Reflectometry"
-weight = 70
+title = "Polarized reflectometry"
+weight = 60
 +++
 
-### Polarized Reflectometry
+### Polarized reflectometry
 
 {{% examples-preview  %}}

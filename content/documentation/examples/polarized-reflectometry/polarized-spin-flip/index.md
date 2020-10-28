@@ -1,5 +1,5 @@
 +++
-title = "Spin-Flip reflectivity"
+title = "Spin-flip reflectivity"
 weight = 20
 +++
 

@@ -1,11 +1,11 @@
 +++
-title = "Spin-Asymmetry Fit Example"
+title = "Spin asymmetry fit example"
 weight = 40
 +++
 
 ### Fitting the Spin-Asymmetry Example from Nist
 
-This example shows how to fit the parameters in the [spin-asymmetry example]({{% ref-example "polarized-reflectometry/polarized-spinasymmetry" %}}).
+This example shows how to fit the parameters in the [spin asymmetry example]({{% ref-example "polarized-reflectometry/polarized-spinasymmetry" %}}).
 
 For this demonstration we choose initial parameters that are not too far from the fitting results. 
 In particular, the magnetization is initially set to zero, such that the spin asymmetry identically vanishes.

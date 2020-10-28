@@ -1,5 +1,5 @@
 +++
-title = "Spin-Asymmetry Example"
+title = "Spin asymmetry example"
 weight = 40
 +++
 
