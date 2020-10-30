@@ -7,14 +7,15 @@ weight = 10
 
 Required software:
 
-* `Compiler with full C++-14 support (e.g. gcc>= 5.0 or clang>=3.4)`
+* `Compiler with full C++-17 support (gcc>= 8 or clang>=7 are expected to work)`
 * `cmake (>= 3.14)`
-* `boost library (>= 1.60)`
-* `fftw3 library (>= 3.3.1)`
 * `gsl (GNU scientific library, >= 1.15)`
+* `libeigen (>=3)`
+* `fftw3 library (>= 3.3.1)`
 * `libtiff library (>=4.0.2)`
 * `python3, python3-devel, python3-numpy, python3-matplotlib`
-* `Qt5 (>=5.4; required modules are listed below)`
+* `boost library (>= 1.65)`
+* `Qt5 (>=5.5.1; required modules are listed below)`
 
 All required packages can be easily installed on most Linux distributions using the system's package manager. Below are a few examples for several selected operating systems. Please note, that other distributions (Fedora, Mint, etc) may have different commands for invoking the package manager and slightly different names of packages (like `boost` instead of `libboost` etc). Besides that, the installation should be very similar.
 
@@ -38,12 +39,12 @@ All required packages can be easily installed on most Linux distributions using 
 <div class="tab-content id="OperationSystemTabContent">
   <div class="tab-pane active" id="Ubuntu" role="tabpanel" aria-labelledby="ubuntu-tab">
     <p><ul><li>Install required packages:
-<pre><code>$ sudo apt-get install build-essential git cmake libgsl-dev libfftw3-dev python3 python3-dev python3-numpy python3-matplotlib libtiff5-dev libboost-dev libboost-filesystem-dev libboost-program-options-dev libboost-regex-dev libboost-iostreams-dev qt5-default libqt5designercomponents5 qttools5-dev libqt5svg5-dev libqt5opengl5-dev</code></pre></li>
+<pre><code>$ sudo apt-get install build-essential git cmake libgsl-dev libeigen3-dev libfftw3-dev python3 python3-dev python3-numpy python3-matplotlib libtiff5-dev libboost-dev libboost-filesystem-dev libboost-program-options-dev libboost-regex-dev libboost-iostreams-dev qt5-default libqt5designercomponents5 qttools5-dev libqt5svg5-dev libqt5opengl5-dev</code></pre></li>
 </ul></p>
   </div>
   <div class="tab-pane" id="OpenSuse" role="tabpanel" aria-labelledby="opensuse-tab">
     <p><ul><li>Install required packages:
-<pre><code>$ sudo zypper install gcc-c++ git-core cmake gsl-devel libboost_*-devel fftw3-devel \
+<pre><code>$ sudo zypper install gcc-c++ git-core cmake gsl-devel libeigen libboost_*-devel fftw3-devel \
   python3-devel python3-numpy-devel python3-matplotlib libtiff-devel</code></pre></li>
     <li>Install Qt5
 <pre><code>$ sudo zypper install libqt5-qtbase-devel libqt5-qttools-devel libqt5-qtsvg-devel</code></pre></li></ul></p>
@@ -55,7 +56,7 @@ All required packages can be easily installed on most Linux distributions using 
     <pre><code>$ sudo rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm</code></pre></li>
     <li>Install BornAgain dependencies:
     <pre><code>$ sudo yum -y install make cmake3 gcc-c++
-$ sudo yum -y install fftw-devel boost-devel gsl-devel libtiff-devel
+$ sudo yum -y install fftw-devel boost-devel gsl-devel eigen3-devel libtiff-devel
 $ sudo yum -y install python3-devel numpy
 $ sudo yum -y install qt5-qtbase-devel qt5-qttools-devel qt5-qtsvg-devel</code></pre></li>
     <li>Install 'devtoolset' with additional development tools.<br/>
