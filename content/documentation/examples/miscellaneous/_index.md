@@ -1,6 +1,6 @@
 +++
 title = "Miscellaneous"
-weight = 70
+weight = 100
 +++
 
 ### Miscellaneous
