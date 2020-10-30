@@ -27,10 +27,10 @@ beam shape in `BornAgain`:
                     distribution along the radius of the beam.
 
 The footprint correction for square beam is defined by
-`FootprintFactorSquare` command, which has the signature
+`FootprintSquare` command, which has the signature
 
 ```python
-<footprint_object> = FootprintFactorSquare(beam_to_sample_width_ratio)
+<footprint_object> = FootprintSquare(beam_to_sample_width_ratio)
 ```
 
 Here `<footprint_object>` is an object later passed to the simulation, while `beam_to_sample_width_ratio`
@@ -39,7 +39,7 @@ defines the ratio between the widths of beam and sample.
 In the case of the Gaussian beam the footprint object is created with
 
 ```python
-<footprint_object> = FootprintFactorGaussian(beam_to_sample_width_ratio)
+<footprint_object> = FootprintGauss(beam_to_sample_width_ratio)
 ```
 
 The command signature is exactly the same as in the case with the square beam,
