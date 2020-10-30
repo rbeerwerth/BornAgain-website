@@ -19,7 +19,9 @@ The most important change is improved numerics for the computation of reflection
 and transmission of scalar or polarized beams. The new algorithms is numerically
 stable even for arbitrarily many layers and for low overall transmission. For
 rough interfaces, one can choose between a tanh scattering-length density profile
-and the Névot-Croce approximation.
+and the Névot-Croce approximation. There is a new documentation section with
+[polarized reflectometry]({{< relref "documentation/examples/polarized-reflectometry" >}})
+examples.
 
 There are a few API changes. Some classes have been renamed for clarity or brevity:
 - FootprintSquare, FootprintGauss, FormFactorHollowSphere, CosineRipple, SawtoothRipple.
