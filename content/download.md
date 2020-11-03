@@ -49,8 +49,8 @@ breadcrumb = true
         <div class="card-body">
           <h5 class="card-title">Windows, Python 3.8</h5>
           <p><span class="badge badge-primary mr-1">Recommended</span></p>
-          <p class="card-text">Windows 7,8,10 binary installer intended for Python 3.8</p>
-          <a href="{{% ref-installer-win "3.8" %}}" onclick="ga('send', 'event', 'download', 'click', 'win-py37');" class="btn btn-primary ba-custom">Download</a>
+          <p class="card-text">Windows 7,8,10 binary installer intended for Python 3.9</p>
+          <a href="{{% ref-installer-win "3.9" %}}" onclick="ga('send', 'event', 'download', 'click', 'win-py37');" class="btn btn-primary ba-custom">Download</a>
         </div>
       </div>
     </div>
