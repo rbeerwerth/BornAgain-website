@@ -9,7 +9,6 @@ googleAnalytics = "UA-120020802-1"
 
 # Code
 PygmentsCodeFences = true
-# PygmentsUseClassic = false
 PygmentsUseClasses = true
 PygmentsStyle = "vs"
 
@@ -27,7 +26,7 @@ PygmentsStyle = "vs"
   download_loc = "http://apps.jcns.fz-juelich.de/src/BornAgain"
   manual_version = "1.7.2"
   recommended_python_major = "3"
-  recommended_python_minor = "9"
+  recommended_python_minor = "8"
   Debug = false
 
 [params.authors.herck]

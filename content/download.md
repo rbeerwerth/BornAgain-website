@@ -47,8 +47,17 @@ breadcrumb = true
       <div class="card text-center bg-light mx-3 my-5 border-primary ba-custom-border" style="width: 18rem;">
         <div class="card-header">Windows, 64-bit (x86)</div>
         <div class="card-body">
-          <h5 class="card-title">Windows, Python 3.9</h5>
+          <h5 class="card-title">Windows, Python 3.8</h5>
           <p><span class="badge badge-primary mr-1">Recommended</span></p>
+          <p class="card-text">Windows 7,8,10 binary installer intended for Python 3.8</p>
+          <a href="{{% ref-installer-win "3.8" %}}" onclick="ga('send', 'event', 'download', 'click', 'win-py37');" class="btn btn-primary ba-custom">Download</a>
+        </div>
+      </div>
+      <div class="card text-center bg-light mx-3 my-5 border-primary ba-custom-border" style="width: 18rem;">
+        <div class="card-header">Windows, 64-bit (x86)</div>
+        <div class="card-body">
+          <h5 class="card-title">Windows, Python 3.9</h5>
+          <p><span class="badge badge-default mr-1">Experimental</span></p>
           <p class="card-text">Windows 7,8,10 binary installer intended for Python 3.9</p>
           <a href="{{% ref-installer-win "3.9" %}}" onclick="ga('send', 'event', 'download', 'click', 'win-py37');" class="btn btn-primary ba-custom">Download</a>
         </div>
