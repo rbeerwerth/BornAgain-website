@@ -9,7 +9,6 @@ googleAnalytics = "UA-120020802-1"
 
 # Code
 PygmentsCodeFences = true
-# PygmentsUseClassic = false
 PygmentsUseClasses = true
 PygmentsStyle = "vs"
 
