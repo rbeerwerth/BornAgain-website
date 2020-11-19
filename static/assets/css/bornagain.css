@@ -179,7 +179,7 @@ ul.doctree li.active, ul.doctree li.active > a {
 
 .latest-commits ul li { margin: 10px 10px 10px 10px; }
 
-a.linktofile[href$='.gz'] {
+a.linktofile[href$='.gz'], [href$='.zip'] {
   background: url("../../img/save.png") no-repeat left;
   padding-left: 25px;
   white-space:nowrap;
