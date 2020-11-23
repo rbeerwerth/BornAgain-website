@@ -16,7 +16,7 @@ Scattering from elongated particles distributed along a two-dimensional rectangu
 
 {{< galleryscg >}}
 {{< figscg src="CosineRipplesAtRectLattice_setup.jpg" width="350px" caption="Real-space model">}}
-{{< figscg src="CosineRipplesAtRectLattice.png" width="350px" caption="Intensity image">}}
+{{< figscg src="/files/simulation/CosineRipplesAtRectLattice.png" width="350px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
 {{< highlightfile file="/static/files/python/simulation/ex03_InterferenceFunctions/CosineRipplesAtRectLattice.py" language="python" >}}

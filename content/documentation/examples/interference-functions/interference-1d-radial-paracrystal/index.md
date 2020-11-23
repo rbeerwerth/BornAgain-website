@@ -18,7 +18,7 @@ Scattering from a monodisperse distribution of cylinders positioned following a 
 $exp \left(-\frac{peak\\_distance}{damping\\_length}\right)$ to the Fourier transform of the probability densities.
 
 {{< galleryscg >}}
-{{< figscg src="Interference1DRadialParaCrystal.png" width="350px" caption="Intensity image">}}
+{{< figscg src="/files/simulation/Interference1DRadialParaCrystal.png" width="350px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
 {{< highlightfile file="/static/files/python/simulation/ex03_InterferenceFunctions/Interference1DRadialParaCrystal.py" language="python" >}}

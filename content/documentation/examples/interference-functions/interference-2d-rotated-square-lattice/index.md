@@ -11,7 +11,7 @@ This example is similar to [Interference 2D square lattice]({{% ref-example "int
 
 {{< galleryscg >}}
 {{< figscg src="Interference2DRotatedSquareLattice_setup.jpg" width="350px" caption="Real-space model">}}
-{{< figscg src="Interference2DRotatedSquareLattice.png" width="350px" caption="Intensity image">}}
+{{< figscg src="/files/simulated/Interference2DRotatedSquareLattice.png" width="350px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
 {{< highlightfile file="/static/files/python/simulation/ex03_InterferenceFunctions/Interference2DRotatedSquareLattice.py" language="python" >}}

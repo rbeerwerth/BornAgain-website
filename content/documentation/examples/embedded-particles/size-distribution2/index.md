@@ -17,7 +17,7 @@ Scattering of a polydisperse distribution of two types of cylinders.
 
 {{< galleryscg >}}
 {{< figscg src="TwoTypesOfCylindersWithSizeDistribution_setup.jpg" width="350px" caption="Real-space model">}}
-{{< figscg src="TwoTypesOfCylindersWithSizeDistribution.png" width="350px" caption="Intensity image">}}
+{{< figscg src="/files/simulated/TwoTypesOfCylindersWithSizeDistribution.png" width="350px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
 {{< highlightfile file="/static/files/python/simulation/ex01_BasicParticles/TwoTypesOfCylindersWithSizeDistribution.py" language="python" >}}

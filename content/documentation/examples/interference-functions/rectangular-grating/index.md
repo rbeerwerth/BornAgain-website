@@ -10,7 +10,7 @@ This example demonstrates how to perform a simulation of a grating using very lo
 [Interference of a 1D lattice]({{% ref-example "interference-functions/interference-1d-lattice" %}}) may provide useful background for this example.
 
 {{< galleryscg >}}
-{{< figscg src="Figure.png" width="4500px" caption="Intensity image">}}
+{{< figscg src="/files/simulated/RectangularGrating.png" width="4500px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
 {{< highlightfile file="/static/files/python/simulation/ex03_InterferenceFunctions/RectangularGrating.py" language="python" >}}

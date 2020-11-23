@@ -17,7 +17,7 @@ In this example we simulate the scattering from infinite 1D repetition of rectan
 {{< galleryscg >}}
 {{< figscg src="Interference1DLattice_setup.jpg" width="200px" caption="Real-space model">}}
 {{< figscg src="Interference1DLattice_sketch.jpg" width="200px" caption="Sketch">}}
-{{< figscg src="Interference1DLattice.png" width="200px" caption="Intensity image">}}
+{{< figscg src="/files/simulated/Interference1DLattice.png" width="200px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
 {{< highlightfile file="/static/files/python/simulation/ex03_InterferenceFunctions/Interference1DLattice.py" language="python" >}}

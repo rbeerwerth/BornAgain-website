@@ -20,7 +20,7 @@ Scattering from monodisperse cylinders distributed along a two-dimensional squar
 A damping length is used to introduce finite size effects by applying a multiplicative coefficient equal to $exp \left(-\frac{peak\\_distance}{damping\\_length}\right)$ to the Fourier transform of the probability densities. $damping\\_length$ is equal to $0$ by default and, in this case, no correction is applied.
 
 {{< galleryscg >}}
-{{< figscg src="Interference2DParaCrystal.png" width="350px" caption="Intensity image">}}
+{{< figscg src="/files/simulated/Interference2DParaCrystal.png" width="350px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
 {{< highlightfile file="/static/files/python/simulation/ex03_InterferenceFunctions/Interference2DParaCrystal.py" language="python" >}}

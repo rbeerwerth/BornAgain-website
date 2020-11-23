@@ -9,6 +9,6 @@ This example demonstrates how to include particles with non-zero magnetization. 
 
 A more detailed description of this example can be found in the [Magnetic Particles Tutorial]({{% ref-tutorial "particles/magnetic-particles/index.md" %}}).
 
-{{< figscg src="MagneticSpheres.png" width="500px" class="center" caption="The figure shows the intensity map produced by the script below." >}}
+{{< figscg src="/files/simulated/MagneticSpheres.png" width="500px" class="center" caption="The figure shows the intensity map produced by the script below." >}}
 
 {{< highlightfile file="/static/files/python/simulation/ex07_Miscellaneous/MagneticSpheres.py" language="python" >}}

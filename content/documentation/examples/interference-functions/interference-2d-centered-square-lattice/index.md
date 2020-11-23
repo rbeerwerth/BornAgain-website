@@ -17,7 +17,7 @@ Scattering from cylinders distributed along a squared centered lattice.
 
 {{< galleryscg >}}
 {{< figscg src="Interference2DCenteredSquareLattice_setup.jpg" width="350px" caption="Real-space model">}}
-{{< figscg src="Interference2DCenteredSquareLattice.png" width="350px" caption="Intensity image">}}
+{{< figscg src="/files/simulated/Interference2DCenteredSquareLattice.png" width="350px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
 {{< highlightfile file="/static/files/python/simulation/ex03_InterferenceFunctions/Interference2DCenteredSquareLattice.py" language="python" >}}

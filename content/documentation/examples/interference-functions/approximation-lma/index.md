@@ -17,7 +17,7 @@ Scattering from cylinders of two different sizes using the Local Monodisperse Ap
 * The incident angles are $\alpha\_i = 0.2 ^{\circ}$ and $\phi\_i = 0^{\circ}$.
 
 {{< galleryscg >}}
-{{< figscg src="ApproximationLMA.png" width="350px" caption="Intensity image">}}
+{{< figscg src="/files/simulated/ApproximationLMA.png" width="350px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
 {{< highlightfile file="/static/files/python/simulation/ex03_InterferenceFunctions/ApproximationLMA.py" language="python" >}}

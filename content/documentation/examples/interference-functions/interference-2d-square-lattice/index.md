@@ -17,7 +17,7 @@ Scattering from cylindrical particles distributed along a square lattice.
 
 {{< galleryscg >}}
 {{< figscg src="Interference2DSquareLattice_setup.jpg" width="350px" caption="Real-space model">}}
-{{< figscg src="Interference2DSquareLattice.png" width="350px" caption="Intensity image">}}
+{{< figscg src="/files/simulated/Interference2DSquareLattice.png" width="350px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
 {{< highlightfile file="/static/files/python/simulation/ex03_InterferenceFunctions/Interference2DSquareLattice.py" language="python" >}}

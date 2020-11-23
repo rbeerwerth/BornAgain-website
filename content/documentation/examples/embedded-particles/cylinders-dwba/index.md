@@ -16,7 +16,7 @@ This example is similar to the simulation [Cylinders in Born Approximation]({{% 
 
 {{< galleryscg >}}
 {{< figscg src="CylindersInDWBA_setup.jpg" width="350px" caption="Real-space model">}}
-{{< figscg src="CylindersInDWBA.png" width="350px" caption="Intensity image">}}
+{{< figscg src="/files/simulated/CylindersInDWBA.png" width="350px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
 {{< highlightfile file="/static/files/python/simulation/ex01_BasicParticles/CylindersInDWBA.py" language="python" >}}
