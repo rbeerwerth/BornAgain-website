@@ -62,7 +62,7 @@ results_mm = run_simulation(ba.kvector_t(0, -1, 0),
 The resulting reflectivities are shown in this plot:
 
 {{< galleryscg >}}
-{{< figscg src="BasicPolarizedReflectometry.png" width="650px" caption="Reflectivity">}}
+{{< figscg src="/files/simulated/BasicPolarizedReflectometry.png" width="650px" caption="Reflectivity">}}
 {{< /galleryscg >}}
 
 As expected, we find the birefringent behavior and two different critical angles.

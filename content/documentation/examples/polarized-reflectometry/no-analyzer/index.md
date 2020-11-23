@@ -62,7 +62,7 @@ It is then easy to check that they are identical.
 This is the resulting plot that shows the computed reflectivity for up and down polarization of the incident neutrons:
 
 {{< galleryscg >}}
-{{< figscg src="PolarizedNoAnalyzer.png" width="650px" caption="Reflectivity">}}
+{{< figscg src="/files/simulated/PolarizedNoAnalyzer.png" width="650px" caption="Reflectivity">}}
 {{< /galleryscg >}}
 
 

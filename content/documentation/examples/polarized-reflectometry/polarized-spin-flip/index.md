@@ -31,7 +31,7 @@ results_mp = run_simulation(ba.kvector_t(0, -1, 0),
 Running the full script, that is given below, we obtain the following simulation result:
 
 {{< galleryscg >}}
-{{< figscg src="PolarizedSpinFlip.png" width="650px" caption="Reflectivity">}}
+{{< figscg src="/files/simulated/PolarizedSpinFlip.png" width="650px" caption="Reflectivity">}}
 {{< /galleryscg >}}
 
 This plot shows the resulting reflectivity in all four channels.

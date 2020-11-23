@@ -4,8 +4,8 @@ weight = 40
 +++
 
 ### Spin-asymmetry example from NIST
- 
- 
+
+
 This example shows how to simulate the magnetic layer described on the NIST homepage in the [Magnetically Dead Layers in Spinel Films](https://www.nist.gov/ncnr/magnetically-dead-layers-spinel-films) example.
 In particular, we want to show how to use BornAgain in order to simulate the spin asymmetry.
 The sample simulated in this example is very similar to the previous examples introduced in this section.
@@ -14,12 +14,12 @@ During these tutorials, we neglect the magnetically dead layer that forms below 
 
 
 In this first example, we utilize parameters that are deduced from a fit to the data provided on the NIST homepage.
-How to perform the fit is described in the 
+How to perform the fit is described in the
 [extended example]({{% ref-example "polarized-reflectometry/polarized-spinasymmetry-fit" %}}).
 
 
 
-#### Spin asymmetry 
+#### Spin asymmetry
 
 
 The spin asymmetry is defined as
@@ -42,7 +42,7 @@ This is performed in the function `plotSpinAsymmetry`.
 
 We also apply a resolution correction, as described in the [ToF - Resolution effects]({{% ref-example "reflectometry/tofr-with-resolution" %}}) example.
 
-Furthermore, we introduce an offest in the $Q$-axis, in order to accomodate for experimental uncertainties 
+Furthermore, we introduce an offest in the $Q$-axis, in order to accomodate for experimental uncertainties
 in the measurement of $\theta$.
 For this purpose, the provided $Q$-axis is shifted in the function `get_simulation`:
 
@@ -62,8 +62,8 @@ Furthermore, the reflectivity data is scaled such that its maximum is unity.
 
 
 {{< galleryscg >}}
-{{< figscg src="SpinAsymmetry1.png" width="350px" caption="Reflectivity">}}
-{{< figscg src="SpinAsymmetry2.png" width="350px" caption="Spin Asymmetry">}}
+{{< figscg src="/files/simulated/SpinAsymmetry1.png" width="350px" caption="Reflectivity">}}
+{{< figscg src="/files/simulated/SpinAsymmetry2.png" width="350px" caption="Spin Asymmetry">}}
 {{< /galleryscg >}}
 
 Here is the complete example:

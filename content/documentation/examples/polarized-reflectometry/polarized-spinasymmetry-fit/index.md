@@ -7,14 +7,14 @@ weight = 40
 
 This example shows how to fit the parameters in the [spin-asymmetry example]({{% ref-example "polarized-reflectometry/polarized-spinasymmetry" %}}).
 
-For this demonstration, we choose initial parameters that are not too far from the fitting results. 
+For this demonstration, we choose initial parameters that are not too far from the fitting results.
 In particular, the magnetization is initially set to zero, such that the spin asymmetry identically vanishes.
 
 With the initial parameters, we obtain the following reflectivity and spin-asymmetry curves:
 
 {{< galleryscg >}}
-{{< figscg src="SpinAsymmetryInitial1.png" width="350px" caption="Reflectivity">}}
-{{< figscg src="SpinAsymmetryInitial2.png" width="350px" caption="Spin Asymmetry">}}
+{{< figscg src="/files/simulated/SpinAsymmetryInitial1.png" width="350px" caption="Reflectivity">}}
+{{< figscg src="/files/simulated/SpinAsymmetryInitial2.png" width="350px" caption="Spin Asymmetry">}}
 {{< /galleryscg >}}
 
 
@@ -36,17 +36,17 @@ fit_objective.setObjectiveMetric("reldiff")
 
 The fitting of polarized reflectometry data proceeds similar to the lines presented in
 [the tutorial on multiple datasets]({{% ref-example "fitting/advanced/multiple-datasets" %}}).
-We need to add the reflectivity curves for the up-up and down-down channel 
+We need to add the reflectivity curves for the up-up and down-down channel
 to the fit objective:
 
 {{< highlight python>}}
-fit_objective.addSimulationAndData( SimulationFunctionPlusplus, 
+fit_objective.addSimulationAndData( SimulationFunctionPlusplus,
                                                     rdata_pp, 1.0)
-fit_objective.addSimulationAndData( SimulationFunctionMinusMinus, 
+fit_objective.addSimulationAndData( SimulationFunctionMinusMinus,
                                                     rdata_mm, 1.0)
 {{< /highlight >}}
 
-`SimulationFunctionPlusplus` and `SimulationFunctionMinusMinus` are two function objects that return a simulation result for 
+`SimulationFunctionPlusplus` and `SimulationFunctionMinusMinus` are two function objects that return a simulation result for
 the up-up and down-down channels, respectively.
 
 The fit parameters are defined in the dictionary `startParams`, where they are defined as a triple of values `(start, min, max)`.
@@ -76,12 +76,12 @@ python3 PolarizedSpinAsymmetryFit.py fit
 we get the result
 
 {{< galleryscg >}}
-{{< figscg src="SpinAsymmetryFit1.png" width="350px" caption="Reflectivity">}}
-{{< figscg src="SpinAsymmetryFit2.png" width="350px" caption="Spin Asymmetry">}}
+{{< figscg src="/files/simulated/SpinAsymmetryFit1.png" width="350px" caption="Reflectivity">}}
+{{< figscg src="/files/simulated/SpinAsymmetryFit2.png" width="350px" caption="Spin Asymmetry">}}
 {{< /galleryscg >}}
 
 
-This result was already presented in the [spin-asymmetry]({{% ref-example "polarized-reflectometry/polarized-spinasymmetry" %}}) tutorial and 
+This result was already presented in the [spin-asymmetry]({{% ref-example "polarized-reflectometry/polarized-spinasymmetry" %}}) tutorial and
 can also be obtained by runnning the example without the fit option:
 
 {{< highlight python>}}

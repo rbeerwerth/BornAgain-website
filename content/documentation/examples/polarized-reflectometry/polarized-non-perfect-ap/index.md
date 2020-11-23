@@ -65,7 +65,7 @@ results_mp = run_simulation(polarization = ba.kvector_t(0, -1, 0),
 The computed reflectivity looks like this:
 
 {{< galleryscg >}}
-{{< figscg src="Pd-Fe-Layers.png" width="650px" caption="Reflectivity">}}
+{{< figscg src="/files/simulated/PolarizedNonperfectAnalyzerPolarizer.png" width="650px" caption="Reflectivity">}}
 {{< /galleryscg >}}
 
 Due to the different values for the polarizer and analyzer efficiency, we obtain
