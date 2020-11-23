@@ -13,7 +13,7 @@ Here we will consider the intensity map produced by a neutron resonator composed
 
 A more detailed description of this example can be found in the [Depth Probe Tutorial]({{% ref-tutorial "simulation-classes/depth-probe/index.md" %}}).
 
-{{< figscg src="DepthProbeSimulation.png" width="500" class="center">}}
+{{< figscg src="/files/simulated/DepthProbeSimulation.png" width="500" class="center">}}
 
 In the figure above, the $y$ axis corresponds to the position across the sample surface
 (in nanometers), while the $x$ axis corresponds to the

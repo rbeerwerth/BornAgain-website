@@ -40,7 +40,7 @@ Beam and detector are setup to detect the spin-flip scattering channel and the
 result of this simulation is plotted as usual.
 
 {{< galleryscg >}}
-{{< figscg src="PolarizedSANS.png" width="600px" caption="Intensity images">}}
+{{< figscg src="/files/simulated/PolarizedSANS.png" width="600px" caption="Intensity images">}}
 {{< /galleryscg >}}
 
 {{< highlightfile file="/static/files/python/simulation/ex07_Miscellaneous/PolarizedSANS.py" language="python" >}}

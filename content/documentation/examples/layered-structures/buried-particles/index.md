@@ -16,7 +16,7 @@ Scattering from a sample containing spherical embedded particles.
 
 {{< galleryscg >}}
 {{< figscg src="BuriedParticles_setup.jpg" width="350px" caption="Real-space model">}}
-{{< figscg src="BuriedParticles.png" width="350px" caption="Intensity image">}}
+{{< figscg src="/files/simulated/BuriedParticles.png" width="350px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
 {{< highlightfile file="/static/files/python/simulation/ex02_LayeredStructures/BuriedParticles.py" language="python" >}}

@@ -15,7 +15,7 @@ To find the intensity peaks from a GISAXS simulation, the result must be casted 
 ```
 
 {{< galleryscg >}}
-{{< figscg src="Figure.png" width="670px" caption="Intensity images">}}
+{{< figscg src="/files/simulated/FindPeaks.png" width="670px" caption="Intensity images">}}
 {{< /galleryscg >}}
 
 The following script offers a complete example in which the peaks are found after carrying on a GISAXS simulation. This particular example uses as a sample a grating of long boxes distributed along a 1D lattice.

@@ -14,7 +14,7 @@ In this example we demonstrate how to plot intensity data with detector axes exp
 * Please note, that the given parameter only affects min/max values of histogram axes (there is no rebinning involved).
 
 {{< galleryscg >}}
-{{< figscg src="AxesInDifferentUnits.png" width="670px" caption="Intensity images">}}
+{{< figscg src="/files/simulated/AxesInDifferentUnits.png" width="670px" caption="Intensity images">}}
 {{< /galleryscg >}}
 
 {{< highlightfile file="/static/files/python/simulation/ex07_Miscellaneous/AxesInDifferentUnits.py" language="python" >}}

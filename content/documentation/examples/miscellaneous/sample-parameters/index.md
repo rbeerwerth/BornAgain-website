@@ -99,7 +99,7 @@ Example below demonstrates how to create a sample with fixed parameters and then
 Four simulations are performed one after another. Parameters of the sample are adjusted in between using different matching criteria.
 
 {{< galleryscg >}}
-{{< figscg src="SampleParametersIntro.png" width="600px" caption="Intensity images">}}
+{{< figscg src="/files/simulated/SampleParametersIntro.png" width="600px" caption="Intensity images">}}
 {{< /galleryscg >}}
 
 {{< highlightfile file="/static/files/python/simulation/ex07_Miscellaneous/SimulationParameters.py" language="python" >}}
