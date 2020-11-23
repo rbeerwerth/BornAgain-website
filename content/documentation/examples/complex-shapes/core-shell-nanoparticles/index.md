@@ -12,11 +12,11 @@ Scattering from cuboidal core-shell particles.
 * The simulation is run using the Born approximation. There is no substrate and no interference between the different scattered beams.
 * The planar distribution of the particles is diluted and random.
 * The incident wavelength is equal to $1$ $\unicode{x212B}$.
-* The incident angles are $\alpha\_i = 0.2 ^{\circ}$ and $\phi\_i = 0^{\circ}$.  
+* The incident angles are $\alpha\_i = 0.2 ^{\circ}$ and $\phi\_i = 0^{\circ}$.
 
 {{< galleryscg >}}
 {{< figscg src="CoreShellNanoparticles_setup.jpg" width="350px" caption="Real-space model">}}
-{{< figscg src="CoreShellNanoparticles.png" width="350px" caption="Intensity image">}}
+{{< figscg src="/files/simulated/CoreShellNanoparticles.png" width="350px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
 {{< highlightfile file="/static/files/python/simulation/ex04_ComplexShapes/CoreShellNanoparticles.py" language="python" >}}

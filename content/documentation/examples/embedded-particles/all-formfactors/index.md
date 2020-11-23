@@ -15,7 +15,7 @@ The dimensions of the object are chosen only in order to get a characteristic si
   
 {{< galleryscg >}}
 {{< figscg src="AllFormFactorsAvailable_setup.jpg" width="350px" caption="Real-space models">}}
-{{< figscg src="AllFormFactorsAvailable.png" width="350px" caption="Intensity images">}}
+{{< figscg src="/files/simulated/AllFormFactorsAvailable.png" width="350px" caption="Intensity images">}}
 {{< /galleryscg >}}
   
 {{< highlightfile file="/static/files/python/simulation/ex01_BasicParticles/AllFormFactorsAvailable.py" language="python" >}}

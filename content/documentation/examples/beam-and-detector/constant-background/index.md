@@ -14,9 +14,9 @@ simulation.setBackground(bg)
 ```
 
 {{< galleryscg >}}
-{{< figscg src="Figure.png" width="450px" caption="Intensity image">}}
+{{< figscg src="/files/simulated/ConstantBackground.png" width="450px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
-The script below shows how to add a constant background in the context of a GISAXS simulation of an air-substrate bilayer with cylindrical particles embedded. 
+The script below shows how to add a constant background in the context of a GISAXS simulation of an air-substrate bilayer with cylindrical particles embedded.
 
 {{< highlightfile file="/static/files/python/simulation/ex05_BeamAndDetector/ConstantBackground.py" language="python" >}}

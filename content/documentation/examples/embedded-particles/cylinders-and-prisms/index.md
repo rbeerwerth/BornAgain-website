@@ -19,7 +19,7 @@ Scattering from a mixture of cylinders and prisms without interference.
 
 {{< galleryscg >}}
 {{< figscg src="CylindersAndPrisms_setup.jpg" width="350px" caption="Real-space model">}}
-{{< figscg src="CylindersAndPrisms.png" width="350px" caption="Intensity image">}}
+{{< figscg src="/files/simulated/CylindersAndPrisms.png" width="350px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
 {{< highlightfile file="/static/files/python/simulation/ex01_BasicParticles/CylindersAndPrisms.py" language="python" >}}
