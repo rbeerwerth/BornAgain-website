@@ -28,7 +28,7 @@ qmin = 0.05997
 qmax = 1.96
 
 # number of points on which the computed result is plotted
-scan_size=1500
+scan_size = 1500
 
 # The SLD of the substrate is kept constant
 sldMao  = (5.377e-06, 0)
