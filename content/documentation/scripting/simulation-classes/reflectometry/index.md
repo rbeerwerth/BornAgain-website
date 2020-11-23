@@ -209,7 +209,7 @@ if __name__ == '__main__':
 
 To plot the data using matplotlib routines, we use a convenience function, defined in the BornAgain namespace: `plot_simulation_result()`.
 
-As a result of executing the whole script in the python interpreter
+As a result of executing the whole script in the Python interpreter
 ```bash
 $ python BasicSpecularSimulation.py
 ```

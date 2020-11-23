@@ -166,11 +166,11 @@ limits = ba.RealLimits.limited(1.0, 9.0))
 #### Particle distributions through the GUI
 
 The easiest way of generating a particle distribution from scratch is from the GUI.
-After that, one can export the layout as a python script and tweak it to get the desired outcome:
+After that, one can export the layout as a Python script and tweak it to get the desired outcome:
 
 {{< figscg src="distribution_from_GUI.png" class="center">}}
 
-One must note, however, that some functionality is only present through the python API, 
+One must note, however, that some functionality is only present through the Python API, 
 for instance, `linkParameter` is not accessible through the GUI:
 
 ```python

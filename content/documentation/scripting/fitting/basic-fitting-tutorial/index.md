@@ -21,7 +21,7 @@ with no interference between the particles. We consider the following parameters
 Our reference data are a "noisy" two-dimensional intensity map obtained from the simulation of the same geometry
 with a fixed value of 5nm for all sizes of cylinders and prisms.
 
-### Importing the python libraries
+### Importing the Python libraries
 
 {{< highlight python "linenos=table,linenostart=6" >}}
 

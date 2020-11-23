@@ -113,7 +113,7 @@ by clicking `Add workspace folder` as shown in the screenshot below.
 
 {{< figscg src="anaconda-running-step5-vscode.PNG" class="center" width="450px">}}
 
-Choose the directory with the BornAgain python examples at `C:/BornAgain-{{< release-string >}}/Examples/python`
+Choose the directory with the BornAgain Python examples at `C:/BornAgain-{{< release-string >}}/Examples/python`
 
 {{< figscg src="anaconda-running-step6-vscode.PNG" class="center" width="450px">}}
 

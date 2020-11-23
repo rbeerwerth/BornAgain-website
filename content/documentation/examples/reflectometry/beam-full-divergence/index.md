@@ -24,7 +24,7 @@ In this example the following parameters related to the spread of the beam were 
 * Standard deviation in the wavelength $\sigma_{\lambda} = 0.01 \cdot \lambda_0$
 * Standard deviation in the incident angle $\sigma_{\alpha} = 0.01^{\circ}$
 
-As one can see from the python script, the definitions of beam parameter distributions
+As one can see from the Python script, the definitions of beam parameter distributions
 match ones described in [similar example for GISAS simulations]({{% ref-example "beam-and-detector/beam-divergence" %}}).
 However, in the case of the incident angle one should always use a distribution with zero mean,
 since the actual mean value is substituted by `SpecularSimulation` in dependence on the

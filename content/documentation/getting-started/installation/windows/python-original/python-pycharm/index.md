@@ -54,7 +54,7 @@ Up to now, we have configured `PyCharm` to work with the system interpreter dire
 
 ### Configure the project you've just created.
 
-As soon as you push the `Create` button, you will be presented with the initial project view. The tree view on the left shows that your project consists of two parts: the `Untitled` directory for your python scripts (which is empty for the moment) and the `External Libraries ` directory (which is not relevant for us at this point).
+As soon as you push the `Create` button, you will be presented with the initial project view. The tree view on the left shows that your project consists of two parts: the `Untitled` directory for your Python scripts (which is empty for the moment) and the `External Libraries ` directory (which is not relevant for us at this point).
 
 {{< figscg src="python-pycharm-project7.PNG" class="center" width="450px">}}
 
