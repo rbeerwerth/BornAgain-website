@@ -13,7 +13,7 @@ Further information about reflectometry simulations can be found in the
 The observed reflectometry signal can be affected either by a spread in the beam wavelength or in the incident angle.
 
 {{< galleryscg >}}
-{{< figscg src="Figure.png" width="500px" caption="Intensity image">}}
+{{< figscg src="/files/simulated/BeamAngularDivergence.png" width="500px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
 In this example, a Gaussian distribution is used to spread the incident angle, with a standard deviation of $\sigma_{\alpha} = 0.01^{\circ}$.

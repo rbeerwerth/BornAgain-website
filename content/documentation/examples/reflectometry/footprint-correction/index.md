@@ -15,7 +15,7 @@ as well as on the shape of the beam.
 
 {{< galleryscg >}}
   {{< figscg src="FootprintScheme.png" width="350px" caption="Footprint scene">}}
-{{< figscg src="FootprintCorrection.png" width="350px" caption="Intensity image">}}
+{{< figscg src="/files/simulated/FootprintCorrection.png" width="350px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
 When taking into account footprint correction, there are two possible options for the

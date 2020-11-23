@@ -15,7 +15,7 @@ and the Névot-Croce roughness model that arises from a Gaussian distribution of
 deviation from the mean-surface position.
 
 {{< galleryscg >}}
-{{< figscg src="RoughnessModel.png" width="650px" caption="Intensity image">}}
+{{< figscg src="/files/simulated/RoughnessModel.png" width="650px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
 In both cases, the root-mean-square deviation from the mean surface position is chosen 

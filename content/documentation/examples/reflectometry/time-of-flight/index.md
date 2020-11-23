@@ -16,10 +16,8 @@ Setting up a TOF simulation boils down to specifying the range of values spanned
     simulation.setScan(scan)
 ```
 
-
-
 {{< galleryscg >}}
-{{< figscg src="TimeOfFlightReflectometry.png" width="500px" caption="This figure shows the reflectometry signal obtained after running the TOF simulation of the script below." >}}
+{{< figscg src="/files/simulated/TimeOfFlightReflectometry.png" width="500px" caption="This figure shows the reflectometry signal obtained after running the TOF simulation of the script below." >}}
 {{< /galleryscg >}}
 
 {{< highlightfile file="/static/files/python/simulation/ex06_Reflectometry/TimeOfFlightReflectometry.py"  language="python" >}}

@@ -14,7 +14,7 @@ In real specular experiments the observed reflectivity is always affected
 by the beam spread in both wavelength and incident angle.
 
 {{< galleryscg >}}
-{{< figscg src="BeamDivergence.png" width="500px" caption="Intensity image">}}
+{{< figscg src="/files/simulated/BeamDivergence.png" width="500px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
 In this example the following parameters related to the spread of the beam were set to the simulation:

@@ -10,7 +10,7 @@ For more details about preparing a sample and carrying on a reflectometry simula
 [reflectometry simulation tutorial]({{% ref-tutorial "simulation-classes/reflectometry" %}}).
 
 {{< galleryscg >}}
-{{< figscg src="MaterialProfile.png" width="500px" caption="This figure shows the sld profile of the sample built, i.e. the sld value ($y$ axis) as a function of depth ($x$ axis). $x = 0$ represents the surface of the sample, while the substrate is located at $x = -40 \, [{\rm nm}]$ in this example." >}}
+{{< figscg src="/files/simulated/MaterialProfile.png" width="500px" caption="This figure shows the sld profile of the sample built, i.e. the sld value ($y$ axis) as a function of depth ($x$ axis). $x = 0$ represents the surface of the sample, while the substrate is located at $x = -40 \, [{\rm nm}]$ in this example." >}}
 {{< /galleryscg >}}
 
 To obtain the figure above, one must run the script below, which is basically about [defining a sample with interfacial roughness]({{% ref-example "reflectometry/specular-simulation-with-roughness" %}}) and plotting right away its sld profile.

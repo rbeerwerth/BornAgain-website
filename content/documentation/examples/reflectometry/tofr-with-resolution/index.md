@@ -7,7 +7,7 @@ weight = 30
 
 In real experiments, the $q_z$ resolution is non infinite. To take this into account in TOF simulations,
 one needs to define the spread in $q$ as $dq$, set up a distribution with a given number of samples, `n_samples`,
-and define the desired sigma factor, `n_sig` (e.g. the range in standard deviations to take into account 
+and define the desired sigma factor, `n_sig` (e.g. the range in standard deviations to take into account
 during the sample generation).
 
 ``` python
@@ -34,10 +34,9 @@ In the snippet above, a Gaussian distribution has been used, but there are sever
  -  Cosine: `RangedDistributionCosine(n_samples, sigma_factor, min, max)`
 
 {{< galleryscg >}}
-  {{< figscg src="TimeOfFlightReflectometry.png" width="350px" caption="TOF simulation without resolution effects" >}}
-  {{< figscg src="TOFRWithResolution.png" width="350px" caption="TOF simulation with $dq = 0.03\,q$" >}}
+  {{< figscg src="/files/simulated/TimeOfFlightReflectometry.png" width="350px" caption="TOF simulation without resolution effects" >}}
+  {{< figscg src="/files/simulated/TOFRWithResolution.png" width="350px" caption="TOF simulation with $dq = 0.03\,q$" >}}
 {{< /galleryscg >}}
-
 
 
 {{< highlightfile file="/static/files/python/simulation/ex06_Reflectometry/TOFRWithResolution.py"  language="python" >}}

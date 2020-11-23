@@ -15,7 +15,7 @@ $\sigma = 1$ nm.
 
 {{< galleryscg >}}
 {{< figscg src="SpecularSimulationWithRoughnessSetup.jpg" width="350px" caption="Real-space model">}}
-{{< figscg src="SpecularSimulationWithRoughness.png" width="350px" caption="Intensity image">}}
+{{< figscg src="/files/simulated/SpecularSimulationWithRoughness.png" width="350px" caption="Intensity image">}}
 {{< /galleryscg >}}
 
 When comparing the result of the simulation to the result obtained in the
