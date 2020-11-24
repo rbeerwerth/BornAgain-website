@@ -269,7 +269,7 @@ def downloadAndExtractData():
 def run_fit_ba(q_axis, r_data, r_uncertainty, simulationFactory, startParams):
     
     fit_objective = ba.FitObjective()
-    fit_objective.setObjectiveMetric("reldiff")
+    fit_objective.setObjectiveMetric("chi2")
   
     fit_objective.addSimulationAndData( 
         lambda params: simulationFactory[0](q_axis[0], params), 
@@ -277,7 +277,7 @@ def run_fit_ba(q_axis, r_data, r_uncertainty, simulationFactory, startParams):
     fit_objective.addSimulationAndData( 
         lambda params: simulationFactory[1](q_axis[1], params), 
         r_data[1], r_uncertainty[1], 1.0)
-    
+
     fit_objective.initPrint(10)
     
     params = ba.Parameters()
