@@ -179,16 +179,6 @@ def plot_sld_profile(fitParams, filename):
     plt.xlabel( r"$z$ [A]" )
     plt.ylabel( r"$\delta(z) \cdot 10^6$" )
     
-    #ax2 = plt.gca().twinx()
-    
-    #msld = plt.plot( z + shift, numpy.imag( slds) * 1e6, label=r"Im", color="C1" )
-    #plt.ylabel( r"$\beta(z) \cdot 10^6$" )
-    
-    
-    #lines = nsld + msld
-    #labels = [ l.get_label() for l in lines ]
-    
-    #plt.legend(lines, labels)
     plt.legend()
     plt.tight_layout()
     plt.savefig(filename)
@@ -341,7 +331,7 @@ if __name__ == '__main__':
                         [data_300_p[1], data_300_m[1], data_150_p[1], data_150_m[1]], 
                         [run_Simulation_300_p, run_Simulation_300_m, run_Simulation_150_p, run_Simulation_150_m]]
       
-        fitResult = fit_wrapper.run_fit_differential_evolution(*dataSimTuple, startParams)
+        fitResult = run_fit_differential_evolution(*dataSimTuple, startParams)
         
         print("Fit Result:")
         print(fitResult)
