@@ -166,7 +166,7 @@ def get_Experimental_data(qmin, qmax):
 def run_fit_ba(q_axis, r_data, r_uncertainty, simulationFactory, startParams):
     
     fit_objective = ba.FitObjective()
-    fit_objective.setObjectiveMetric("reldiff")
+    fit_objective.setObjectiveMetric("chi2")
   
     fit_objective.addSimulationAndData( 
         lambda params: simulationFactory(q_axis, params), 
@@ -214,12 +214,12 @@ if __name__ == '__main__':
         startParams = {}
         fixedParams = {
                       # parameters from our own fit run
-                      'q_offset': 0.017849763792799695, 
-                      'q_res/q': 0.014267528320415003, 
-                      't_pt/nm': 48.22907009585575, 
-                      'r_si/nm': 1.258513852972984, 
-                      'r_pt/nm': 0.25616242102024595, 
-                      'intensity': 1.2543628914957092
+                      'q_offset': 0.015085985992837999, 
+                      'q_res/q': 0.010156450689003465, 
+                      't_pt/nm': 48.564838355355405, 
+                      'r_si/nm': 1.2857515425763575, 
+                      'r_pt/nm': 0.2868252673771518, 
+                      'intensity': 1.3156374978332654
                       }
         fit = False
 
