@@ -89,9 +89,10 @@ def run_simulation(q_axis, fitParams):
 
 def qr(result, q_offset=0):
     """
-    helper function to return q axis and reflectivity from simulation result
+    helper function to return the q axis and 
+    reflectivity from simulation result
     """
-    q = numpy.array(result.result().axis(ba.Axes.QSPACE)) + q_offset
+    q = numpy.array(result.result().axis(ba.Axes.QSPACE)) - q_offset
     r = numpy.array(result.result().array(ba.Axes.QSPACE))
     
     return q, r
@@ -108,8 +109,8 @@ def plot(q, r, exp, filename, params=None):
     fig = plt.figure()
     ax = fig.add_subplot(111)
     
-    ax.errorbar( exp[0], exp[1], xerr=exp[3], yerr=exp[2], label="R", fmt='.', 
-                  markersize=1., linewidth=0.6, color='r' )
+    ax.errorbar( exp[0], exp[1], xerr=exp[3], yerr=exp[2], label="R", 
+                fmt='.', markersize=1., linewidth=0.6, color='r' )
     
     ax.plot(q, r, label="Simulation", color='C0', linewidth=0.5)
     
@@ -163,7 +164,8 @@ def get_Experimental_data(qmin, qmax):
 #                          Fit Function                            #
 ####################################################################
 
-def run_fit_ba(q_axis, r_data, r_uncertainty, simulationFactory, startParams):
+def run_fit_ba(q_axis, r_data, r_uncertainty, 
+               simulationFactory, startParams):
     
     fit_objective = ba.FitObjective()
     fit_objective.setObjectiveMetric("chi2")
@@ -227,17 +229,22 @@ if __name__ == '__main__':
     paramsInitial = {d:v[0] for d, v in startParams.items()}
 
     qzs  = numpy.linspace(qmin, qmax, scan_size)
-    q, r = qr( run_simulation(qzs, paramsInitial), -dict(paramsInitial, **fixedParams)["q_offset"] )
+    q, r = qr( run_simulation(qzs, paramsInitial), 
+              dict(paramsInitial, **fixedParams)["q_offset"] )
     data = get_Experimental_data(qmin, qmax)
     
-    plot(q, r, data, f'PtLayerFit_initial.pdf', dict(paramsInitial, **fixedParams))
+    plot(q, r, data, f'PtLayerFit_initial.pdf', 
+                  dict(paramsInitial, **fixedParams))
     
     if fit:
-        fitResult = run_fit_ba(data[0], data[1], data[2], run_simulation, startParams)
+        fitResult = run_fit_ba(data[0], data[1], data[2], 
+                                run_simulation, startParams)
         
         print("Fit Result:")
         print(fitResult)
         
-        q, r = qr( run_simulation(qzs, fitParams=fitResult), -fitResult["q_offset"] )
-        plot(q, r, data, f'PtLayerFit_fit.pdf', dict(fitResult, **fixedParams))
+        q, r = qr( run_simulation(qzs, fitParams=fitResult), 
+                    fitResult["q_offset"] )
+        plot(q, r, data, f'PtLayerFit_fit.pdf', 
+                    dict(fitResult, **fixedParams))
   

@@ -41,7 +41,7 @@ and the following six parameters are utilized:
 
 * The relative $Q$-resolution: `q_res/q` ([c.f.]({{% ref-example "reflectometry/tofr-with-resolution" %}}))
 
-* A $Q$ offset: `q_offset`
+* A $Q$-offset: `q_offset`
 
   This global offset is introduced to account for uncertainties in the angle at which the measurement is performed.
 
@@ -52,17 +52,33 @@ Furthermore, there is a rather large variance in the data that also leads to a r
 Therefore, we neglect the data in the low $Q$-region by choosing a cutoff at $Q_{\text{min}} = $&nbsp;0.18.
 This value is selected by hand after performing several fits and visually selecting a good result.
 
+##### $Q$-offset
+
+Currently, BornAgain does not have an API support for an offset of the $Q$-axis.
+Therefore, we need to shift the $Q$-axis before performing a simulation
+{{< highlight python>}}
+q_axis = q_axis + parameters["q_offset"]
+{{< /highlight >}}
+
+This shift then needs to be counter-transformed when returning the results in the `qr(result)` function
+{{< highlight python>}}
+q = numpy.array(result.result().axis(ba.Axes.QSPACE)) - q_offset
+{{< /highlight >}}
+
+##### Initial parameters
 
 In order to successfully fit this example, we chose some sane starting values and 
 the example code, that is fully given below, can be run with the following command:
 {{< highlight python>}}
-python3 PolarizedSpinAsymmetryFit.py
+python3 Pt_layer_fit.py fit
 {{< /highlight >}}
 This performs a simulation with the initial parameters and yields the following result:
 
 {{< galleryscg >}}
 {{< figscg src="Pt-Layer-initial.png" width="550px" caption="Reflectivity with the initial parameters before fitting">}}
 {{< /galleryscg >}}
+
+Immediately afterwards the fit is performed.
 
 
 #### Fit result
@@ -71,7 +87,7 @@ This performs a simulation with the initial parameters and yields the following 
 In order to run the fitting procedure, the following command can be issued:
 
 {{< highlight python>}}
-python3 PolarizedSpinAsymmetryFit.py fit
+python3 Pt_layer_fit.py fit
 {{< /highlight >}}
 
 We need to allow a few seconds computational time and BornAgain should compute the following result
@@ -80,6 +96,12 @@ We need to allow a few seconds computational time and BornAgain should compute t
 {{< figscg src="Pt-Layer-final.png" width="550px" caption="Reflectivity with the parameters obtained from our fit">}}
 {{< /galleryscg >}}
 
+
+If the `fit` keyword is omitted from the command line
+{{< highlight python>}}
+python3 Pt_layer_fit.py
+{{< /highlight >}}
+a simulation is performed with our fit results and one should obtain the result shown above.
 
 
 
