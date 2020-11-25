@@ -13,6 +13,8 @@ import sys
 import numpy
 import matplotlib.pyplot as plt
 
+from scipy.optimize import differential_evolution
+
 import bornagain as ba
 from bornagain import angstrom
 
@@ -35,13 +37,16 @@ def get_sample(parameters, sign, ms150=1):
     
     m_Air   = ba.MaterialBySLD("Air", 0, 0)
     m_PyOx  = ba.MaterialBySLD("PyOx", 
-                               (parameters["sld_PyOx_real"] + sign * ms150 * parameters["msld_PyOx"] )* 1e-6, 
+                               (parameters["sld_PyOx_real"] + \
+                                 sign * ms150 * parameters["msld_PyOx"] )* 1e-6, 
                                parameters["sld_PyOx_imag"] * 1e-6)
     m_Py2   = ba.MaterialBySLD("Py2",  
-                               ( parameters["sld_Py2_real"] + sign * ms150 * parameters["msld_Py2"] ) * 1e-6,
+                               ( parameters["sld_Py2_real"] + \
+                                 sign * ms150 * parameters["msld_Py2"] ) * 1e-6,
                                parameters["sld_Py2_imag"] * 1e-6)
     m_Py1   = ba.MaterialBySLD("Py1",  
-                               ( parameters["sld_Py1_real"] + sign * ms150 * parameters["msld_Py1"] ) * 1e-6,
+                               ( parameters["sld_Py1_real"] + \
+                                 sign * ms150 * parameters["msld_Py1"] ) * 1e-6,
                                parameters["sld_Py1_imag"] * 1e-6)
     m_SiO2  = ba.MaterialBySLD("SiO2", parameters["sld_SiO2_real"] * 1e-6,    
                                parameters["sld_SiO2_imag"] * 1e-6)
@@ -92,7 +97,6 @@ def get_simulation(q_axis, fitParams, sign, ms150=False):
     
     dq = parameters["dq"] * q_axis
     scan = ba.QSpecScan( q_axis )
-    #scan.setFootprintFactor(footprint)
     scan.setAbsoluteQResolution(q_distr, dq)
     
     simulation = ba.SpecularSimulation()
@@ -100,7 +104,8 @@ def get_simulation(q_axis, fitParams, sign, ms150=False):
     simulation.setBeamIntensity(parameters["intensity"])
     
     if ms150:
-      sample = get_sample(parameters=parameters, sign=sign, ms150=parameters["ms150"])
+      sample = get_sample(parameters=parameters, sign=sign, 
+                                          ms150=parameters["ms150"])
     else:
       sample = get_sample(parameters=parameters, sign=sign, ms150=1)
       
@@ -229,6 +234,78 @@ def get_Experimental_data(filename, qmin, qmax):
 
 
 
+
+####################################################################
+#                          Fit Function                            #
+####################################################################
+
+def relative_difference(sim, exp):
+    result = (exp - sim) / (exp + sim)
+    return numpy.sum(result * result) / len(sim)
+
+def create_Parameter_dictionary(parameterNames, *args):
+    return { name:value for name, value in zip(parameterNames, *args) }
+    
+class FitObjective:
+    def __init__(self, q_axis, rdata, simulationFactory, parameterNames):
+      if isinstance(q_axis, list) and isinstance(rdata, list) and 
+                                  isinstance(simulationFactory, list):
+        self._q = q_axis
+        self._r = rdata
+        self._simulationFactory = simulationFactory
+      
+      elif not isinstance(q_axis, list) and not isinstance(rdata, list) 
+                            and not isinstance(simulationFactory, list):
+        self._q = [q_axis]
+        self._r = [rdata]
+        self._simulationFactory = [simulationFactory]
+      
+      else:
+        raise Exception("Inconsistent parameters")
+      
+      
+      self._parameterNames = parameterNames
+    
+    def __call__(self, *args):
+        fitParameters = create_Parameter_dictionary(self._parameterNames, *args)
+        print(f"FitParamters = {fitParameters}")
+        
+        result_metric = 0
+        
+        for q, r, sim in zip(self._q, self._r, self._simulationFactory):
+          sim_result = sim(q, fitParameters).result().array()
+          result_metric += relative_difference(sim_result, r)
+                                    
+        return result_metric
+            
+    
+def run_fit_differential_evolution(q_axis, rdata, simulationFactory, 
+                                                    startParams):
+    
+    bounds = [ (par[1], par[2]) for n, par in startParams.items() ]
+    parameters = [ par[0] for n, par in startParams.items() ]
+    parameterNames = [ n for n, par in startParams.items() ]
+    print(f"Bounds = {bounds}")
+
+    objective = FitObjective(q_axis, rdata, simulationFactory, 
+                                                  parameterNames)
+    
+    chi2_initial = objective(parameters)
+    
+    result = differential_evolution( objective, bounds,
+                                maxiter=200, popsize=len(bounds)*10,
+                                mutation=(0.5, 1.5), disp=True, tol=1e-2 )
+    
+    resultParameters = create_Parameter_dictionary(parameterNames, result.x)
+    chi2_final = objective(resultParameters.values())
+
+    print(f"Initial chi2: {chi2_initial}")
+    print(f"Final chi2: {chi2_final}")
+    return resultParameters
+
+
+
+
 ####################################################################
 #                          Main Function                           #
 ####################################################################
@@ -250,7 +327,7 @@ if __name__ == '__main__':
     
     if len(sys.argv) > 1 and sys.argv[1] == "fit":
         
-        # some sensible start parameters for fitting it with differential evolution
+        # some sensible start parameters for fitting
         startParams = {
                           "intensity":(1.04, 0, 3),
                           
@@ -279,9 +356,30 @@ if __name__ == '__main__':
         fit = True
         
     else:
-        
-        # my fitting result from 005 (T = 300K alone)
-        startParams = {'intensity': 0.9482344993285265, 't_PyOx': 74.97056190221168, 't_Py2': 61.75823766477464, 't_Py1': 54.058310970786316, 't_SiO2': 23.127048588278402, 'sld_PyOx_real': 2.199791584033569, 'sld_Py2_real': 4.980316982224387, 'sld_Py1_real': 4.612135848532186, 'r_PyOx': 31.323366207013787, 'r_Py2': 9.083768897940645, 'r_Py1': 5.0, 'r_SiO2': 14.43455709065263, 'r_Si': 14.948233893986075, 'msld_PyOx': 0.292684104601585, 'msld_Py2': 0.5979447434271339, 'msld_Py1': 0.56376339230351, 'ms150': 1.083311702077648}
+        # result from our own fitting
+        startParams = {'intensity': 0.9482344993285265, 
+                       
+                       't_PyOx': 74.97056190221168, 
+                       't_Py2': 61.75823766477464, 
+                       't_Py1': 54.058310970786316, 
+                       't_SiO2': 23.127048588278402, 
+                       
+                       'sld_PyOx_real': 2.199791584033569, 
+                       'sld_Py2_real': 4.980316982224387, 
+                       'sld_Py1_real': 4.612135848532186, 
+                       
+                       'r_PyOx': 31.323366207013787, 
+                       'r_Py2': 9.083768897940645, 
+                       'r_Py1': 5.0, 
+                       'r_SiO2': 14.43455709065263, 
+                       'r_Si': 14.948233893986075, 
+                       
+                       'msld_PyOx': 0.292684104601585, 
+                       'msld_Py2': 0.5979447434271339, 
+                       'msld_Py1': 0.56376339230351, 
+                       
+                       'ms150': 1.083311702077648
+                       }
         
        
         startParams = {d:(v,) for d, v in startParams.items()}
@@ -310,11 +408,15 @@ if __name__ == '__main__':
     q_150_p, r_150_p = qr( run_Simulation_150_p( qzs, paramsInitial ) )
     q_150_m, r_150_m = qr( run_Simulation_150_m( qzs, paramsInitial ) )
     
-    data_300_p = get_Experimental_data("honeycomb_300_p.dat", qmin, qmax)
-    data_300_m = get_Experimental_data("honeycomb_300_m.dat", qmin, qmax)
+    data_300_p = get_Experimental_data("honeycomb_300_p.dat", 
+                                                    qmin, qmax)
+    data_300_m = get_Experimental_data("honeycomb_300_m.dat", 
+                                                    qmin, qmax)
 
-    data_150_p = get_Experimental_data("honeycomb_150_p.dat", qmin, qmax)
-    data_150_m = get_Experimental_data("honeycomb_150_m.dat", qmin, qmax)
+    data_150_p = get_Experimental_data("honeycomb_150_p.dat", 
+                                                    qmin, qmax)
+    data_150_m = get_Experimental_data("honeycomb_150_m.dat", 
+                                                    qmin, qmax)
 
 
     plot_sld_profile(paramsInitial, f"Honeycomb_Fit_sld_profile_initial.pdf")
@@ -327,9 +429,12 @@ if __name__ == '__main__':
 
     # fit and plot fit
     if fit:
-        dataSimTuple = [[data_300_p[0], data_300_m[0], data_150_p[0], data_150_m[0]], 
-                        [data_300_p[1], data_300_m[1], data_150_p[1], data_150_m[1]], 
-                        [run_Simulation_300_p, run_Simulation_300_m, run_Simulation_150_p, run_Simulation_150_m]]
+        dataSimTuple = [[data_300_p[0], data_300_m[0], 
+                         data_150_p[0], data_150_m[0]], 
+                        [data_300_p[1], data_300_m[1], 
+                         data_150_p[1], data_150_m[1]], 
+                        [run_Simulation_300_p, run_Simulation_300_m, 
+                         run_Simulation_150_p, run_Simulation_150_m]]
       
         fitResult = run_fit_differential_evolution(*dataSimTuple, startParams)
         
