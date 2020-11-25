@@ -32,7 +32,7 @@ the spin asymmetry.
 Given the experimental data, the measured spin asymmetry is calculated in the same way.
 In addition, the error is computed by:
 
-$$\Delta S = \frac{\sqrt{ 4 {R^{++}}^2 \Delta {R^{- -}}^2 + 4 {R^{- -}}^2 \Delta {R^{++}}^2 }}{ \left( R^{++} + R^{- -}\right)^2 } $$
+$$\Delta S = \frac{\sqrt{ 4 {R^{++}}^2 \left( \Delta {R^{- -}} \right)^2 + 4 {R^{- -}}^2 \left( \Delta {R^{++}}\right)^2 }}{ \left( R^{++} + R^{- -}\right)^2 } $$
 
 This is performed in the function `plotSpinAsymmetry`.
 

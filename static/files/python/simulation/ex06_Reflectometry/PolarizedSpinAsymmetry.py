@@ -28,7 +28,7 @@ qmin = 0.05997
 qmax = 1.96
 
 # number of points on which the computed result is plotted
-scan_size=1500
+scan_size = 1500
 
 # The SLD of the substrate is kept constant
 sldMao  = (5.377e-06, 0)
@@ -226,23 +226,12 @@ def filterData(data, qmin, qmax):
     return data[:,minIndex:maxIndex+1]
 
 def get_Experimental_data(qmin, qmax):
-    if hasattr(get_Experimental_data, "raw_data"):
-        data_pp = get_Experimental_data.raw_data_pp
-        data_mm = get_Experimental_data.raw_data_mm
-        
-    else:
-        input_Data = downloadAndExtractData()
-        data_pp = normalizeData(input_Data[0])
-        data_mm = normalizeData(input_Data[1])
-        
-        get_Experimental_data.data_pp = data_pp
-        get_Experimental_data.data_mm = data_mm
-        get_Experimental_data.raw_data = True
+    input_Data = downloadAndExtractData()
+    data_pp = normalizeData(input_Data[0])
+    data_mm = normalizeData(input_Data[1])
     
     return ( filterData( data_pp, qmin, qmax) , 
-            filterData( data_mm, qmin, qmax) )
-
-
+             filterData( data_mm, qmin, qmax) )
 
 def downloadAndExtractData():
     url = "https://www.nist.gov/document/spinelfilmzip"
@@ -281,19 +270,17 @@ if __name__ == '__main__':
 
     fixedParams = {
                 # parameters from our own fit run
-                'q_res': (0.01027065792503683, ),
-                'q_offset': (8.977754679340925e-05, ), 
+                'q_res': 0.010542945012551425, 
+                'q_offset': 7.971243487467318e-05, 
                 
-                'rho_Mafo': (6.373962950920891, ),
-                'rhoM_Mafo': (0.2383070807371731, ),
-                't_Mafo': (137.73795730237237, ),
+                'rho_Mafo': 6.370140108715461, 
+                'rhoM_Mafo': 0.27399566816062926, 
+                't_Mafo': 137.46913056084736, 
                 
-                'r_Mao': (7.004715629445297, ),
-                'r_Mafo': (3.8860835236521702, ),
+                'r_Mao': 8.60487712674644, 
+                'r_Mafo': 3.7844265311293483
                 }
   
-    fixedParams = { d:v[0] for d, v in fixedParams.items() }
-
     def run_Simulation_pp( qzs, params ):
         return run_simulation(qzs, params,                                 
                         polarization = ba.kvector_t(0, 1, 0),
@@ -316,6 +303,4 @@ if __name__ == '__main__':
     
     plotSpinAsymmetry(data_pp, data_mm, qzs, r_pp, r_mm, 
                       "MAFO_Saturated_spin_asymmetry.pdf")
-    
-    
     

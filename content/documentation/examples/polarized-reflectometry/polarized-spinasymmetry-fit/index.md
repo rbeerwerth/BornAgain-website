@@ -22,17 +22,23 @@ With the initial parameters, we obtain the following reflectivity and spin-asymm
 
 #### Setup of the Fit
 
-For fitting of reflectometry data covering several orders of magnitude we use the relative difference
+For fitting of reflectometry data covering several orders of magnitude we use the $\chi^2$ metric
 
-$$\Delta = \frac{1}{N} \sum_{i = 1}^N \left( \frac{d_i - s_i}{d_i + s_i} \right)^2$$
+$$\chi^2 = \sum_{i = 1}^N  \frac{\left( d_i - s_i \right)^2}{\sigma_i^2}$$
 
+Here $d_i$ is the $i$-thexperimental data point, $\sigma_i$ is its uncertainty and 
+$s_i$ is the corresponding simulation result.
 
-This is supported by BornAgain by setting
+This is supported in BornAgain by setting
 
 {{< highlight python>}}
-fit_objective.setObjectiveMetric("reldiff")
+fit_objective.setObjectiveMetric("chi2")
 {{< /highlight >}}
 
+It must be noted, that in order to obtain good results, one needs to provide the uncertainties 
+of the reflectivity.
+If no uncertainties are available, using the relative difference `fit_objective.setObjectiveMetric("reldiff")` yields better results.
+If the relative difference is selected and uncertainties are provided, BornAgain automatically falls back to the above $\chi^2$ metric.
 
 The fitting of polarized reflectometry data proceeds similar to the lines presented in
 [the tutorial on multiple datasets]({{% ref-example "fitting/advanced/multiple-datasets" %}}).
@@ -41,9 +47,9 @@ to the fit objective:
 
 {{< highlight python>}}
 fit_objective.addSimulationAndData( SimulationFunctionPlusplus,
-                                                    rdata_pp, 1.0)
+                                    r_data_pp, r_uncertainty_pp, 1.0)
 fit_objective.addSimulationAndData( SimulationFunctionMinusMinus,
-                                                    rdata_mm, 1.0)
+                                    r_data_mm, r_uncertainty_mm, 1.0)
 {{< /highlight >}}
 
 `SimulationFunctionPlusplus` and `SimulationFunctionMinusMinus` are two function objects that return a simulation result for
