@@ -1,12 +1,9 @@
 """
-This example demonstrates how to fit a complex
-experimental setup using BornAgain.
-It is based on real data published in 
-https://doi.org/10.1002/advs.201700856
+This example demonstrates how to fit a complex experimental setup using BornAgain.
+It is based on real data published in  https://doi.org/10.1002/advs.201700856
 by A. Glavic et al.
-In this example we utilize the scalar reflectometry 
-engine to fit polarized data without spin-flip for 
-performance reasons.
+In this example we utilize the scalar reflectometry  engine to fit polarized 
+data without spin-flip for performance reasons.
 """
 
 import sys
@@ -26,7 +23,6 @@ scan_size=1500
 # restrict the Q-range of the data used for fitting
 qmin = 0.08
 qmax = 1.4
-
 
 
 ####################################################################
@@ -161,7 +157,6 @@ def plot(qs, rs, exps, shifts, labels, filename):
     plt.savefig(filename)
     
     
-    
 def plot_sld_profile(fitParams, filename):
     
     
@@ -171,8 +166,10 @@ def plot_sld_profile(fitParams, filename):
     z_300_p, sld_300_p = ba.MaterialProfile( get_sample(parameters, 1) )
     z_300_m, sld_300_m = ba.MaterialProfile( get_sample(parameters, -1) )
 
-    z_150_p, sld_150_p = ba.MaterialProfile( get_sample(parameters, 1, ms150=parameters["ms150"]) )
-    z_150_m, sld_150_m = ba.MaterialProfile( get_sample(parameters, -1, ms150=parameters["ms150"]) )
+    z_150_p, sld_150_p = ba.MaterialProfile( get_sample(parameters, 1, 
+                                                  ms150=parameters["ms150"]) )
+    z_150_m, sld_150_m = ba.MaterialProfile( get_sample(parameters, -1, 
+                                                  ms150=parameters["ms150"]) )
     
     plt.figure()
     nsld = plt.plot( z_300_p, numpy.real( sld_300_p ) * 1e6, label=r"300K $+$" )
@@ -188,7 +185,6 @@ def plot_sld_profile(fitParams, filename):
     plt.tight_layout()
     plt.savefig(filename)
     plt.close()
-
 
 
 ####################################################################
@@ -230,9 +226,6 @@ def get_Experimental_data(filename, qmin, qmax):
     maxIndex = numpy.argmin( numpy.abs( data[0] - qmax ) )
     
     return data[:,minIndex:maxIndex+1]
-
-
-
 
 
 ####################################################################
@@ -302,8 +295,6 @@ def run_fit_differential_evolution(q_axis, rdata, simulationFactory,
     print(f"Initial chi2: {chi2_initial}")
     print(f"Final chi2: {chi2_final}")
     return resultParameters
-
-
 
 
 ####################################################################

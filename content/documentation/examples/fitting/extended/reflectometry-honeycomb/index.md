@@ -14,26 +14,26 @@ artificial magnetic honeycomb lattice published by A.&nbsp;Glavic et al., in
 The experiment was performed with polarized neutrons, but without polarization analysis.
 Since the magnetization of the sample was parallel to the neutron spin, there is no spin flip
 and we apply the scalar theory to this problem.
-This is primarily done to speed up computations, when the polarized computational engine is utilized
+This is primarily done to speed up computations: when the polarized computational engine is utilized
 the fitting procedure takes roughly three times as long.
 
 
 #### Experimental data
 
-The experimental data consits of four datasets that should be fitted simultaneously .
+The experimental data consists of four datasets that should be fitted simultaneously.
 These datasets arise from the two polarization channels for up and down polarization of the incoming beam
 and both of these channels are measured at two temperatures (300K and 150K).
 
 All of this is measured on the same sample, so all parameters are assumed to be the same, 
 except the magnetization being temperature dependent.
 Therefore, we introduce a scaling parameter for the magnetization as the ratio of the 
-magnetizations at 150K and 300K: $M_{s150} = M_{150K} / M_{300K}$
+magnetizations at 150K and 300K: $M_{s150} = M_{150K} / M_{300K}$.
 
 
 #### Magnetization model
 
 To model a magnetic material, one can assign a magnetization vector to any material, as is demonstrated 
-in, for example, the [basic polarized reflectometry tutorial]({{% ref-example "polarized-reflectometry/basic-polarized-reflectometry" %}}).
+in the [basic polarized reflectometry tutorial]({{% ref-example "polarized-reflectometry/basic-polarized-reflectometry" %}}).
 When a non-vanishing magnetization vector is specified for at least one layer in a sample,
 BornAgain will automatically utilize the polarized computational engine.
 This leads to lower performance as the computations are more invovled.
@@ -48,7 +48,7 @@ Here the $+$ is chosen for incoming neutrons with spin up and $-$ is chosen for 
 
 #### Computational model
 
-We simulate this experiment by bulding a 6 layer model-
+We simulate this experiment by bulding a 6 layer model:
 As usual the top layer is the vacuum and the bottom layer is a silicon substrate.
 On top of the silicon substrate, we simulate a thin oxide layer, where we fit its roughness and thickness
 The SLDs of these three layers are taken from the literature and kept constant.
