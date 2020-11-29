@@ -4,7 +4,7 @@ fitting example "Magnetically Dead Layers in Spinel Films"
 given at the Nist website:
 https://www.nist.gov/ncnr/magnetically-dead-layers-spinel-films
 
-For simplicity, here we only reproduce the first part of that 
+For simplicity, here we only reproduce the first part of that
 demonstration without the magnetically dead layer.
 """
 
@@ -100,7 +100,7 @@ def get_simulation(q_axis, parameters, polarization, analyzer):
 
 def run_simulation(q_axis, fitParams, *, polarization, analyzer):
     """
-    Run a simulation on the given q-axis, where the sample is 
+    Run a simulation on the given q-axis, where the sample is
     constructed with the given parameters.
     Vectors for polarization and analyzer need to be provided
     """
@@ -161,7 +161,7 @@ def plot(qs, rs, exps, labels, filename):
 
 def plotSpinAsymmetry(data_pp, data_mm, q, r_pp, r_mm, filename):
     """
-    Plot the simulated spin asymmetry as well its 
+    Plot the simulated spin asymmetry as well its
     experimental counterpart with errorbars
     """
 
@@ -276,15 +276,15 @@ if __name__ == '__main__':
 
     fixedParams = {
         # parameters from our own fit run
-        'q_res': 0.010542945012551425, 
-        'q_offset': 7.971243487467318e-05, 
-        'rho_Mafo': 6.370140108715461, 
-        'rhoM_Mafo': 0.27399566816062926, 
-        't_Mafo': 137.46913056084736, 
-        'r_Mao': 8.60487712674644, 
+        'q_res': 0.010542945012551425,
+        'q_offset': 7.971243487467318e-05,
+        'rho_Mafo': 6.370140108715461,
+        'rhoM_Mafo': 0.27399566816062926,
+        't_Mafo': 137.46913056084736,
+        'r_Mao': 8.60487712674644,
         'r_Mafo': 3.7844265311293483
     }
-    
+
     def run_Simulation_pp(qzs, params):
         return run_simulation(qzs,
                               params,
