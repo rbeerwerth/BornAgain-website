@@ -22,8 +22,10 @@ def create_detector():
     """
     u0 = beam_xpos*pilatus_pixel_size  # in mm
     v0 = beam_ypos*pilatus_pixel_size  # in mm
-    detector = ba.RectangularDetector(pilatus_npx, pilatus_npx*pilatus_pixel_size,
-                                      pilatus_npy, pilatus_npy*pilatus_pixel_size)
+    detector = ba.RectangularDetector(pilatus_npx,
+                                      pilatus_npx*pilatus_pixel_size,
+                                      pilatus_npy,
+                                      pilatus_npy*pilatus_pixel_size)
     detector.setPerpendicularToDirectBeam(detector_distance, u0, v0)
     return detector
 
@@ -37,7 +39,7 @@ def create_simulation(params):
     simulation.setBeamParameters(wavelength, alpha_i, 0.0)
     simulation.setBeamIntensity(1.2e7)
     simulation.setRegionOfInterest(85.0, 70.0, 120.0, 92.)
-    simulation.addMask(ba.Rectangle(101.9, 82.1, 103.7, 85.2), True)  # mask on reflected beam
+    simulation.addMask(ba.Rectangle(101.9, 82.1, 103.7, 85.2), True)  # beamstop
 
     sample_builder = SampleBuilder()
     sample = sample_builder.create_sample(params)

@@ -80,27 +80,41 @@ def plot(result):
     # set plotting parameters
     rcParams['image.cmap'] = 'jet'
     rcParams['image.aspect'] = 'auto'
-    
+
     fig = plt.figure(figsize=(12.80, 10.24))
 
     plt.subplot(2, 2, 1)
     # default units for rectangular detector are millimeters
 
-    ba.plot_colormap(result, title="In default units",
-                     xlabel=r'$X_{mm}$', ylabel=r'$Y_{mm}$', zlabel=None)
+    ba.plot_colormap(result,
+                     title="In default units",
+                     xlabel=r'$X_{mm}$',
+                     ylabel=r'$Y_{mm}$',
+                     zlabel=None)
 
     plt.subplot(2, 2, 2)
-    ba.plot_colormap(result, units=ba.Axes.NBINS, title="In number of bins",
-                     xlabel=r'$X_{nbins}$', ylabel=r'$Y_{nbins}$', zlabel=None)
+    ba.plot_colormap(result,
+                     units=ba.Axes.NBINS,
+                     title="In number of bins",
+                     xlabel=r'$X_{nbins}$',
+                     ylabel=r'$Y_{nbins}$',
+                     zlabel=None)
 
     plt.subplot(2, 2, 3)
-    ba.plot_colormap(result, units=ba.Axes.DEGREES, title="In degs",
-                     xlabel=r'$\phi_f ^{\circ}$', ylabel=r'$\alpha_f ^{\circ}$',
+    ba.plot_colormap(result,
+                     units=ba.Axes.DEGREES,
+                     title="In degs",
+                     xlabel=r'$\phi_f ^{\circ}$',
+                     ylabel=r'$\alpha_f ^{\circ}$',
                      zlabel=None)
 
     plt.subplot(2, 2, 4)
-    ba.plot_colormap(result, units=ba.Axes.QSPACE, title="Q-space",
-                     xlabel=r'$Q_{y} [1/nm]$', ylabel=r'$Q_{z} [1/nm]$', zlabel=None)
+    ba.plot_colormap(result,
+                     units=ba.Axes.QSPACE,
+                     title="Q-space",
+                     xlabel=r'$Q_{y} [1/nm]$',
+                     ylabel=r'$Q_{z} [1/nm]$',
+                     zlabel=None)
 
     plt.subplots_adjust(left=0.07, right=0.97, top=0.9, bottom=0.1, hspace=0.25)
     plt.show()

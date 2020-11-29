@@ -45,11 +45,12 @@ def get_simulation(integration_flag):
     If integration_flag=True, the simulation will integrate over detector bins.
     """
     simulation = ba.GISASSimulation()
-    simulation.setDetectorParameters(200, -2.0*deg, 2.0*deg,
-                                     200, 0.0*deg, 2.0*deg)
+    simulation.setDetectorParameters(200, -2.0*deg, 2.0*deg, 200, 0.0*deg,
+                                     2.0*deg)
     simulation.setBeamParameters(1.0*angstrom, 0.2*deg, 0.0*deg)
     simulation.getOptions().setMonteCarloIntegration(integration_flag, 50)
-    simulation.setTerminalProgressMonitor()
+    if not "__no_terminal__" in globals():
+        simulation.setTerminalProgressMonitor()
     return simulation
 
 
@@ -62,19 +63,31 @@ def run_simulation():
     fig = plt.figure(figsize=(12.80, 10.24))
 
     # conditions to define cylinders scale factor and integration flag
-    conditions = [
-        {'title': "Small cylinders, analytical calculations",
-         'scale': 1,   'integration': False, 'zmin': 1e-5, 'zmax': 1e2},
-
-        {'title': "Small cylinders, Monte-Carlo integration",
-         'scale': 1,   'integration': True, 'zmin': 1e-5, 'zmax': 1e2},
-
-        {'title': "Large cylinders, analytical calculations",
-         'scale': 100, 'integration': False, 'zmin': 1e-5, 'zmax': 1e10},
-
-        {'title': "Large cylinders, Monte-Carlo integration",
-         'scale': 100, 'integration': True, 'zmin': 1e-5, 'zmax': 1e10}
-    ]
+    conditions = [{
+        'title': "Small cylinders, analytical calculations",
+        'scale': 1,
+        'integration': False,
+        'zmin': 1e-5,
+        'zmax': 1e2
+    }, {
+        'title': "Small cylinders, Monte-Carlo integration",
+        'scale': 1,
+        'integration': True,
+        'zmin': 1e-5,
+        'zmax': 1e2
+    }, {
+        'title': "Large cylinders, analytical calculations",
+        'scale': 100,
+        'integration': False,
+        'zmin': 1e-5,
+        'zmax': 1e10
+    }, {
+        'title': "Large cylinders, Monte-Carlo integration",
+        'scale': 100,
+        'integration': True,
+        'zmin': 1e-5,
+        'zmax': 1e10
+    }]
 
     # run simulation 4 times and plot results
     for i_plot, condition in enumerate(conditions):
@@ -89,15 +102,22 @@ def run_simulation():
         result = simulation.result()
 
         # plotting results
-        plt.subplot(2, 2, i_plot+1)
+        plt.subplot(2, 2, i_plot + 1)
         plt.subplots_adjust(wspace=0.3, hspace=0.3)
 
         zmin = condition['zmin']
         zmax = condition['zmax']
-        ba.plot_colormap(result, zmin=zmin, zmax=zmax, cmap='jet', aspect='auto')
+        ba.plot_colormap(result,
+                         zmin=zmin,
+                         zmax=zmax,
+                         cmap='jet',
+                         aspect='auto')
 
-        plt.text(0.0, 2.1, conditions[i_plot]['title'],
-                 horizontalalignment='center', verticalalignment='center',
+        plt.text(0.0,
+                 2.1,
+                 conditions[i_plot]['title'],
+                 horizontalalignment='center',
+                 verticalalignment='center',
                  fontsize=12)
 
 

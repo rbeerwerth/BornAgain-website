@@ -9,7 +9,6 @@ from matplotlib import pyplot as plt
 phi_min, phi_max = -2.0, 2.0
 alpha_min, alpha_max = 0.0, 2.0
 
-
 formfactors = [
     ba.FormFactorAnisoPyramid(20.0, 16.0, 13.0, 60.0*deg),
     ba.FormFactorBox(20.0, 16.0, 13.0),
@@ -62,8 +61,8 @@ def get_simulation():
     Returns GISAXS simulation with standard beam and detector.
     """
     simulation = ba.GISASSimulation()
-    simulation.setDetectorParameters(100, phi_min*deg, phi_max*deg,
-                                     100, alpha_min*deg, alpha_max*deg)
+    simulation.setDetectorParameters(100, phi_min*deg, phi_max*deg, 100,
+                                     alpha_min*deg, alpha_max*deg)
     simulation.setBeamParameters(1.0*angstrom, 0.2*deg, 0.0*deg)
     return simulation
 
@@ -95,17 +94,25 @@ def run_simulation():
         result = simulate(ff)
 
         # showing the result
-        plt.subplot(5, 5, nplot+1)
+        plt.subplot(5, 5, nplot + 1)
         plt.subplots_adjust(wspace=0.3, hspace=0.3)
 
-        ba.plot_colormap(result, xlabel="", ylabel="", zlabel="",
-                         cmap='jet', aspect='auto')
+        ba.plot_colormap(result,
+                         xlabel="",
+                         ylabel="",
+                         zlabel="",
+                         cmap='jet',
+                         aspect='auto')
 
         plt.tick_params(axis='both', which='major', labelsize=8)
         plt.tick_params(axis='both', which='minor', labelsize=6)
-        plt.xticks(numpy.arange(phi_min, phi_max+0.0001, 1.0))
-        plt.text(-0.1, 2.15, name, horizontalalignment='center',
-                 verticalalignment='center', fontsize=9)
+        plt.xticks(numpy.arange(phi_min, phi_max + 0.0001, 1.0))
+        plt.text(-0.1,
+                 2.15,
+                 name,
+                 horizontalalignment='center',
+                 verticalalignment='center',
+                 fontsize=9)
 
 
 if __name__ == '__main__':

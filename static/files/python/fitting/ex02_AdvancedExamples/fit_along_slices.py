@@ -42,7 +42,8 @@ def get_simulation(params, add_masks=True):
     Create and return GISAXS simulation with beam and detector defined
     """
     simulation = ba.GISASSimulation()
-    simulation.setDetectorParameters(100, -1.0*deg, 1.0*deg, 100, 0.0*deg, 2.0*deg)
+    simulation.setDetectorParameters(100, -1.0*deg, 1.0*deg, 100, 0.0*deg,
+                                     2.0*deg)
     simulation.setBeamParameters(1.0*angstrom, 0.2*deg, 0.0*deg)
     simulation.setBeamIntensity(1e+08)
     simulation.setSample(get_sample(params))
@@ -78,7 +79,6 @@ class PlotObserver:
     Draws fit progress every nth iteration. Here we plot slices along real
     and simulated images to see fit progress.
     """
-
     def __init__(self):
         self.fig = plt.figure(figsize=(10.25, 7.69))
         self.fig.canvas.draw()
@@ -97,11 +97,15 @@ class PlotObserver:
         # line representing vertical slice
         plt.plot([phi_slice_value, phi_slice_value],
                  [data.getYmin(), data.getYmax()],
-                 color='gray', linestyle='-', linewidth=1)
+                 color='gray',
+                 linestyle='-',
+                 linewidth=1)
         # line representing horizontal slice
         plt.plot([data.getXmin(), data.getXmax()],
                  [alpha_slice_value, alpha_slice_value],
-                 color='gray', linestyle='-', linewidth=1)
+                 color='gray',
+                 linestyle='-',
+                 linewidth=1)
 
     @staticmethod
     def plot_slices(slices, title):
@@ -110,8 +114,7 @@ class PlotObserver:
         """
         plt.subplots_adjust(wspace=0.2, hspace=0.3)
         for label, slice in slices:
-            plt.semilogy(slice.getBinCenters(),
-                         slice.getBinValues(), label=label)
+            plt.semilogy(slice.binCenters(), slice.binValues(), label=label)
             plt.xlim(slice.getXmin(), slice.getXmax())
             plt.ylim(1.0, slice.getMaximum()*10.0)
         plt.legend(loc='upper right')
@@ -127,13 +130,14 @@ class PlotObserver:
 
         iteration_info = fit_objective.iterationInfo()
 
-        plt.text(0.01, 0.85, "Iterations  " + '{:d}'.
-                 format(iteration_info.iterationCount()))
-        plt.text(0.01, 0.75, "Chi2       " + '{:8.4f}'.format(iteration_info.chi2()))
+        plt.text(
+            0.01, 0.85,
+            "Iterations  " + '{:d}'.format(iteration_info.iterationCount()))
+        plt.text(0.01, 0.75,
+                 "Chi2       " + '{:8.4f}'.format(iteration_info.chi2()))
         for index, params in enumerate(iteration_info.parameters()):
-            plt.text(0.01, 0.55 - index * 0.1,
+            plt.text(0.01, 0.55 - index*0.1,
                      '{:30.30s}: {:6.3f}'.format(params.name(), params.value))
-
 
         plt.tight_layout()
         plt.draw()
@@ -153,19 +157,16 @@ class PlotObserver:
         self.plot_real_data(real_data)
 
         # horizontal slices
-        slices = [
-            ("real", real_data.projectionX(alpha_slice_value)),
-            ("simul", simul_data.projectionX(alpha_slice_value))
-            ]
-        title = ("Horizontal slice at alpha =" + '{:3.1f}'.format(alpha_slice_value))
+        slices = [("real", real_data.projectionX(alpha_slice_value)),
+                  ("simul", simul_data.projectionX(alpha_slice_value))]
+        title = ("Horizontal slice at alpha =" +
+                 '{:3.1f}'.format(alpha_slice_value))
         plt.subplot(2, 2, 2)
         self.plot_slices(slices, title)
 
         # vertical slices
-        slices = [
-            ("real", real_data.projectionY(phi_slice_value)),
-            ("simul", simul_data.projectionY(phi_slice_value))
-            ]
+        slices = [("real", real_data.projectionY(phi_slice_value)),
+                  ("simul", simul_data.projectionY(phi_slice_value))]
         title = "Vertical slice at phi =" + '{:3.1f}'.format(phi_slice_value)
         plt.subplot(2, 2, 3)
         self.plot_slices(slices, title)

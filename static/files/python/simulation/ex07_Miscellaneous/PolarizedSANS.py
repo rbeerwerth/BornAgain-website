@@ -16,8 +16,7 @@ def get_sample():
     """
     # Defining Materials
     mat_solvent = ba.HomogeneousMaterial("Solvent", 5e-6, 0.0)
-    mat_core = ba.HomogeneousMaterial("Core", 6e-6, 2e-8,
-                                      magnetization_core)
+    mat_core = ba.HomogeneousMaterial("Core", 6e-6, 2e-8, magnetization_core)
     mat_shell = ba.HomogeneousMaterial("Shell", 1e-7, 2e-8)
 
     # Defining Layer
@@ -49,7 +48,8 @@ def get_simulation():
     simulation = ba.GISASSimulation()
 
     # Defining detector
-    simulation.setDetectorParameters(200, -3.0*deg, 3.0*deg, 200, -3.0*deg, 3.0*deg)
+    simulation.setDetectorParameters(200, -3.0*deg, 3.0*deg, 200, -3.0*deg,
+                                     3.0*deg)
 
     # Defining beam parameters
     simulation.setBeamParameters(0.5*nm, 0.0*deg, 0.0*deg)
@@ -74,7 +74,9 @@ def run_simulation():
     return simulation.result()
 
 
-if __name__ == '__main__': 
+if __name__ == '__main__':
     result = run_simulation()
-    ba.plot_simulation_result(result, cmap='jet', units=ba.Axes.QSPACE,
+    ba.plot_simulation_result(result,
+                              cmap='jet',
+                              units=ba.Axes.QSPACE,
                               aspect='auto')

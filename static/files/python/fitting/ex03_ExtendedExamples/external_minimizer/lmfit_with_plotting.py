@@ -26,7 +26,8 @@ def get_sample(params):
     particle_layout = ba.ParticleLayout()
     particle_layout.addParticle(sphere)
 
-    interference = ba.InterferenceFunction2DLattice.createHexagonal(lattice_length)
+    interference = ba.InterferenceFunction2DLattice(
+        ba.HexagonalLattice2D(lattice_length))
     pdf = ba.FTDecayFunction2DCauchy(10*nm, 10*nm, 0)
     interference.setDecayFunction(pdf)
 
@@ -46,8 +47,8 @@ def get_simulation(params):
     Create and return GISAXS simulation with beam and detector defined
     """
     simulation = ba.GISASSimulation()
-    simulation.setDetectorParameters(100, -1.0*deg, 1.0*deg,
-                                     100, 0.0*deg, 2.0*deg)
+    simulation.setDetectorParameters(100, -1.0*deg, 1.0*deg, 100, 0.0*deg,
+                                     2.0*deg)
     simulation.setBeamParameters(1.0*angstrom, 0.2*deg, 0.0*deg)
     simulation.setBeamIntensity(1e+08)
     simulation.setSample(get_sample(params))
@@ -77,13 +78,13 @@ class Plotter:
     """
     Adapts standard plotter for lmfit minimizer.
     """
-    def __init__(self, fit_objective, every_nth = 10):
+    def __init__(self, fit_objective, every_nth=10):
         self.fit_objective = fit_objective
         self.plotter_gisas = ba.PlotterGISAS()
         self.every_nth = every_nth
 
     def __call__(self, params, iter, resid):
-        if iter%self.every_nth == 0:
+        if iter % self.every_nth == 0:
             self.plotter_gisas.plot(self.fit_objective)
 
 
@@ -102,11 +103,14 @@ def run_fitting():
     params.add('length', value=10*nm, min=8*nm, max=14*nm)
 
     plotter = Plotter(fit_objective)
-    result = lmfit.minimize(fit_objective.evaluate_residuals, params, iter_cb=plotter)
+    result = lmfit.minimize(fit_objective.evaluate_residuals,
+                            params,
+                            iter_cb=plotter)
     fit_objective.finalize(result)
 
     result.params.pretty_print()
     print(lmfit.fit_report(result))
+
 
 if __name__ == '__main__':
     run_fitting()

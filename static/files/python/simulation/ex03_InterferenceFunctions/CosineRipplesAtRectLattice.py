@@ -24,8 +24,8 @@ def get_sample():
     particle_layout.addParticle(particle, 1.0)
 
     interference = ba.InterferenceFunction2DLattice(
-        200.0*nm, 50.0*nm, 90.0*deg, 0.0*deg)
-    pdf = ba.FTDecayFunction2DCauchy(1000.*nm/2./numpy.pi, 100.*nm/2./numpy.pi, 0)
+        ba.BasicLattice2D(200.0*nm, 50.0*nm, 90.0*deg, 0.0*deg))
+    pdf = ba.FTDecayFunction2DCauchy(160*nm, 16*nm, 0)
     interference.setDecayFunction(pdf)
     particle_layout.setInterferenceFunction(interference)
 
@@ -45,8 +45,8 @@ def get_simulation():
     characterizing the input beam and output detector
     """
     simulation = ba.GISASSimulation()
-    simulation.setDetectorParameters(100, -1.5*deg, 1.5*deg,
-                                     100, 0.0*deg, 2.5*deg)
+    simulation.setDetectorParameters(100, -1.5*deg, 1.5*deg, 100, 0.0*deg,
+                                     2.5*deg)
     simulation.setBeamParameters(1.6*angstrom, 0.3*deg, 0.0*deg)
     return simulation
 

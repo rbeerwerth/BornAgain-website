@@ -31,8 +31,8 @@ def get_sample(lattice_rotation_angle=0.0*deg):
     box = ba.Particle(m_si, box_ff)
 
     particle_layout = ba.ParticleLayout()
-    particle_layout.addParticle(
-        box, 1.0, ba.kvector_t(0.0, 0.0, 0.0), ba.RotationZ(lattice_rotation_angle))
+    particle_layout.addParticle(box, 1.0, ba.kvector_t(0.0, 0.0, 0.0),
+                                ba.RotationZ(lattice_rotation_angle))
     particle_layout.setInterferenceFunction(interference)
 
     # assembling the sample
@@ -41,9 +41,9 @@ def get_sample(lattice_rotation_angle=0.0*deg):
     substrate_layer = ba.Layer(m_si)
 
     roughness = ba.LayerRoughness()
-    roughness.setSigma(5.0 * nm)
+    roughness.setSigma(5.0*nm)
     roughness.setHurstParameter(0.5)
-    roughness.setLatteralCorrLength(10.0 * nm)
+    roughness.setLatteralCorrLength(10.0*nm)
 
     multi_layer = ba.MultiLayer()
     multi_layer.addLayer(vacuum_layer)
@@ -56,8 +56,8 @@ def get_simulation():
     Create and return GISAXS simulation with beam and detector defined
     """
     simulation = ba.GISASSimulation()
-    simulation.setDetectorParameters(200, -0.5*deg, 0.5*deg,
-                                     200, 0.0*deg, 0.6*deg)
+    simulation.setDetectorParameters(200, -0.5*deg, 0.5*deg, 200, 0.0*deg,
+                                     0.6*deg)
     simulation.setBeamParameters(1.34*angstrom, 0.4*deg, 0.0*deg)
     simulation.setBeamIntensity(1e+08)
     simulation.getOptions().setMonteCarloIntegration(True, 100)
@@ -70,7 +70,8 @@ def run_simulation():
     """
     simulation = get_simulation()
     simulation.setSample(get_sample())
-    simulation.setTerminalProgressMonitor()
+    if not "__no_terminal__" in globals():
+        simulation.setTerminalProgressMonitor()
     simulation.runSimulation()
     return simulation.result()
 

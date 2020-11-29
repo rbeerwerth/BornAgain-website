@@ -47,8 +47,8 @@ def get_simulation(params):
     Returns a GISAXS simulation with beam and detector defined
     """
     simulation = ba.GISASSimulation()
-    simulation.setDetectorParameters(100, -1.0*deg, 1.0*deg,
-                                     100, 0.0*deg, 2.0*deg)
+    simulation.setDetectorParameters(100, -1.0*deg, 1.0*deg, 100, 0.0*deg,
+                                     2.0*deg)
     simulation.setBeamParameters(1.0*angstrom, 0.2*deg, 0.0*deg)
     simulation.setBeamIntensity(1e+08)
     simulation.setSample(get_sample(params))
@@ -62,8 +62,12 @@ def create_real_data():
     """
 
     # default sample parameters
-    params = {'cylinder_height': 5.0*nm, 'cylinder_radius': 5.0*nm,
-              'prism_height': 5.0*nm, 'prism_base_edge': 5.0*nm}
+    params = {
+        'cylinder_height': 5.0*nm,
+        'cylinder_radius': 5.0*nm,
+        'prism_height': 5.0*nm,
+        'prism_base_edge': 5.0*nm
+    }
 
     # retrieving simulated data in the form of numpy array
     simulation = get_simulation(params)

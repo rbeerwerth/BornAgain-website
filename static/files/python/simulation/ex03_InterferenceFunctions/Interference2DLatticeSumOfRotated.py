@@ -17,15 +17,14 @@ def get_sample():
     substrate_layer = ba.Layer(m_substrate)
 
     p_interference_function = \
-        ba.InterferenceFunction2DLattice.createSquare(25.0*nm, 0)
-    pdf = ba.FTDecayFunction2DCauchy(300.0*nm/2.0/numpy.pi,
-                                     100.0*nm/2.0/numpy.pi, 0)
+        ba.InterferenceFunction2DLattice(ba.SquareLattice2D(25.0*nm, 0))
+    pdf = ba.FTDecayFunction2DCauchy(48*nm, 16*nm, 0)
     p_interference_function.setDecayFunction(pdf)
 
     particle_layout = ba.ParticleLayout()
-    ff_cyl = ba.FormFactorCylinder(3.0*nm, 3.0*nm)
+    ff = ba.FormFactorCylinder(3.0*nm, 3.0*nm)
     position = ba.kvector_t(0.0, 0.0, 0.0)
-    cylinder = ba.Particle(m_particle, ff_cyl.clone())
+    cylinder = ba.Particle(m_particle, ff.clone())
     cylinder.setPosition(position)
     particle_layout.addParticle(cylinder, 1.0)
     particle_layout.setInterferenceFunction(p_interference_function)
@@ -44,8 +43,8 @@ def get_simulation():
     Assigns additional distribution to lattice rotation angle.
     """
     simulation = ba.GISASSimulation()
-    simulation.setDetectorParameters(100, 0.0*deg, 2.0*deg,
-                                     100, 0.0*deg, 2.0*deg)
+    simulation.setDetectorParameters(100, 0.0*deg, 2.0*deg, 100, 0.0*deg,
+                                     2.0*deg)
     simulation.setBeamParameters(1.0*angstrom, 0.2*deg, 0.0*deg)
 
     simulation.setSample(get_sample())
@@ -55,7 +54,7 @@ def get_simulation():
     xi_distr = ba.DistributionGate(xi_min, xi_max)
 
     # assigns distribution with 3 equidistant points to lattice rotation angle
-    simulation.addParameterDistribution("*/SquareLattice/Xi", xi_distr, 3)
+    simulation.addParameterDistribution("*/SquareLattice2D/Xi", xi_distr, 3)
 
     return simulation
 

@@ -21,12 +21,12 @@ def get_sample():
 
     # creating layers
     ambient_layer = ba.Layer(m_ambient)
-    ti_layer = ba.Layer(m_ti, 30 * angstrom)
-    ni_layer = ba.Layer(m_ni, 70 * angstrom)
+    ti_layer = ba.Layer(m_ti, 30*angstrom)
+    ni_layer = ba.Layer(m_ni, 70*angstrom)
     substrate_layer = ba.Layer(m_substrate)
 
     # create roughness
-    roughness = ba.LayerRoughness(5 * angstrom, 0.5, 10 * angstrom)
+    roughness = ba.LayerRoughness(5*angstrom, 0.5, 10*angstrom)
 
     # creating multilayer
     multi_layer = ba.MultiLayer()
@@ -41,7 +41,7 @@ def get_sample():
 
 if __name__ == '__main__':
     sample = get_sample()
-    zpoints, slds = ba.MaterialProfile(sample)
+    zpoints, slds = ba.materialProfile(sample)
 
     plt.figure()
     plt.plot(zpoints, np.real(slds))

@@ -41,8 +41,8 @@ def get_simulation(params, add_masks=True):
     Create and return GISAXS simulation with beam and detector defined
     """
     simulation = ba.GISASSimulation()
-    simulation.setDetectorParameters(100, -1.0*deg, 1.0*deg,
-                                     100, 0.0*deg, 2.0*deg)
+    simulation.setDetectorParameters(100, -1.0*deg, 1.0*deg, 100, 0.0*deg,
+                                     2.0*deg)
     simulation.setBeamParameters(1.0*angstrom, 0.2*deg, 0.0*deg)
     simulation.setBeamIntensity(1e+08)
     simulation.setSample(get_sample(params))
@@ -89,25 +89,23 @@ def add_mask_to_simulation(simulation):
     simulation.maskAll()
 
     # set mask to simulate pacman's head
-    simulation.addMask(
-        ba.Ellipse(0.0*deg, 1.0*deg, 0.5*deg, 0.5*deg), False)
+    simulation.addMask(ba.Ellipse(0.0*deg, 1.0*deg, 0.5*deg, 0.5*deg), False)
 
     # set mask for pacman's eye
-    simulation.addMask(
-        ba.Ellipse(0.11*deg, 1.25*deg, 0.05*deg, 0.05*deg), True)
+    simulation.addMask(ba.Ellipse(0.11*deg, 1.25*deg, 0.05*deg, 0.05*deg), True)
 
     # set mask for pacman's mouth
-    points = [[0.0*deg, 1.0*deg], [0.5*deg, 1.2*deg],
-              [0.5*deg, 0.8*deg], [0.0*deg, 1.0*deg]]
+    points = [[0.0*deg, 1.0*deg], [0.5*deg, 1.2*deg], [0.5*deg, 0.8*deg],
+              [0.0*deg, 1.0*deg]]
     simulation.addMask(ba.Polygon(points), True)
 
     # giving pacman something to eat
-    simulation.addMask(
-        ba.Rectangle(0.45*deg, 0.95*deg, 0.55*deg, 1.05*deg), False)
-    simulation.addMask(
-        ba.Rectangle(0.61*deg, 0.95*deg, 0.71*deg, 1.05*deg), False)
-    simulation.addMask(
-        ba.Rectangle(0.75*deg, 0.95*deg, 0.85*deg, 1.05*deg), False)
+    simulation.addMask(ba.Rectangle(0.45*deg, 0.95*deg, 0.55*deg, 1.05*deg),
+                       False)
+    simulation.addMask(ba.Rectangle(0.61*deg, 0.95*deg, 0.71*deg, 1.05*deg),
+                       False)
+    simulation.addMask(ba.Rectangle(0.75*deg, 0.95*deg, 0.85*deg, 1.05*deg),
+                       False)
 
     # other mask's shapes are possible too
     # simulation.removeMasks()
