@@ -4,7 +4,7 @@ fitting example "Magnetically Dead Layers in Spinel Films"
 given at the Nist website:
 https://www.nist.gov/ncnr/magnetically-dead-layers-spinel-films
 
-For simplicity, here we only reproduce the first part of that
+For simplicity, here we only reproduce the first part of that 
 demonstration without the magnetically dead layer.
 """
 
@@ -100,7 +100,7 @@ def get_simulation(q_axis, parameters, polarization, analyzer):
 
 def run_simulation(q_axis, fitParams, *, polarization, analyzer):
     """
-    Run a simulation on the given q-axis, where the sample is
+    Run a simulation on the given q-axis, where the sample is 
     constructed with the given parameters.
     Vectors for polarization and analyzer need to be provided
     """
@@ -161,7 +161,7 @@ def plot(qs, rs, exps, labels, filename):
 
 def plotSpinAsymmetry(data_pp, data_mm, q, r_pp, r_mm, filename):
     """
-    Plot the simulated spin asymmetry as well its
+    Plot the simulated spin asymmetry as well its 
     experimental counterpart with errorbars
     """
 
