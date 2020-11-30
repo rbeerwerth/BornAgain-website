@@ -9,11 +9,10 @@ weight = 50
 
 In this example, we want to demonstrate how to fit experimental reflectivity data
 that was obtained by a time-of-flight experiment with unpolarized neutrons.
-The sample is a roughly 50&nbsp;nm thick platinum layer on top of a silicon substrate.
+Experimental data is available for a sample of a roughly 50&nbsp;nm thick platinum layer on top of a silicon substrate that is published in [this repository](https://doi.org/10.5281/zenodo.4072376).
 
-The experiment was performed by M. Fitzsimmons et al., and the resulting data is 
-published in [this repository](https://doi.org/10.5281/zenodo.4072376).
-
+The mesaurements were made by Timothy Charlton, Haile Ambaye and Michael Fitzsimmons (ORNL)
+on a sample provided by Eric Fullerton (UCSD).
 
 
 #### Fit model
