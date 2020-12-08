@@ -64,13 +64,10 @@ They can be found in the "Examples" directory:
 
 {{% examples-preview "documentation/examples/reflectometry" %}}
 
-<<<<<<< HEAD
-=======
 #### Polarized Reflectometry
 
 {{% examples-preview "documentation/examples/polarized-reflectometry" %}}
 
->>>>>>> add new examples
 #### Fitting
 
 {{% examples-preview "documentation/examples/fitting" %}}
